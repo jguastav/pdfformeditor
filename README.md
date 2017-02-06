@@ -2,6 +2,7 @@
 online pdf form editor using angular and pdftron
 
 
+#files
 indexPdfForms.html
 	html sample that incorporates online pdf editor simulating xteros application.
 	PDF FORM EDITOR components: 
@@ -46,7 +47,7 @@ WebViewer <folder>
 			PDFNetJS: PDFTron Javascript pdf manipulation library
 
 			
-PDFTron behavior
+#PDFTron behavior
 
 PDFTron is configured by the following files
 config.js:
@@ -66,7 +67,7 @@ app
 		
 
 			
-Structure:
+#Structure:
 developed PDF Editor form is a selected implementation of PDFTron.
 There are many more alternatives.
 
@@ -102,7 +103,7 @@ By now I reached the main 3 functionalities that uses and integrates angular / f
 		
 The server uploaded files can be viewed on 		
 		http://www.sakpanels.org/xteros/angularPDFTron/app/php/indexPdfForms.html	
-Usage: 
+#Usage: 
 
 1.- Enter to : http://www.sakpanels.org/xteros/angularPDFTron/app/php/listPDFFiles.php
 2.- Open a pdf form using cloud-upload icon
