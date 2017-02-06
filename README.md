@@ -134,4 +134,29 @@ I'm using the PDFTron Javascript library, resolving in the frontend and making c
 This approach can be changed.
 			
       
+#References 
+urls to download libraries
+
+
+PDFNet Server side libraries
+http://www.pdftron.com/pdfnet/downloads.html
+
+Java and C++ Version for linux
+http://www.pdftron.com/downloads/PDFNetC64.tar.gz
+
+Client javascript libraries
+
+http://www.pdftron.com/webviewer/download.html
+and 
+https://www.pdftron.com/pdfnet/pdfnetjs/    
+(PDFNet.js full)
+
+
+Javascript framework versions
+jquery-1.7.2
+AngularJS v1.5.11
+
+PHP.: public host: 4.4.9 or 5.6.16  (preferred)
+         php files are only samples about how to communicate with server side components
+
       
