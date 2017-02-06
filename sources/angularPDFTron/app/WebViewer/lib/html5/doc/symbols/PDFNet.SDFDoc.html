@@ -1,0 +1,2757 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.SDFDoc</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.SDFDoc
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.SDFDoc
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.SDFDoc.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.SDFDoc.html#constructor">PDFNet.SDFDoc</a></b>(id)
+							</div>
+							<div class="description">SDFDoc is a low-level document representing a graph of SDF::Obj nodes that can be used to build higher-level document models such as PDF (Portable DocumentFormat) or FDF (Forms Document Format).</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.SDFDoc.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#clearMarks">clearMarks</a></b>()
+								</div>
+								<div class="description">Removes 'marked' flag from all objects in cross reference table.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectArray">createIndirectArray</a></b>()
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectBool">createIndirectBool</a></b>(value)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectDict">createIndirectDict</a></b>(value)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectName">createIndirectName</a></b>(name)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectNull">createIndirectNull</a></b>(value)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectNumber">createIndirectNumber</a></b>(value)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectStream">createIndirectStream</a></b>(value, data_size, filter_chain)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectStreamFromFilter">createIndirectStreamFromFilter</a></b>(data, filter_chain)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectString">createIndirectString</a></b>(buf_value)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createIndirectStringFromUString">createIndirectStringFromUString</a></b>(str)
+								</div>
+								<div class="description">Used to create SDF/Cos indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#createShallowCopy">createShallowCopy</a></b>()
+								</div>
+								<div class="description">Copy Constructor</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#enableDiskCaching">enableDiskCaching</a></b>(use_cache_flag)
+								</div>
+								<div class="description">A document uses a temporary file which is used to cache the contentsof any new stream object created in the document (that is the default behavior).</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getFileName">getFileName</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getHeader">getHeader</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getHintStream">getHintStream</a></b>()
+								</div>
+								<div class="description">Returns document's initial linearization hint stream if it is available.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getLinearizationDict">getLinearizationDict</a></b>()
+								</div>
+								<div class="description">Returns document's initial linearization dictionary if it is available.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getObj">getObj</a></b>(obj_num)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getSecurityHandler">getSecurityHandler</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#getTrailer">getTrailer</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#importObj">importObj</a></b>(obj, deep_copy)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#initSecurityHandler">initSecurityHandler</a></b>(custom_data)
+								</div>
+								<div class="description">Initializes document's SecurityHandler.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#initStdSecurityHandler">initStdSecurityHandler</a></b>(password, password_sz)
+								</div>
+								<div class="description">Initializes document's SecurityHandler using the supplied password.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#initStdSecurityHandlerUString">initStdSecurityHandlerUString</a></b>(password)
+								</div>
+								<div class="description">Initializes document's SecurityHandler using the supplied password.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#isEncrypted">isEncrypted</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#isFullSaveRequired">isFullSaveRequired</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#isLinearized">isLinearized</a></b>()
+								</div>
+								<div class="description">Call this function to determine whether the document is represented in linearized (fast web view) format.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#isModified">isModified</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#lock">lock</a></b>()
+								</div>
+								<div class="description">Locks the document to prevent competing threads from accessing the document at the same time.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#lockRead">lockRead</a></b>()
+								</div>
+								<div class="description">Locks the document to prevent competing write threads (using Lock()) from accessing the document at the same time.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#removeSecurity">removeSecurity</a></b>()
+								</div>
+								<div class="description">This function removes document security.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#saveMemory">saveMemory</a></b>(flags, header)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#saveStream">saveStream</a></b>(stream, flags, header)
+								</div>
+								<div class="description">Saves the document to a stream.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#setSecurityHandler">setSecurityHandler</a></b>(handler)
+								</div>
+								<div class="description">The function sets a new SecurityHandler as the current security handler.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#swap">swap</a></b>(obj_num1, obj_num2)
+								</div>
+								<div class="description">Sometimes it is desirable to modify all indirect references to a given indirect object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#timedLock">timedLock</a></b>(milliseconds)
+								</div>
+								<div class="description">Try locking the document, waiting no longer than specified number of milliseconds.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#timedLockRead">timedLockRead</a></b>(milliseconds)
+								</div>
+								<div class="description">Try locking the document, waiting no longer than specified number of milliseconds.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#tryLock">tryLock</a></b>()
+								</div>
+								<div class="description">Try locking the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#tryLockRead">tryLockRead</a></b>()
+								</div>
+								<div class="description">Tries to obtain a read lock the document and returns true if the lock was successfully acquired</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#unlock">unlock</a></b>()
+								</div>
+								<div class="description">Removes the lock from the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#unlockRead">unlockRead</a></b>()
+								</div>
+								<div class="description">Removes the lock from the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.SDFDoc.html#xRefSize">xRefSize</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.SDFDoc</b>(id)
+				</div>
+				
+				<div class="description">
+					SDFDoc is a low-level document representing a graph of SDF::Obj nodes that can be used to build higher-level document models such as PDF (Portable DocumentFormat) or FDF (Forms Document Format).SDFDoc brings together document security, document utility methods, and all SDF objects.A SDF document can be created from scratch using a default constructor:SDFDoc mydoc;Obj trailer = mydoc.GetTrailer();SDF document can be also created from an existing file (e.g. an external PDF document):
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="clearMarks"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>clearMarks</b>()
+					
+					</div>
+					<div class="description">
+						Removes 'marked' flag from all objects in cross reference table.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectArray"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectArray</b>()
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectBool"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectBool</b>(value)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectDict"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectDict</b>(value)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectName"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectName</b>(name)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than one object (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>name</b>
+									
+								</dt>
+								<dd>indirect const char* object to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectNull"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectNull</b>(value)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectNumber"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectNumber</b>(value)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStream"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStream</b>(value, data_size, filter_chain)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string [Y]}</span> <b>value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>data_size</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>filter_chain</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStreamFromFilter"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStreamFromFilter</b>(data, filter_chain)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>filter_chain</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectString</b>(buf_value)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf_value</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStringFromUString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStringFromUString</b>(str)
+					
+					</div>
+					<div class="description">
+						Used to create SDF/Cos indirect object.Unlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects they can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>str</b>
+									
+								</dt>
+								<dd>indirect boolean to create.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the created indirect object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createShallowCopy"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{SDFDoc}</span>
+					<b>createShallowCopy</b>()
+					
+					</div>
+					<div class="description">
+						Copy Constructor
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{SDFDoc}</span> A promise that resolves to an object of type: "SDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="enableDiskCaching"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>enableDiskCaching</b>(use_cache_flag)
+					
+					</div>
+					<div class="description">
+						A document uses a temporary file which is used to cache the contentsof any new stream object created in the document (that is the default behavior).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>use_cache_flag</b>
+									
+								</dt>
+								<dd>true to enable caching, false to disable caching.Use this function to enable or disable this feature dynamically.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFileName"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getFileName</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> A promise that resolves to the filename of the document if the document is loaded from disk, or empty string if the document is not yet saved or is loaded from a memory buffer.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHeader"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getHeader</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> A promise that resolves to the header string identifying the document version to which the file conforms. For a file conforming to PDF version 1.4, the header should be %PDF-1.4. In general header strings have the following syntax: %AAA-N.n where AAA identifies document specification (such as PDF, FDF, PJTF etc), N is the major version and n is the minor version. The new header string can be set during a full save (see SDFDoc::Save()).For a document that is not serialized the function returns an empty string.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHintStream"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getHintStream</b>()
+					
+					</div>
+					<div class="description">
+						Returns document's initial linearization hint stream if it is available.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the linearization hint stream of the original document or NULL if the hint stream is not available.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLinearizationDict"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getLinearizationDict</b>()
+					
+					</div>
+					<div class="description">
+						Returns document's initial linearization dictionary if it is available.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the linearization dictionary of the original document or NULL if the dictionary is not available.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getObj"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getObj</b>(obj_num)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>obj_num</b>
+									
+								</dt>
+								<dd>object number of the object to retrieve.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the latest version of the object matching specified object number.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{SecurityHandler}</span>
+					<b>getSecurityHandler</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{SecurityHandler}</span> A promise that resolves to currently selected SecurityHandler.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTrailer"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getTrailer</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to A dictionary representing the root of the document (i.e. a document trailer dictionary)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="importObj"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>importObj</b>(obj, deep_copy)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>obj</b>
+									
+								</dt>
+								<dd>an object to import.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>deep_copy</b>
+									
+								</dt>
+								<dd>a boolean indicating whether to perform a deep or shallow copy.In case of shallow copy all indirect references will be set to null.If the object belongs to a document the function will perform deep or shallow clone depending whether deep_copy flag was specified.If the object does not belong to any document ImportObj does not take the object ownership. ImportObj copies the source object and it is users responsibility to delete free objects.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to a pointer to the root indirect object in this document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initSecurityHandler</b>(custom_data)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler. This version of InitSecurityHandler() works with Standard and Custom PDF security and can be used in situations where the password is obtained dynamically via user feedback. See EncTest sample for example code.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized it can be later obtainedusing GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{UNKNOWNTYPE}</span> <b>custom_data</b>
+									
+								</dt>
+								<dd>An optional parameter used to specify custom data that should be passed in SecurityHandler::Initialize() callback.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the SecurityHandler was successfully initialized (this may include authentication data collection, verification etc.), false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initStdSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initStdSecurityHandler</b>(password, password_sz)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler using the supplied password. This version of InitSecurityHandler() assumes that document uses Standard security and that a password is specified directly.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized, it can be later obtained using GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>password</b>
+									
+								</dt>
+								<dd>Specifies the password used to open the document without any user feedback. If you would like to dynamically obtain the password, you need to derive a custom class from StdSecurityHandler() and use InitSecurityHandler() without any parameters. See EncTest sample for example code.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>password_sz</b>
+									
+								</dt>
+								<dd>An optional parameter used to specify the size of the password buffer, in bytes. If the 'password_sz' is 0, or if the parameter is not specified, the function assumes that the string is null terminated.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the given password successfully unlocked the document,false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initStdSecurityHandlerUString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initStdSecurityHandlerUString</b>(password)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler using the supplied password. This version of InitSecurityHandler() assumes that document uses Standard security and that a password is specified directly.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized, it can be later obtained using GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>password</b>
+									
+								</dt>
+								<dd>Specifies the password used to open the document withoutany user feedback. If you would like to dynamically obtain the password,you need to derive a custom class from StdSecurityHandler() and useInitSecurityHandler() without any parameters. See EncTest samplefor example code.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the given password successfully unlocked the document,false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isEncrypted"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isEncrypted</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is/was originally encrypted false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isFullSaveRequired"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isFullSaveRequired</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document requires full save.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isLinearized"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isLinearized</b>()
+					
+					</div>
+					<div class="description">
+						Call this function to determine whether the document is represented in linearized (fast web view) format.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if document is stored in fast web view format, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isModified"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isModified</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if document was modified, false otherwise</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="lock"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>lock</b>()
+					
+					</div>
+					<div class="description">
+						Locks the document to prevent competing threads from accessing the document at the same time. Threads attempting to access the document will wait in suspended state until the thread that owns the lock calls doc.Unlock().
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="lockRead"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>lockRead</b>()
+					
+					</div>
+					<div class="description">
+						Locks the document to prevent competing write threads (using Lock()) from accessing the document at the same time. Other reader threads however, will be allowed to access the document.Threads attempting to obtain write access to the document will wait in suspended state until the thread that owns the lock calls doc.UnlockRead().Note: To avoid deadlocks obtaining a write lock while holdinga read lock is not permitted and will throw an exception. If this situation is encounteredplease either unlock the read lock before the write lock is obtainedor acquire a write lock (rather than read lock) in the first place.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeSecurity"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeSecurity</b>()
+					
+					</div>
+					<div class="description">
+						This function removes document security.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="saveMemory"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>saveMemory</b>(flags, header)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>flags</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>header</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="saveStream"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>saveStream</b>(stream, flags, header)
+					
+					</div>
+					<div class="description">
+						Saves the document to a stream.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>stream</b>
+									
+								</dt>
+								<dd>The output stream where to write data.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flags</b>
+									
+								</dt>
+								<dd>A bit field composed of an OR of the SDFDoc::SaveOptions values.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>header</b>
+									
+								</dt>
+								<dd>File header. A new file header is set only during full save. See also GetHeader()</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setSecurityHandler</b>(handler)
+					
+					</div>
+					<div class="description">
+						The function sets a new SecurityHandler as the current security handler.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SecurityHandler}</span> <b>handler</b>
+									
+								</dt>
+								<dd>new SecurityHandler</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="swap"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>swap</b>(obj_num1, obj_num2)
+					
+					</div>
+					<div class="description">
+						Sometimes it is desirable to modify all indirect references to a given indirect object. It would be inefficient to manually search for all indirect references to a given indirect object.A more efficient and less error prone method is to replace the indirect object in the cross reference table with a new object. This way the object that is referred to is modified (or replaced) and indirect references do not have to be changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>obj_num1</b>
+									
+								</dt>
+								<dd>object number of first object to be swapped.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>obj_num2</b>
+									
+								</dt>
+								<dd>object number of second object to be swapped.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="timedLock"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>timedLock</b>(milliseconds)
+					
+					</div>
+					<div class="description">
+						Try locking the document, waiting no longer than specified number of milliseconds.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>milliseconds</b>
+									
+								</dt>
+								<dd>max number of milliseconds to wait for the document to lock</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="timedLockRead"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>timedLockRead</b>(milliseconds)
+					
+					</div>
+					<div class="description">
+						Try locking the document, waiting no longer than specified number of milliseconds.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>milliseconds</b>
+									
+								</dt>
+								<dd>max number of milliseconds to wait for the document to lock</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="tryLock"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>tryLock</b>()
+					
+					</div>
+					<div class="description">
+						Try locking the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="tryLockRead"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>tryLockRead</b>()
+					
+					</div>
+					<div class="description">
+						Tries to obtain a read lock the document and returns true if the lock was successfully acquired
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="unlock"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unlock</b>()
+					
+					</div>
+					<div class="description">
+						Removes the lock from the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="unlockRead"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unlockRead</b>()
+					
+					</div>
+					<div class="description">
+						Removes the lock from the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="xRefSize"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>xRefSize</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to The size of cross reference table</dd>
+							
+							</dl>
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:36 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html class="no-js" ng-app="xterosApp" style="height: 100%;">
+<head>
+<base href="/"><meta charset="utf-8">
+<title>xTeros</title>
+<meta name="description" 
+	content="xTeros creates a simple, transparent financial picture of available health plan options tailored to meet your individual Health Insurance needs."><meta name="keywords" content="Health Insurance, Savings, Health Plan Options, Individual Health Insurance, Simple, Cheap"><meta name="fragment" content="!"><meta name="viewport" content="initial-scale=1, maximum-scale=1"><meta property="og:locale" content="{{ngMeta['og:locale']}}"><meta property="og:type" content="{{ngMeta['og:type']}}"><meta property="og:title" content="{{ngMeta['og:title']}}"><meta property="og:description" content="{{ngMeta['og:description']}}"><meta property="og:site_name" content="{{ngMeta['og:site_name']}}"><meta property="og:image" content="{{ngMeta['og:image']}}"><meta property="og:image:width" content="1666"><meta property="og:image:height" content="480"><script type="application/ld+json">{ "@context" : "http://schema.org", "@type" : "Organization", "name" : "xTeros", "url" : "https://xteros.org", "sameAs" : [ "https://www.facebook.com/xteros.inc", "https://www.linkedin.com/company/xteros", "https://twitter.com/xTeros", "https://plus.google.com/+XterosInsurance", "https://www.youtube.com/user/xterosinsurance" ] }</script><link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css"><link rel="icon" type="image/png" href="/assets/img/logo-xteros.png"><link rel="stylesheet" href="styles/vendor.css"><link rel="stylesheet" href="styles/app.css"></head><body translate-cloak="" class="" ng-class="{'screen-margin':!xteros.settings.fullscreen,'has-session-out':sessionOutConfirm}" ng-controller="AppController" style="overflow: hidden;height: 100%;"><div id="page-debug" ng-controller="ToolDebugController" ng-include="'app/components/tool/debug/_tool-debug-tmpl.html'" class="debug-min" ng-if="xteros.showDebugPanel"></div>
+	<div ui-view="" style="height: 100%;"></div>
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        if (window.document.location.hostname == 'xteros.org') {
+            // Prod
+            ga('create', 'UA-54200134-2', 'auto');
+        } else {
+            // Dev
+            ga('create', 'UA-57429548-1', 'auto');
+        }
+		ga('require', 'displayfeatures'); // enabling Remarketing and Advertising Reporting Features 
+        ga('send', 'pageview');
+        ga('require', 'ecommerce'); // loads the ecommerce plugin
+</script>
+<!--
+<script src="scripts/vendor.js">
+</script><script src="scripts/app.js"></script>
+-->
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="https://appcenter.intuit.com/Content/IA/intuit.ipp.anywhere-1.3.3.js"></script>
+<script type="text/javascript" src="https://s3.amazonaws.com/cdn.hellosign.com/public/js/hellosign-embedded.LATEST.min.js">
+</script></body>
+</html>
+

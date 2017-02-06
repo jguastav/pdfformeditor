@@ -1,0 +1,2618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.Image</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.Image
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.Image
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.Image.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.Image.html#constructor">PDFNet.Image</a></b>(id)
+							</div>
+							<div class="description">Image class provides common methods for working with PDF images.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.Image.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#copy">copy</a></b>()
+								</div>
+								<div class="description">Copy Constructor</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createDirectFromMemory">createDirectFromMemory</a></b>(doc, buf, width, height, bpc, color_space, input_format, encoder_hints)
+								</div>
+								<div class="description">Directly embed the image that is already compressed using the Image::InputFilter format.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createDirectFromStream">createDirectFromStream</a></b>(doc, image_data, width, height, bpc, color_space, input_format)
+								</div>
+								<div class="description">Embed the raw image data taking into account specified compression hints.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createFromMemory">createFromMemory</a></b>(doc, buf, width, height, bpc, color_space, encoder_hints)
+								</div>
+								<div class="description">Create and embed an Image.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createFromMemory2">createFromMemory2</a></b>(doc, buf, encoder_hints)
+								</div>
+								<div class="description">Create and embed an Image.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createFromObj">createFromObj</a></b>(image_xobject)
+								</div>
+								<div class="description">Create an image from an existing image represented as a SDF/Cos object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createFromStream">createFromStream</a></b>(doc, image_data, width, height, bpc, color_space, encoder_hints)
+								</div>
+								<div class="description">Create and embed an Image.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createFromStream2">createFromStream2</a></b>(doc, image_data, encoder_hints)
+								</div>
+								<div class="description">Create and embed an Image.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createImageMask">createImageMask</a></b>(doc, buf, width, height, encoder_hints)
+								</div>
+								<div class="description">Create and embed an ImageMask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createImageMaskFromStream">createImageMaskFromStream</a></b>(doc, image_data, width, height, encoder_hints)
+								</div>
+								<div class="description">Create and embed an ImageMask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createSoftMask">createSoftMask</a></b>(doc, buf, width, height, bpc, encoder_hints)
+								</div>
+								<div class="description">create and embed a Soft Mask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Image.<b><a href="../symbols/PDFNet.Image.html#.createSoftMaskFromStream">createSoftMaskFromStream</a></b>(doc, image_data, width, height, bpc, encoder_hints)
+								</div>
+								<div class="description">Create and embed a Soft Mask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#exportAsPngFromStream">exportAsPngFromStream</a></b>(writer)
+								</div>
+								<div class="description">Saves this image to a PNG output stream.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#exportAsTiffFromStream">exportAsTiffFromStream</a></b>(writer)
+								</div>
+								<div class="description">Saves this image to a TIFF output stream.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#exportFromStream">exportFromStream</a></b>(writer)
+								</div>
+								<div class="description">Saves this image to the output stream.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getBitsPerComponent">getBitsPerComponent</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getComponentNum">getComponentNum</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getDecodeArray">getDecodeArray</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageColorSpace">getImageColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageData">getImageData</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageDataSize">getImageDataSize</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageHeight">getImageHeight</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageRenderingIntent">getImageRenderingIntent</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getImageWidth">getImageWidth</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getMask">getMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getSDFObj">getSDFObj</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#getSoftMask">getSoftMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#isImageInterpolate">isImageInterpolate</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#isImageMask">isImageMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#isValid">isValid</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#setMask">setMask</a></b>(image_mask)
+								</div>
+								<div class="description">set an Explicit Image Mask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#setMaskWithObj">setMaskWithObj</a></b>(mask)
+								</div>
+								<div class="description">set a Color Key Mask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Image.html#setSoftMask">setSoftMask</a></b>(soft_mask)
+								</div>
+								<div class="description">set a Soft Mask.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.Image</b>(id)
+				</div>
+				
+				<div class="description">
+					Image class provides common methods for working with PDF images.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="copy"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Image}</span>
+					<b>copy</b>()
+					
+					</div>
+					<div class="description">
+						Copy Constructor
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createDirectFromMemory"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createDirectFromMemory</b>(doc, buf, width, height, bpc, color_space, input_format, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Directly embed the image that is already compressed using the Image::InputFilter format. The function can be used to pass-through pre-compressed image data.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>A document to which the image should be added. The 'Doc' object can be obtained using Obj::GetDoc() or PDFDoc::GetSDFDoc().</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>The stream or buffer containing compressed image data. The compression format must match the input_format parameter.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>The width of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>The height of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>The number of bits used to represent each color component.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>color_space</b>
+									
+								</dt>
+								<dd>The color space in which image samples are specified.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>input_format</b>
+									
+								</dt>
+								<dd>Image::InputFilter describing the format of pre-compressed image data.</dd>
+							
+								<dt>
+									<b>encoder_hints</b>
+									
+								</dt>
+								<dd>An optional parameter that can be used to fine tune compression or to select a different compression algorithm. See Image::Create() for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to pDF::Image object representing the embedded image.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createDirectFromStream"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createDirectFromStream</b>(doc, image_data, width, height, bpc, color_space, input_format)
+					
+					</div>
+					<div class="description">
+						Embed the raw image data taking into account specified compression hints.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>image_data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>color_space</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>input_format</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.Image.InputFilter = {	e_none : 0	e_jpeg : 1	e_jp2 : 2	e_flate : 3	e_g3 : 4	e_g4 : 5	e_ascii_hex : 6}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromMemory"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createFromMemory</b>(doc, buf, width, height, bpc, color_space, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an Image. Embed the raw image data taking into account specified compression hints. By default the function will compress all images using Flate compression.It is possible to fine tune compression or to select a different compression algorithm using 'encoder_hints' object.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>A document to which the image should be added. The 'Doc' object can be obtained using Obj::GetDoc() or PDFDoc::GetSDFDoc().</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>The stream or buffer containing image data. The image data must not be compressed and must follow PDF format for sample representation (please referto section 4.8.2 'Sample Representation' in PDF Reference Manual for details).</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>The width of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>The height of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>The number of bits used to represent each color component.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>color_space</b>
+									
+								</dt>
+								<dd>The color space in which image samples are represented.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>An optional parameter that can be used to fine tune compression or to select a different compression algorithm. See Image::Create() for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to pDF::Image object representing the embedded image.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromMemory2"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createFromMemory2</b>(doc, buf, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an Image. Embed the raw image data taking into accountspecified compression hints.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromObj"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createFromObj</b>(image_xobject)
+					
+					</div>
+					<div class="description">
+						Create an image from an existing image represented as a SDF/Cos object.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>image_xobject</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromStream"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createFromStream</b>(doc, image_data, width, height, bpc, color_space, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an Image. Embed the raw image data taking into account specified compression hints.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>image_data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>color_space</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromStream2"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createFromStream2</b>(doc, image_data, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an Image. Embed the raw image data taking into accountspecified compression hints.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>image_data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createImageMask"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createImageMask</b>(doc, buf, width, height, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an ImageMask. Embed the raw image data taking into account specified compression hints. The ImageMask can be used as a stencil mask for painting in the current color or as an explicit mask specifying which areas of the image to paint and which to mask out. One of the most important uses of stencil masking is for painting character glyphs represented as bitmaps.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>A document to which the image should be added. The 'Doc' object can be obtained using Obj::GetDoc() or PDFDoc::GetSDFDoc().</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>The stream or buffer containing image data stored in 1 bit per sample format. The image data must not be compressed and must follow PDF format for sample representation (please refer to section 4.8.2 'Sample Representation' in PDF Reference Manual for details).</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>The width of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>The height of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>An optional parameter that can be used to fine tune compression or to select a different compression algorithm. See Image::Create() for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to pDF::Image object representing the embedded ImageMask.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createImageMaskFromStream"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createImageMaskFromStream</b>(doc, image_data, width, height, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed an ImageMask.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>image_data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createSoftMask"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createSoftMask</b>(doc, buf, width, height, bpc, encoder_hints)
+					
+					</div>
+					<div class="description">
+						create and embed a Soft Mask. Embed the raw image data taking into account specified compression hints.A soft-mask image (see "Soft-Mask Images" in PDF Reference Manual) is used as a source of mask shape or mask opacity values in the transparent imaging model.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>A document to which the image should be added. The 'Doc' object can be obtained using Obj::GetDoc() or PDFDoc::GetSDFDoc().</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>The stream or buffer containing image data represented in DeviceGray color space (i.e. one component per sample). The image data must not be compressed and must follow PDF format for sample representation (please referto section 4.8.2 'Sample Representation' in PDF Reference Manual for details).</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>The width of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>The height of the image, in samples.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>The number of bits used to represent each color component.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>An optional parameter that can be used to fine tune compression or to select a different compression algorithm. See Image::Create() for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createSoftMaskFromStream"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Image}</span>
+					<span class="light">PDFNet.Image.</span><b>createSoftMaskFromStream</b>(doc, image_data, width, height, bpc, encoder_hints)
+					
+					</div>
+					<div class="description">
+						Create and embed a Soft Mask. Embed the raw image data taking into account specified compression hints.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>image_data</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>height</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bpc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>encoder_hints</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Image}</span> A promise that resolves to an object of type: "Image" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="exportAsPngFromStream"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>exportAsPngFromStream</b>(writer)
+					
+					</div>
+					<div class="description">
+						Saves this image to a PNG output stream.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FilterWriter}</span> <b>writer</b>
+									
+								</dt>
+								<dd>FilterWriter used to write to the output stream.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="exportAsTiffFromStream"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>exportAsTiffFromStream</b>(writer)
+					
+					</div>
+					<div class="description">
+						Saves this image to a TIFF output stream.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FilterWriter}</span> <b>writer</b>
+									
+								</dt>
+								<dd>FilterWriter used to write to the output stream.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="exportFromStream"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>exportFromStream</b>(writer)
+					
+					</div>
+					<div class="description">
+						Saves this image to the output stream.(0 PNG, 1 TIF, 2 JPEG).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FilterWriter}</span> <b>writer</b>
+									
+								</dt>
+								<dd>A pointer to FilterWriter used to write to the output stream. If the parameter is null, nothing will be written to the output stream, but the function returns the format identifier.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number indicating the selected image format:</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBitsPerComponent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getBitsPerComponent</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of bits used to represent each color component. Only a single value may be specified; the number of bits is the same for all color components. Valid values are 1, 2, 4, 8, and 16.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getComponentNum"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getComponentNum</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of color components per sample.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDecodeArray"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getDecodeArray</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to decode array or NULL if the parameter is not specified. A decode object is an array of numbers describing how to map image samples into the range of values appropriate for the images color space . If ImageMask is true, the array must be either [0 1] or [1 0]; otherwise, its length must be twice the number of color components required by ColorSpace. Default value depends on the color space, See Table 4.36 in PDF Ref. Manual.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getImageColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to the SDF object representing the color space in which image samples are specified or NULL if: 	  the image is an image mask  or is compressed using JPXDecode with missing ColorSpace entry in image dictionary. The returned color space may be any type of color space except Pattern.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageData"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Filter}</span>
+					<b>getImageData</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Filter}</span> A promise that resolves to a stream (filter) containing decoded image data</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageDataSize"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageDataSize</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the size of image data in bytes</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageHeight"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageHeight</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the height of the image, in samples.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageRenderingIntent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageRenderingIntent</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.RenderingIntent = {	e_absolute_colorimetric : 0	e_relative_colorimetric : 1	e_saturation : 2	e_perceptual : 3}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the color rendering intent to be used in rendering the image.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageWidth"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageWidth</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the width of the image, in samples.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an image XObject defining an image mask to be applied to this image (See'Explicit Masking', 4.8.5), or an array specifying a range of colorsto be applied to it as a color key mask (See 'Color Key Masking'). If IsImageMask() return true, this method will return NULL.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSDFObj"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getSDFObj</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the underlying SDF/Cos object</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSoftMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getSoftMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an image XObject defining a Soft Mask to be applied to this image (See section 7.5.4 'Soft-Mask Images' in PDF Reference Manual), or NULL if the image does not have the soft mask.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isImageInterpolate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isImageInterpolate</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a boolean indicating whether image interpolation is to be performed.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isImageMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isImageMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a boolean indicating whether the inline image is to be treated as an image mask.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isValid"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isValid</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to whether this is a valid raster image. If the function returns false the underlying SDF/Cos object is not a valid raster image and this Image object should be treated as null.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMask"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMask</b>(image_mask)
+					
+					</div>
+					<div class="description">
+						set an Explicit Image Mask.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Image}</span> <b>image_mask</b>
+									
+								</dt>
+								<dd>An Image object which serves as an explicit mask for thebase (this) image. The base image and the image mask need not have thesame resolution (Width and Height values), but since all images are defined onthe unit square in user space, their boundaries on the page will coincide; that is,they will overlay each other. The image mask indicates which places on the pageare to be painted and which are to be masked out (left unchanged). Unmasked areasare painted with the corresponding portions of the base image; masked areasare not.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMaskWithObj"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMaskWithObj</b>(mask)
+					
+					</div>
+					<div class="description">
+						set a Color Key Mask.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>mask</b>
+									
+								</dt>
+								<dd>is an Cos/SDF array specifying a range of colors to be masked out. Samples in the image that fall within this range are not painted, allowing the existing background to show through. The effect is similar to that of the video technique known as chroma-key. For details of the array format please refer to section 4.8.5 'Color Key Masking' in PDF Reference Manual.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setSoftMask"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setSoftMask</b>(soft_mask)
+					
+					</div>
+					<div class="description">
+						set a Soft Mask.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Image}</span> <b>soft_mask</b>
+									
+								</dt>
+								<dd>is a subsidiary Image object defining a soft-mask image (See section 7.5.4 'Soft-Mask Images' in PDF Reference Manual) to be used as a source of mask shape or mask opacity values in the transparent imaging model. The alpha source parameter in the graphics state determines whether the mask values are interpreted as shape or opacity.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:34 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

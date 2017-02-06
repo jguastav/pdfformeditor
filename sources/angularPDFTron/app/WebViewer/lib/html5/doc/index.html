@@ -1,0 +1,2078 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		
+		<title>PDFTron WebViewer HTML5 API Reference - undefined</title>
+		<meta name="generator" content="JsDoc Toolkit" />
+                <link rel="stylesheet" href="../external/jquery.treeview.css" />
+                <script src="../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});	
+			});
+		</script>
+		<style type="text/css">
+		/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+	
+	<body>
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<div id="index">
+			<div align="center"><a href="index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+		</div>
+		
+		<div id="content">
+			<h1 class="classTitle">Class Index</h1>
+			
+			
+			<div>
+				<h2><a href="symbols/_global_.html">_global_</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.html">Actions</a></h2>
+				Actions
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.Action.html">Actions.Action</a></h2>
+				Actions.Action
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.Dispatcher.html">Actions.Dispatcher</a></h2>
+				Actions.Dispatcher
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.GoTo.html">Actions.GoTo</a></h2>
+				Actions.GoTo
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.GoTo.Dest.html">Actions.GoTo.Dest</a></h2>
+				Actions.GoTo.Dest
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.Hide.html">Actions.Hide</a></h2>
+				Actions.Hide
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.JavaScript.html">Actions.JavaScript</a></h2>
+				Actions.JavaScript
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.Named.html">Actions.Named</a></h2>
+				Actions.Named
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.ResetForm.html">Actions.ResetForm</a></h2>
+				Actions.ResetForm
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.SubmitForm.html">Actions.SubmitForm</a></h2>
+				Actions.SubmitForm
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Actions.URI.html">Actions.URI</a></h2>
+				Actions.URI
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.html">Annotations</a></h2>
+				The namespace containing Annotations.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Annotation.html">Annotations.Annotation</a></h2>
+				Represents an annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.BoxControlHandle.html">Annotations.BoxControlHandle</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.BoxSelectionModel.html">Annotations.BoxSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.ButtonWidgetAnnotation.html">Annotations.ButtonWidgetAnnotation</a></h2>
+				Represents a Button Widget annotation, which includes push button, checkbox, and radio button.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.CalloutControlHandle.html">Annotations.CalloutControlHandle</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.CaretAnnotation.html">Annotations.CaretAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.CheckButtonWidgetAnnotation.html">Annotations.CheckButtonWidgetAnnotation</a></h2>
+				Annotations.CheckButtonWidgetAnnotation
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.ChoiceWidgetAnnotation.html">Annotations.ChoiceWidgetAnnotation</a></h2>
+				Represents a Choice Widget annotation (a combo box).
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Color.html">Annotations.Color</a></h2>
+				Represents a class that contains a color's RGB and alpha value.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.ControlHandle.html">Annotations.ControlHandle</a></h2>
+				Represents a base class for control handles for selected annotations that can be moved.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.EllipseAnnotation.html">Annotations.EllipseAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Font.html">Annotations.Font</a></h2>
+				Annotations.Font
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Forms.html">Annotations.Forms</a></h2>
+				Annotations.Forms
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Forms.Field.html">Annotations.Forms.Field</a></h2>
+				Annotations.Forms.Field
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Forms.FieldManager.html">Annotations.Forms.FieldManager</a></h2>
+				Annotations.Forms.FieldManager
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.FreeHandAnnotation.html">Annotations.FreeHandAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.FreeTextAnnotation.html">Annotations.FreeTextAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.FreeTextSelectionModel.html">Annotations.FreeTextSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.HTMLAnnotation.html">Annotations.HTMLAnnotation</a></h2>
+				Annotations.HTMLAnnotation
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.IPathAnnotation.html">Annotations.IPathAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.LineAnnotation.html">Annotations.LineAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.LineControlHandle.html">Annotations.LineControlHandle</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.LineSelectionModel.html">Annotations.LineSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Link.html">Annotations.Link</a></h2>
+				Annotations.Link
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.ListWidgetAnnotation.html">Annotations.ListWidgetAnnotation</a></h2>
+				Represents a Choice Widget annotation (a list).
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.MarkupAnnotation.html">Annotations.MarkupAnnotation</a></h2>
+				Represents an extendable Markup annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PathControlHandle.html">Annotations.PathControlHandle</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PathSelectionModel.html">Annotations.PathSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Point.html">Annotations.Point</a></h2>
+				A utility class that represents a point with an x and y coordinate.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PolygonAnnotation.html">Annotations.PolygonAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PolygonControlHandle.html">Annotations.PolygonControlHandle</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PolygonSelectionModel.html">Annotations.PolygonSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PolylineAnnotation.html">Annotations.PolylineAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.PopupAnnotation.html">Annotations.PopupAnnotation</a></h2>
+				Represents a popup note on an annotation
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.RadioButtonWidgetAnnotation.html">Annotations.RadioButtonWidgetAnnotation</a></h2>
+				Annotations.RadioButtonWidgetAnnotation
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.Rect.html">Annotations.Rect</a></h2>
+				Represents a utility class used to manipulate rectangle objects.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.RectangleAnnotation.html">Annotations.RectangleAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.SelectionAlgorithm.html">Annotations.SelectionAlgorithm</a></h2>
+				Represents static utility functions to determine hit testing for annotations.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.SelectionModel.html">Annotations.SelectionModel</a></h2>
+				Represents a class that contains information about how an annotation should behave when selected.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.SignatureWidgetAnnotation.html">Annotations.SignatureWidgetAnnotation</a></h2>
+				Represents a Signature Widget annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.StampAnnotation.html">Annotations.StampAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.StickyAnnotation.html">Annotations.StickyAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextHighlightAnnotation.html">Annotations.TextHighlightAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextMarkupAnnotation.html">Annotations.TextMarkupAnnotation</a></h2>
+				Represents an extendable text markup annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextSelectionModel.html">Annotations.TextSelectionModel</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextSquigglyAnnotation.html">Annotations.TextSquigglyAnnotation</a></h2>
+				Represents a text squiggly annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextStrikeoutAnnotation.html">Annotations.TextStrikeoutAnnotation</a></h2>
+				Represents a text strikeout annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextUnderlineAnnotation.html">Annotations.TextUnderlineAnnotation</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.TextWidgetAnnotation.html">Annotations.TextWidgetAnnotation</a></h2>
+				Annotations.TextWidgetAnnotation
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.WidgetAnnotation.html">Annotations.WidgetAnnotation</a></h2>
+				Represents an extendable Widget annotation.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Annotations.WidgetFlags.html">Annotations.WidgetFlags</a></h2>
+				Annotations.WidgetFlags
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/BaseReaderControl.html">BaseReaderControl</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.html">CoreControls</a></h2>
+				The namespace containing WebViewer's core user controls.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.AnnotationManager.html">CoreControls.AnnotationManager</a></h2>
+				Represents an object that manages the Annotations that appear on a Document's pages when displayed in a DocumentViewer.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.Bookmark.html">CoreControls.Bookmark</a></h2>
+				Represents a bookmark in a Document.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DisplayMode.html">CoreControls.DisplayMode</a></h2>
+				Represents a Display Mode.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DisplayModeManager.html">CoreControls.DisplayModeManager</a></h2>
+				Represents an object that manages the display modes used by DocumentViewer
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DisplayModes.html">CoreControls.DisplayModes</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.Document.html">CoreControls.Document</a></h2>
+				Represents a document.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DocumentViewer.html">CoreControls.DocumentViewer</a></h2>
+				Represents a full-featured control used for displaying a Document.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DocumentViewer.FitMode.html">CoreControls.DocumentViewer.FitMode</a></h2>
+				Represents fit modes for the DocumentViewer.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DocumentViewer.SearchMode.html">CoreControls.DocumentViewer.SearchMode</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/CoreControls.DocumentViewer.SearchResults.html">CoreControls.DocumentViewer.SearchResults</a></h2>
+				
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.html">PartRetrievers</a></h2>
+				PartRetrievers The namespace containing document part retrievers.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.AndroidContentPartRetriever.html">PartRetrievers.AndroidContentPartRetriever</a></h2>
+				Represents a http part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.AzurePartRetriever.html">PartRetrievers.AzurePartRetriever</a></h2>
+				Represents a http part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.ExternalPdfPartRetriever.html">PartRetrievers.ExternalPdfPartRetriever</a></h2>
+				Represents a pdf document retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.HttpPartRetriever.html">PartRetrievers.HttpPartRetriever</a></h2>
+				Represents a http part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.IOSPartRetriever.html">PartRetrievers.IOSPartRetriever</a></h2>
+				Represents a http part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.LocalPartRetriever.html">PartRetrievers.LocalPartRetriever</a></h2>
+				Represents a local part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.LocalPdfPartRetriever.html">PartRetrievers.LocalPdfPartRetriever</a></h2>
+				Represents a local pdf document retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.StreamingPartRetriever.html">PartRetrievers.StreamingPartRetriever</a></h2>
+				Represents a streaming part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PartRetrievers.WinRTPartRetriever.html">PartRetrievers.WinRTPartRetriever</a></h2>
+				Represents a http part retriever.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.html">PDFNet</a></h2>
+				Contains PDFNetJS classes and functions
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Action.html">PDFNet.Action</a></h2>
+				PDFNet.Action
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ActionParameter.html">PDFNet.ActionParameter</a></h2>
+				PDFNet.ActionParameter
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Annot.html">PDFNet.Annot</a></h2>
+				PDFNet.Annot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.AnnotBorderStyle.html">PDFNet.AnnotBorderStyle</a></h2>
+				PDFNet.AnnotBorderStyle
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.AttrObj.html">PDFNet.AttrObj</a></h2>
+				PDFNet.AttrObj
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Bookmark.html">PDFNet.Bookmark</a></h2>
+				PDFNet.Bookmark
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.CaretAnnot.html">PDFNet.CaretAnnot</a></h2>
+				PDFNet.CaretAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ChunkRenderer.html">PDFNet.ChunkRenderer</a></h2>
+				PDFNet.ChunkRenderer
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.CircleAnnot.html">PDFNet.CircleAnnot</a></h2>
+				PDFNet.CircleAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ClassMap.html">PDFNet.ClassMap</a></h2>
+				PDFNet.ClassMap
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ColorPt.html">PDFNet.ColorPt</a></h2>
+				PDFNet.ColorPt
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ColorSpace.html">PDFNet.ColorSpace</a></h2>
+				PDFNet.ColorSpace
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ContentItem.html">PDFNet.ContentItem</a></h2>
+				PDFNet.ContentItem
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ContentReplacer.html">PDFNet.ContentReplacer</a></h2>
+				PDFNet.ContentReplacer
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ConversionMonitor.html">PDFNet.ConversionMonitor</a></h2>
+				PDFNet.ConversionMonitor
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Convert.html">PDFNet.Convert</a></h2>
+				PDFNet.Convert
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Date.html">PDFNet.Date</a></h2>
+				PDFNet.Date
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Destination.html">PDFNet.Destination</a></h2>
+				PDFNet.Destination
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.DictIterator.html">PDFNet.DictIterator</a></h2>
+				PDFNet.DictIterator
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.DocumentConversion.html">PDFNet.DocumentConversion</a></h2>
+				PDFNet.DocumentConversion
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Element.html">PDFNet.Element</a></h2>
+				PDFNet.Element
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ElementBuilder.html">PDFNet.ElementBuilder</a></h2>
+				PDFNet.ElementBuilder
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ElementReader.html">PDFNet.ElementReader</a></h2>
+				PDFNet.ElementReader
+/**ElementReader can be used to parse and process content streams.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ElementWriter.html">PDFNet.ElementWriter</a></h2>
+				PDFNet.ElementWriter
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FDFDoc.html">PDFNet.FDFDoc</a></h2>
+				PDFNet.FDFDoc
+/** FDFDoc is a class representing Forms Data Format (FDF) documents.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FDFField.html">PDFNet.FDFField</a></h2>
+				PDFNet.FDFField
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Field.html">PDFNet.Field</a></h2>
+				PDFNet.Field
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FileAttachmentAnnot.html">PDFNet.FileAttachmentAnnot</a></h2>
+				PDFNet.FileAttachmentAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FileSpec.html">PDFNet.FileSpec</a></h2>
+				PDFNet.FileSpec
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Filter.html">PDFNet.Filter</a></h2>
+				PDFNet.Filter
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FilterReader.html">PDFNet.FilterReader</a></h2>
+				PDFNet.FilterReader
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FilterWriter.html">PDFNet.FilterWriter</a></h2>
+				PDFNet.FilterWriter
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Flattener.html">PDFNet.Flattener</a></h2>
+				PDFNet.Flattener
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Font.html">PDFNet.Font</a></h2>
+				PDFNet.Font
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.FreeTextAnnot.html">PDFNet.FreeTextAnnot</a></h2>
+				PDFNet.FreeTextAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Function.html">PDFNet.Function</a></h2>
+				PDFNet.Function
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.GState.html">PDFNet.GState</a></h2>
+				PDFNet.GState
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.HighlightAnnot.html">PDFNet.HighlightAnnot</a></h2>
+				PDFNet.HighlightAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Highlights.html">PDFNet.Highlights</a></h2>
+				PDFNet.Highlights
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.HTML2PDF.html">PDFNet.HTML2PDF</a></h2>
+				PDFNet.HTML2PDF
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.HTML2PDF_Proxy.html">PDFNet.HTML2PDF_Proxy</a></h2>
+				PDFNet.HTML2PDF_Proxy
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.HTML2PDF_TOCSettings.html">PDFNet.HTML2PDF_TOCSettings</a></h2>
+				PDFNet.HTML2PDF_TOCSettings
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.HTML2PDF_WebPageSettings.html">PDFNet.HTML2PDF_WebPageSettings</a></h2>
+				PDFNet.HTML2PDF_WebPageSettings
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Image.html">PDFNet.Image</a></h2>
+				PDFNet.Image
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.InkAnnot.html">PDFNet.InkAnnot</a></h2>
+				PDFNet.InkAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Iterator.html">PDFNet.Iterator</a></h2>
+				PDFNet.Iterator
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.KeyStrokeActionResult.html">PDFNet.KeyStrokeActionResult</a></h2>
+				PDFNet.KeyStrokeActionResult
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.KeyStrokeEventData.html">PDFNet.KeyStrokeEventData</a></h2>
+				PDFNet.KeyStrokeEventData
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.LineAnnot.html">PDFNet.LineAnnot</a></h2>
+				PDFNet.LineAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.LinkAnnot.html">PDFNet.LinkAnnot</a></h2>
+				PDFNet.LinkAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.MarkupAnnot.html">PDFNet.MarkupAnnot</a></h2>
+				PDFNet.MarkupAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Matrix2D.html">PDFNet.Matrix2D</a></h2>
+				PDFNet.Matrix2D
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.MovieAnnot.html">PDFNet.MovieAnnot</a></h2>
+				PDFNet.MovieAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.NameTree.html">PDFNet.NameTree</a></h2>
+				PDFNet.NameTree
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.NumberTree.html">PDFNet.NumberTree</a></h2>
+				PDFNet.NumberTree
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Obj.html">PDFNet.Obj</a></h2>
+				PDFNet.Obj
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ObjSet.html">PDFNet.ObjSet</a></h2>
+				PDFNet.ObjSet
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.OCG.html">PDFNet.OCG</a></h2>
+				PDFNet.OCG
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.OCGConfig.html">PDFNet.OCGConfig</a></h2>
+				PDFNet.OCGConfig
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.OCGContext.html">PDFNet.OCGContext</a></h2>
+				PDFNet.OCGContext
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.OCMD.html">PDFNet.OCMD</a></h2>
+				PDFNet.OCMD
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Optimizer.html">PDFNet.Optimizer</a></h2>
+				PDFNet.Optimizer
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Page.html">PDFNet.Page</a></h2>
+				PDFNet.Page
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PageLabel.html">PDFNet.PageLabel</a></h2>
+				PDFNet.PageLabel
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PageSet.html">PDFNet.PageSet</a></h2>
+				PDFNet.PageSet
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PatternColor.html">PDFNet.PatternColor</a></h2>
+				PDFNet.PatternColor
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFACompliance.html">PDFNet.PDFACompliance</a></h2>
+				PDFNet.PDFACompliance
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDC.html">PDFNet.PDFDC</a></h2>
+				PDFNet.PDFDC
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDCEX.html">PDFNet.PDFDCEX</a></h2>
+				PDFNet.PDFDCEX
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDoc.html">PDFNet.PDFDoc</a></h2>
+				PDFNet.PDFDoc
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDocInfo.html">PDFNet.PDFDocInfo</a></h2>
+				PDFNet.PDFDocInfo
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDocViewPrefs.html">PDFNet.PDFDocViewPrefs</a></h2>
+				PDFNet.PDFDocViewPrefs
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFDraw.html">PDFNet.PDFDraw</a></h2>
+				PDFNet.PDFDraw
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFNet.html">PDFNet.PDFNet</a></h2>
+				PDFNet.PDFNet
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFRasterizer.html">PDFNet.PDFRasterizer</a></h2>
+				PDFNet.PDFRasterizer
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFView.html">PDFNet.PDFView</a></h2>
+				PDFNet.PDFView
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PDFViewCtrl.html">PDFNet.PDFViewCtrl</a></h2>
+				PDFNet.PDFViewCtrl
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Point.html">PDFNet.Point</a></h2>
+				PDFNet.Point
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PolygonAnnot.html">PDFNet.PolygonAnnot</a></h2>
+				PDFNet.PolygonAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PolyLineAnnot.html">PDFNet.PolyLineAnnot</a></h2>
+				PDFNet.PolyLineAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.PopupAnnot.html">PDFNet.PopupAnnot</a></h2>
+				PDFNet.PopupAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ProgressMonitor.html">PDFNet.ProgressMonitor</a></h2>
+				PDFNet.ProgressMonitor
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.QuadPoint.html">PDFNet.QuadPoint</a></h2>
+				PDFNet.QuadPoint
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Rect.html">PDFNet.Rect</a></h2>
+				PDFNet.Rect
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Redaction.html">PDFNet.Redaction</a></h2>
+				PDFNet.Redaction
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.RedactionAnnot.html">PDFNet.RedactionAnnot</a></h2>
+				PDFNet.RedactionAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.RedactionAppearance.html">PDFNet.RedactionAppearance</a></h2>
+				PDFNet.RedactionAppearance
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Redactor.html">PDFNet.Redactor</a></h2>
+				PDFNet.Redactor
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.RoleMap.html">PDFNet.RoleMap</a></h2>
+				PDFNet.RoleMap
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.RubberStampAnnot.html">PDFNet.RubberStampAnnot</a></h2>
+				PDFNet.RubberStampAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ScreenAnnot.html">PDFNet.ScreenAnnot</a></h2>
+				PDFNet.ScreenAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SDFDoc.html">PDFNet.SDFDoc</a></h2>
+				PDFNet.SDFDoc
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SecurityHandler.html">PDFNet.SecurityHandler</a></h2>
+				PDFNet.SecurityHandler
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SElement.html">PDFNet.SElement</a></h2>
+				PDFNet.SElement
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Shading.html">PDFNet.Shading</a></h2>
+				PDFNet.Shading
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SignatureHandler.html">PDFNet.SignatureHandler</a></h2>
+				PDFNet.SignatureHandler
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SoundAnnot.html">PDFNet.SoundAnnot</a></h2>
+				PDFNet.SoundAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SquareAnnot.html">PDFNet.SquareAnnot</a></h2>
+				PDFNet.SquareAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.SquigglyAnnot.html">PDFNet.SquigglyAnnot</a></h2>
+				PDFNet.SquigglyAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.Stamper.html">PDFNet.Stamper</a></h2>
+				PDFNet.Stamper
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.STree.html">PDFNet.STree</a></h2>
+				PDFNet.STree
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.StrikeOutAnnot.html">PDFNet.StrikeOutAnnot</a></h2>
+				PDFNet.StrikeOutAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextAnnot.html">PDFNet.TextAnnot</a></h2>
+				PDFNet.TextAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextExtractor.html">PDFNet.TextExtractor</a></h2>
+				PDFNet.TextExtractor
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextExtractorLine.html">PDFNet.TextExtractorLine</a></h2>
+				PDFNet.TextExtractorLine
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextExtractorStyle.html">PDFNet.TextExtractorStyle</a></h2>
+				PDFNet.TextExtractorStyle
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextExtractorWord.html">PDFNet.TextExtractorWord</a></h2>
+				PDFNet.TextExtractorWord
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextMarkupAnnot.html">PDFNet.TextMarkupAnnot</a></h2>
+				PDFNet.TextMarkupAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.TextSearch.html">PDFNet.TextSearch</a></h2>
+				PDFNet.TextSearch
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.UnderlineAnnot.html">PDFNet.UnderlineAnnot</a></h2>
+				PDFNet.UnderlineAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.ViewChangeCollection.html">PDFNet.ViewChangeCollection</a></h2>
+				PDFNet.ViewChangeCollection
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.WatermarkAnnot.html">PDFNet.WatermarkAnnot</a></h2>
+				PDFNet.WatermarkAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/PDFNet.WidgetAnnot.html">PDFNet.WidgetAnnot</a></h2>
+				PDFNet.WidgetAnnot
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/ReaderControl.html">ReaderControl</a></h2>
+				Represents the full-featured ReaderControl reusable UI component that extends DocumentViewer.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/ReaderControl.config.html">ReaderControl.config</a></h2>
+				ReaderControl.config
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/ReaderControl.config.ui.html">ReaderControl.config.ui</a></h2>
+				ReaderControl.config.ui
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.html">Tools</a></h2>
+				The namespace containing UI tools for the DocumentViewer.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.AnnotationEditTool.html">Tools.AnnotationEditTool</a></h2>
+				Represents a tool for DocumentViewer's built-in annotation editing.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.AnnotationSelectTool.html">Tools.AnnotationSelectTool</a></h2>
+				Represents a tool that can select annotations
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.ArrowCreateTool.html">Tools.ArrowCreateTool</a></h2>
+				Represents the tool for creating line annotations with an arrow head.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.CalloutCreateTool.html">Tools.CalloutCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.FreeTextAnnotation.html">Annotations.FreeTextAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.EllipseCreateTool.html">Tools.EllipseCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.EllipseAnnotation.html">Annotations.EllipseAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.FreeHandCreateTool.html">Tools.FreeHandCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.FreeHandAnnotation.html">Annotations.FreeHandAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.FreeTextCreateTool.html">Tools.FreeTextCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.FreeTextAnnotation.html">Annotations.FreeTextAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.GenericAnnotationCreateTool.html">Tools.GenericAnnotationCreateTool</a></h2>
+				Represents a generic tool use to create markup annotations based on two mouse points (mouse left down and mouse left up).
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.LineCreateTool.html">Tools.LineCreateTool</a></h2>
+				Represents the tool for creating Annotations.LineAnnotations.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.PageCoordinate.html">Tools.PageCoordinate</a></h2>
+				Represents a point on a page
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.PanTool.html">Tools.PanTool</a></h2>
+				Represents a tool for DocumentViewer's built-in mouse pan scrolling.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.PolygonCloudCreateTool.html">Tools.PolygonCloudCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.PolygonAnnotation.html">Annotations.PolygonAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.PolygonCreateTool.html">Tools.PolygonCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.PolygonAnnotation.html">Annotations.PolygonAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.PolylineCreateTool.html">Tools.PolylineCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.PolylineAnnotation.html">Annotations.PolylineAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.RectangleCreateTool.html">Tools.RectangleCreateTool</a></h2>
+				Represents the tool for creating Annotations.RectangleAnnotations.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.SignatureCreateTool.html">Tools.SignatureCreateTool</a></h2>
+				Represents the tool for creating a Signature which is represented by an <a href="symbols/Annotations.FreeHandAnnotation.html">Annotations.FreeHandAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.StickyCreateTool.html">Tools.StickyCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.StickyAnnotation.html">Annotations.StickyAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextAnnotationCreateTool.html">Tools.TextAnnotationCreateTool</a></h2>
+				Represents an abstract class for text-based annotation creation tools.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextHighlightCreateTool.html">Tools.TextHighlightCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.TextHighlightAnnotation.html">Annotations.TextHighlightAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextSelectTool.html">Tools.TextSelectTool</a></h2>
+				Represents a tool for DocumentViewer's built-in text selection.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextSquigglyCreateTool.html">Tools.TextSquigglyCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.TextSquigglyAnnotation.html">Annotations.TextSquigglyAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextStrikeoutCreateTool.html">Tools.TextStrikeoutCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.TextStrikeoutAnnotation.html">Annotations.TextStrikeoutAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextTool.html">Tools.TextTool</a></h2>
+				Represents an extendable class for text-based tool.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.TextUnderlineCreateTool.html">Tools.TextUnderlineCreateTool</a></h2>
+				Represents the tool for creating <a href="symbols/Annotations.TextUnderlineAnnotation.html">Annotations.TextUnderlineAnnotation</a>.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/Tools.Tool.html">Tools.Tool</a></h2>
+				Represents the base class for DocumentViewer UI tools.
+			</div>
+			<hr />
+			
+			<div>
+				<h2><a href="symbols/WebViewerInterface.html">WebViewerInterface</a></h2>
+				The functions that WebViewer uses to interface with ReaderControl
+			</div>
+			<hr />
+			
+			
+		</div>
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blankt">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:38 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

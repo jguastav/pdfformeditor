@@ -1,0 +1,2875 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.Element</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.Element
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.Element
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.Element.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.Element.html#constructor">PDFNet.Element</a></b>(id)
+							</div>
+							<div class="description">Element is the abstract interface used to access graphical elements used to build the display list.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.Element.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getBBox">getBBox</a></b>()
+								</div>
+								<div class="description">Obtains the bounding box for a graphical element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getBitsPerComponent">getBitsPerComponent</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getCharIterator">getCharIterator</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getComponentNum">getComponentNum</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getCTM">getCTM</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getDecodeArray">getDecodeArray</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getGState">getGState</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageColorSpace">getImageColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageData">getImageData</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageDataSize">getImageDataSize</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageHeight">getImageHeight</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageRenderingIntent">getImageRenderingIntent</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getImageWidth">getImageWidth</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getMask">getMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getMCPropertyDict">getMCPropertyDict</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getMCTag">getMCTag</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getNewTextLineOffset">getNewTextLineOffset</a></b>()
+								</div>
+								<div class="description">returns the offset (out_x, out_y) to the start of the current line relative to the beginning of the previous line.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getParentStructElement">getParentStructElement</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getPosAdjustment">getPosAdjustment</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getShading">getShading</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getStructMCID">getStructMCID</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getTextData">getTextData</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getTextLength">getTextLength</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getTextMatrix">getTextMatrix</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getTextString">getTextString</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getType">getType</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#getXObject">getXObject</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#hasTextMatrix">hasTextMatrix</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isClippingPath">isClippingPath</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isClipWindingFill">isClipWindingFill</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isFilled">isFilled</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isImageInterpolate">isImageInterpolate</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isImageMask">isImageMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isOCVisible">isOCVisible</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isStroked">isStroked</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#isWindingFill">isWindingFill</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setClipWindingFill">setClipWindingFill</a></b>(winding_rule)
+								</div>
+								<div class="description">sets clipping path's fill rule.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setNewTextLineOffset">setNewTextLineOffset</a></b>(dx, dy)
+								</div>
+								<div class="description">sets the offset (dx, dy) to the start of the current line relative to the beginning of the previous line.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setPathClip">setPathClip</a></b>(clip)
+								</div>
+								<div class="description">indicate whether the path is a clipping path or non-clipping path</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setPathFill">setPathFill</a></b>(fill)
+								</div>
+								<div class="description">indicate whether the path should be filled</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setPathStroke">setPathStroke</a></b>(stroke)
+								</div>
+								<div class="description">indicate whether the path should be stroked</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setPathTypes">setPathTypes</a></b>(in_seg_types, count)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setPosAdjustment">setPosAdjustment</a></b>(adjust)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setTextData">setTextData</a></b>(buf_text_data)
+								</div>
+								<div class="description">set the text data for the current e_text Element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setTextMatrix">setTextMatrix</a></b>(mtx)
+								</div>
+								<div class="description">Sets the text matrix for a text element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setTextMatrixEntries">setTextMatrixEntries</a></b>(a, b, c, d, h, v)
+								</div>
+								<div class="description">Sets the text matrix for a text element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#setWindingFill">setWindingFill</a></b>(winding_rule)
+								</div>
+								<div class="description">sets path's fill rule.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Element.html#updateTextMetrics">updateTextMetrics</a></b>()
+								</div>
+								<div class="description">Recompute the character positioning information (i.e.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.Element</b>(id)
+				</div>
+				
+				<div class="description">
+					Element is the abstract interface used to access graphical elements used to build the display list.  Just like many other classes in PDFNet (e.g. ColorSpace, Font, Annot, etc), Elementclass follows the composite design pattern. This means that all Elements are accessed through the same interface, but depending on the Element type (that can be obtained using GetType()), only methods related to that type can be called.For example, if GetType() returns e_image, it is illegal to call a method specific to another Element type (i.e. a call to a text specific GetTextData() will throw an Exception).
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="getBBox"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getBBox</b>()
+					
+					</div>
+					<div class="description">
+						Obtains the bounding box for a graphical element.Calculates the bounding box for a graphical element (i.e. an Element that belongs to one of following types: e_path, e_text, e_image, e_inline_image, e_shading e_form).The returned bounding box is guaranteed to encompass the Element, but is not guaranteed to be the smallest box that could contain the element. For example, for Bezier curves the bounding box will enclose all control points, not just the curve itself.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>A rectangle specifying the bounding box of Element (a rectangle that surrounds the entire element). The coordinates are represented in the default PDF page coordinate system and are using units called points ( 1 point = 1/72 inch =  2.54 /72 centimeter). The bounding box already accounts for the effects of current transformation matrix (CTM), text matrix, font size, and other properties in the graphics state. If this is a non-graphical element, the bounding box is undefined.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBitsPerComponent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getBitsPerComponent</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of bits used to represent each color component. Only a single value may be specified; the number of bits is the same for all color components. Valid values are 1, 2, 4, and 8.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCharIterator"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Iterator}</span>
+					<b>getCharIterator</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Iterator}</span> A promise that resolves to a CharIterator addressing the first CharData element in the text run.CharIterator points to CharData. CharData is a data structure that contains the char_code number (used to retrieve glyph outlines, to map to Unicode, etc.), character positioning information (x, y), and the number of bytes taken by the character within the text buffer.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getComponentNum"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getComponentNum</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of color components per sample.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCTM"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{matrix2d}</span>
+					<b>getCTM</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{matrix2d}</span> A promise that resolves to current Transformation Matrix (CTM) that maps coordinates to the initial user space.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDecodeArray"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getDecodeArray</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to decode array or NULL if the parameter is not specified. A decode object is an array of numbers describing how to map image samples into the range of values appropriate for the color space of the image. If ImageMask is true, the array must be either [0 1] or [1 0]; otherwise, its length must be twice the number of color components required by ColorSpace. Default value depends on the color space, See Table 4.36 in PDF Ref. Manual.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getGState"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{GState}</span>
+					<b>getGState</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{GState}</span> A promise that resolves to gState of this Element</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getImageColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to the SDF object representing the color space in which imageare specified or NULL if the image is an image mask The returned color space may be any type of color space except Pattern.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageData"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Filter}</span>
+					<b>getImageData</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Filter}</span> A promise that resolves to a stream (filter) containing decoded image data</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageDataSize"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageDataSize</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the size of image data in bytes</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageHeight"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageHeight</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the height of the image, in samples.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageRenderingIntent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageRenderingIntent</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.RenderingIntent = {	e_absolute_colorimetric : 0	e_relative_colorimetric : 1	e_saturation : 2	e_perceptual : 3}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the color rendering intent to be used in rendering the image.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getImageWidth"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getImageWidth</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the width of the image, in samples.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an image XObject defining an image mask to be applied to this image (See'Explicit Masking', 4.8.5), or an array specifying a range of colorsto be applied to it as a color key mask (See 'Color Key Masking'). If IsImageMask() return true, this method will return NULL.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMCPropertyDict"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getMCPropertyDict</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to a dictionary containing the property list or NULL if propertydictionary is not present.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMCTag"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getMCTag</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to a tag is a name object indicating the role or significance of the marked content point/sequence.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getNewTextLineOffset"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getNewTextLineOffset</b>()
+					
+					</div>
+					<div class="description">
+						returns the offset (out_x, out_y) to the start of the current line relative to the beginning of the previous line.   out_x and out_y are numbers expressed in unscaled text space units. The returned numbers correspond to the arguments of 'Td' operator.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getParentStructElement"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{selement}</span>
+					<b>getParentStructElement</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{selement}</span> A promise that resolves to parent logical structure element (such as 'span' or 'paragraph').If the Element is not associated with any structure element, the returnedSElement will not be valid (i.e. selem.IsValid() -> false).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPosAdjustment"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPosAdjustment</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number used to adjust text matrix in horizontal direction when drawingtext. The number is expressed in thousandths of a unit of text space. The returned number corresponds to a number value within TJ array. For 'Tj' text strings the returned value is always 0.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getShading"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Shading}</span>
+					<b>getShading</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Shading}</span> A promise that resolves to the SDF object of the Shading object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStructMCID"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getStructMCID</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to marked Content Identifier (MCID) for this Element or a negative number if the element is not assigned an identifier/MCID.Marked content identifier can be used to associate an Element with logical structure element that refers to the Element.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextData"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getTextData</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to a pointer to the internal text buffer for this text element.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextLength"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getTextLength</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the text advance distance in text space.  The total sum of all of the advance values from rendering all of the characters within this element, including the advance value on the glyphs, the effect of properties such as 'char-spacing', 'word-spacing' and positioning adjustments on 'TJ' elements.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextMatrix"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{matrix2d}</span>
+					<b>getTextMatrix</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{matrix2d}</span> A promise that resolves to a reference to the current text matrix (Tm).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getTextString</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> A promise that resolves to a pointer to Unicode string for this text Element. The function maps character codes to Unicode array defined by Adobe Glyph List (http://partners.adobe.com/asn/developer/type/glyphlist.txt).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getType"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getType</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.Element.Type = {	e_null : 0	e_path : 1	e_text_begin : 2	e_text : 3	e_text_new_line : 4	e_text_end : 5	e_image : 6	e_inline_image : 7	e_shading : 8	e_form : 9	e_group_begin : 10	e_group_end : 11	e_marked_content_begin : 12	e_marked_content_end : 13	e_marked_content_point : 14}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the current element type.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getXObject"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getXObject</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the SDF object of the Image/Form object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="hasTextMatrix"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>hasTextMatrix</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if this element is directly associated with a text matrix (that is Tm operator is just before this text element) or false if the text matrix is default or is inherited from previous text elements.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isClippingPath"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isClippingPath</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the current path element is a clipping path and should be added to clipping path stack.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isClipWindingFill"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isClipWindingFill</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the current clip path is using non-zero winding rule, or false for even-odd rule.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isFilled"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isFilled</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the current path element should be filled</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isImageInterpolate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isImageInterpolate</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a boolean indicating whether image interpolation is to be performed.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isImageMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isImageMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a boolean indicating whether the inline image is to be treated as an image mask.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isOCVisible"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isOCVisible</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if this element is visible in the optional-content context (OCG::Context). The method considers the context's current OCMD stack, the group ON-OFF states, the non-OC drawing status, the drawing and enumeration mode, and the intent. When enumerating page content, OCG::Context can be passed as a parameter in ElementReader.Begin() method. When using PDFDraw, PDFRasterizer, or PDFView class to render PDF pages use PDFDraw::SetOCGContext() method to select an OC context.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isStroked"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isStroked</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the current path element should be stroked</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isWindingFill"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isWindingFill</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the current path should be filled using non-zero winding rule, or false if the path should be filled using even-odd rule.According non-zero winding rule, you can determine whether a test point is inside or outside a closed curve as follows: Draw a line from a test point to a point that is distant from the curve. Count the number of times the curve crosses the test line from left to right, and count the number of times the curve crosses the test line from right to left. If those two numbers are the same, the test point is outside the curve; otherwise, the test point is inside the curve. According to even-odd rule, you can determine whether a test point is inside or outside a closed curve as follows: Draw a line from the test point to a point that is distant from the curve. If that line crosses the curve an odd number of times, the test point is inside the curve; otherwise, the test point is outside the curve.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setClipWindingFill"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setClipWindingFill</b>(winding_rule)
+					
+					</div>
+					<div class="description">
+						sets clipping path's fill rule.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>winding_rule</b>
+									
+								</dt>
+								<dd>if winding_rule is true clipping should use non-zero winding rule, or false for even-odd rule.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setNewTextLineOffset"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setNewTextLineOffset</b>(dx, dy)
+					
+					</div>
+					<div class="description">
+						sets the offset (dx, dy) to the start of the current line relative to the beginning of the previous line.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>dx</b>
+									
+								</dt>
+								<dd>horizontal offset to the start of the curret line</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>dy</b>
+									
+								</dt>
+								<dd>vertical offset to the start of the current line</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPathClip"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPathClip</b>(clip)
+					
+					</div>
+					<div class="description">
+						indicate whether the path is a clipping path or non-clipping path
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>clip</b>
+									
+								</dt>
+								<dd>true to set path to clipping path. False for non-clipping path.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPathFill"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPathFill</b>(fill)
+					
+					</div>
+					<div class="description">
+						indicate whether the path should be filled
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>fill</b>
+									
+								</dt>
+								<dd>true to set path to be filled. False for no fill path.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPathStroke"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPathStroke</b>(stroke)
+					
+					</div>
+					<div class="description">
+						indicate whether the path should be stroked
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>stroke</b>
+									
+								</dt>
+								<dd>true to set path to be stroked. False for no stroke path.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPathTypes"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPathTypes</b>(in_seg_types, count)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>in_seg_types</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>count</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPosAdjustment"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPosAdjustment</b>(adjust)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>adjust</b>
+									
+								</dt>
+								<dd>number to set the horizontal adjustment to</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextData"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextData</b>(buf_text_data)
+					
+					</div>
+					<div class="description">
+						set the text data for the current e_text Element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf_text_data</b>
+									
+								</dt>
+								<dd>a pointer to a buffer containing text.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextMatrix"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextMatrix</b>(mtx)
+					
+					</div>
+					<div class="description">
+						Sets the text matrix for a text element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{matrix2d}</span> <b>mtx</b>
+									
+								</dt>
+								<dd>The new text matrix for this text element</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextMatrixEntries"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextMatrixEntries</b>(a, b, c, d, h, v)
+					
+					</div>
+					<div class="description">
+						Sets the text matrix for a text element. This method accepts text transformation matrix components directly.A transformation matrix in PDF is specified by six numbers, usually in the form of an array containing six elements. In its most general form, this array is denoted [a b c d h v]; it can represent any linear transformation from one coordinate system to another. For more information about PDF matrices please refer to section 4.2.2 'Common Transformations' in PDF Reference Manual, and to documentation for Matrix2D class.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>a</b>
+									
+								</dt>
+								<dd>horizontal 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>b</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>c</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>d</b>
+									
+								</dt>
+								<dd>vertical 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>h</b>
+									
+								</dt>
+								<dd>horizontal translation component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>v</b>
+									
+								</dt>
+								<dd>vertical translation component of the new text matrix.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setWindingFill"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setWindingFill</b>(winding_rule)
+					
+					</div>
+					<div class="description">
+						sets path's fill rule.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>winding_rule</b>
+									
+								</dt>
+								<dd>if winding_rule is true path will be filled using non-zero winding fill rule, otherwise even-odd fill will be used.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="updateTextMetrics"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>updateTextMetrics</b>()
+					
+					</div>
+					<div class="description">
+						Recompute the character positioning information (i.e. CharIterator-s) and text length. Element objects caches text length and character positioning information. If the user modifies the text data or graphics state the cached information is not correct. UpdateTextMetrics() can be used to recalculate the correctpositioning and length information.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:32 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

@@ -1,0 +1,4527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - CoreControls.DocumentViewer</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class CoreControls.DocumentViewer
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				Represents a full-featured control used for displaying a Document. The viewer supports text selection and text search, and several page view modes.
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\DocumentViewer.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class CoreControls.DocumentViewer.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/CoreControls.DocumentViewer.html#constructor">CoreControls.DocumentViewer</a></b>()
+							</div>
+							<div class="description">Creates a new empty DocumentViewer.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class CoreControls.DocumentViewer.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/CoreControls.DocumentViewer.html#defaults">defaults</a></b>
+								</div>
+								<div class="description">Default values for document viewer.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class CoreControls.DocumentViewer.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#clearSelection">clearSelection</a></b>()
+								</div>
+								<div class="description">Clears any selected text on the all pages.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#closeDocument">closeDocument</a></b>()
+								</div>
+								<div class="description">Reinitializes data and clears the viewer area content.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#displayBookmark">displayBookmark</a></b>(bookmark)
+								</div>
+								<div class="description">If the boomark is an internal link then it scrolls the viewer so that the position of the bookmark is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#displayFirstPage">displayFirstPage</a></b>()
+								</div>
+								<div class="description">Scrolls the viewer so that the upper-left corner of the Document's first page is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#displayLastPage">displayLastPage</a></b>()
+								</div>
+								<div class="description">Scrolls the viewer so that the upper-left corner of the Document's last page is in the upper-left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#displaySearchResult">displaySearchResult</a></b>(result, jump)
+								</div>
+								<div class="description">Scrolls the viewer so that the position of the search result is in the middle of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#dispose">dispose</a></b>()
+								</div>
+								<div class="description">Disposes the current document's data</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#drawSelection">drawSelection</a></b>(pageNumber)
+								</div>
+								<div class="description">Draws the text selection for the specified page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getAnnotationManager">getAnnotationManager</a></b>()
+								</div>
+								<div class="description">Returns the AnnotationManager used by this DocumentViewer</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getCompleteRotation">getCompleteRotation</a></b>(pageNumber)
+								</div>
+								<div class="description">Returns the complete rotation of the page including the document's rotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getCurrentPage">getCurrentPage</a></b>()
+								</div>
+								<div class="description">Returns the current page number</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getDisplayModeManager">getDisplayModeManager</a></b>()
+								</div>
+								<div class="description">Returns the DisplayModeManager used by this DocumentViewer</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getDocument">getDocument</a></b>()
+								</div>
+								<div class="description">Returns the Document that is currently being displayed by the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getFitMode">getFitMode</a></b>()
+								</div>
+								<div class="description">Returns the current fit mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getMargin">getMargin</a></b>()
+								</div>
+								<div class="description">Returns a pixel value, representing the left, right, top and bottom margins.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getPageCount">getPageCount</a></b>()
+								</div>
+								<div class="description">Returns the number of pages in a document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getPageHeight">getPageHeight</a></b>(pageIndex)
+								</div>
+								<div class="description">Get the current height of the specified page, taking into account rotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getPageRotations">getPageRotations</a></b>()
+								</div>
+								<div class="description">Gets the individual page rotations of the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getPageWidth">getPageWidth</a></b>(pageIndex)
+								</div>
+								<div class="description">Get the current width of the specified page, taking into account rotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getPageZoom">getPageZoom</a></b>(pageIndex)
+								</div>
+								<div class="description">Get the zoom value for a particular page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getRightToLeftPages">getRightToLeftPages</a></b>()
+								</div>
+								<div class="description">Returns the page rendering order.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getRotation">getRotation</a></b>(pageNumber)
+								</div>
+								<div class="description">Returns the current viewing rotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getSelectedText">getSelectedText</a></b>()
+								</div>
+								<div class="description">Returns the text selected by text selection tool or search.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getToolMode">getToolMode</a></b>()
+								</div>
+								<div class="description">Returns the current tool.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#getZoom">getZoom</a></b>()
+								</div>
+								<div class="description">Returns the current zoom level</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#loadAsync">loadAsync</a></b>(partRetriever, options)
+								</div>
+								<div class="description">Initialize the viewer and load a .xod document into the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#recalculateLayout">recalculateLayout</a></b>(pagesToRecalculate)
+								</div>
+								<div class="description">Request a recalculation of page layout and rerender all pages.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#removeContent">removeContent</a></b>(removeData, rotationChanged)
+								</div>
+								<div class="description">Removes all the page content from the DOM.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#returnCanvas">returnCanvas</a></b>(pageIndex, canvas)
+								</div>
+								<div class="description">Returns the canvas so that it can be reused.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#rotateClockwise">rotateClockwise</a></b>(pageNumber)
+								</div>
+								<div class="description">Rotates all pages in the currently displayed document clockwise by 90 degrees.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#rotateCounterClockwise">rotateCounterClockwise</a></b>(pageNumber)
+								</div>
+								<div class="description">Rotates all pages in the currently displayed document counter-clockwise by 90 degrees.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#scrollViewUpdated">scrollViewUpdated</a></b>()
+								</div>
+								<div class="description">This function must be called after modifying the ScrollView (#DocumentViewer) element's dimensions or properties.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#select">select</a></b>(pt1, pt2)
+								</div>
+								<div class="description">Selects the text content of the document given two page coordinates.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setCurrentPage">setCurrentPage</a></b>(pageNumber)
+								</div>
+								<div class="description">Sets the current page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setFitMode">setFitMode</a></b>(fitMode)
+								</div>
+								<div class="description">Sets how the document will scale to fit the size of the scrollviewer's viewport.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setInternalAnnotationsTransform">setInternalAnnotationsTransform</a></b>(handler(annotationData,callback))
+								</div>
+								<div class="description">Allows you to transform (or replace) the internal annotations of the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setMargin">setMargin</a></b>(margin)
+								</div>
+								<div class="description">Set the pixel value to use for the left, right, top and bottom margins.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setOptions">setOptions</a></b>(options)
+								</div>
+								<div class="description">Sets specific DocumentViewer options.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setPageRotations">setPageRotations</a></b>(rotations)
+								</div>
+								<div class="description">Sets the individual page rotations of multiple pages at once.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setPagesPerCanvas">setPagesPerCanvas</a></b>(numPages, isCover)
+								</div>
+								<div class="description">Sets the number of pages that will be visible on each canvas.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setPageZoom">setPageZoom</a></b>(pageIndex, zoom)
+								</div>
+								<div class="description">Sets the zoom for a particular page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setRightToLeftPages">setRightToLeftPages</a></b>(rightToLeftPages)
+								</div>
+								<div class="description">Sets the page rendering order.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setRotation">setRotation</a></b>(pageRotation, pageNumber)
+								</div>
+								<div class="description">Sets the current viewing rotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setTextHighlightColor">setTextHighlightColor</a></b>(color)
+								</div>
+								<div class="description">Sets the color to use when highlighting text from text selection or searching.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#setToolMode">setToolMode</a></b>(tool)
+								</div>
+								<div class="description">Sets the tool mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#stopPageRender">stopPageRender</a></b>(pageIndex)
+								</div>
+								<div class="description">Stops the rendering of the specified page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#textSearchInit">textSearchInit</a></b>(pattern, mode, fullSearch, onSearchCallback(result))
+								</div>
+								<div class="description">Searches for a particular text string on the currently displayed Document, starting on the current page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#updateLinks">updateLinks</a></b>(pageIndex)
+								</div>
+								<div class="description">Updates old xod (version <= 1.2) link annotations in the annotation manager</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#updateView">updateView</a></b>(visiblePages, currentPageIndex)
+								</div>
+								<div class="description">Removes previously drawn pages that are no longer visible anddraws pages that are visible and have not been drawn.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#updateVisiblePages">updateVisiblePages</a></b>(visiblePages)
+								</div>
+								<div class="description">Notifies the document viewer that the visible pages have changedbut does not draw any pages.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#zoomTo">zoomTo</a></b>(zoom, x, y)
+								</div>
+								<div class="description">Adjusts the viewer's zoom factor, and positions the point (x,y) at the upper left corner of the viewer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#zoomToMouse">zoomToMouse</a></b>(zoom, offsetX, offsetY)
+								</div>
+								<div class="description">Adjusts the viewer's zoom factor and positions the point on the document under the mouse at the same positionafter zooming in.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the events documented in the class CoreControls.DocumentViewer.">
+					<caption>Event Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Event Attributes</th>
+							<th scope="col">Event Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:beforeDocumentLoaded">beforeDocumentLoaded</a></b>(evt)
+								</div>
+								<div class="description">Triggered just before the document has been loaded into the viewer</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:changePage">changePage</a></b>(evt, pageNum)
+								</div>
+								<div class="description">Triggered when the page should be changed.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:dblClick">dblClick</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the dblClick event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:displayModeUpdated">displayModeUpdated</a></b>(evt)
+								</div>
+								<div class="description">Triggered when the display mode is updated</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:displayPageLocation">displayPageLocation</a></b>(evt, pageNum, verticalOffset, horizontalOffset)
+								</div>
+								<div class="description">Triggered when a page location should be displayed</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:documentLoaded">documentLoaded</a></b>(evt)
+								</div>
+								<div class="description">Triggered when the document has been loaded</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:fitModeUpdated">fitModeUpdated</a></b>(evt, fitMode)
+								</div>
+								<div class="description">Triggered when the fit mode has changed</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:keyDown">keyDown</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the keyDown event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:keyUp">keyUp</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the keyUp event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:layoutChanged">layoutChanged</a></b>(evt, changes)
+								</div>
+								<div class="description">Triggered when the layout has changed because pages have permanently been added, removed, moved or changed in some other way.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:linkReady">linkReady</a></b>(evt, linkElement, link)
+								</div>
+								<div class="description">Triggered when a link is created on the page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseEnter">mouseEnter</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseEnter event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseLeave">mouseLeave</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseLeave event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseLeftDown">mouseLeftDown</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseLeftButtonDown event in the DocumentViewer's viewing areaAttach like docViewer.on('mouseLeftDown', callback)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseLeftUp">mouseLeftUp</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseLeftButtonUp event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseMove">mouseMove</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseMove event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseRightDown">mouseRightDown</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseRightButtonDown event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:mouseRightUp">mouseRightUp</a></b>(evt, nativeEvt)
+								</div>
+								<div class="description">Triggered for the mouseRightButtonUp event in the DocumentViewer's viewing area</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:pageComplete">pageComplete</a></b>(evt, pageIndex, canvas)
+								</div>
+								<div class="description">Triggered when a page has been completely rendered.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:pageNumberUpdated">pageNumberUpdated</a></b>(evt, pageNumber)
+								</div>
+								<div class="description">Triggered when the page number is updated</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:rotationUpdated">rotationUpdated</a></b>(evt, rotation, pageNumber)
+								</div>
+								<div class="description">Triggered when the page rotation has changed</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:textSelected">textSelected</a></b>(evt, quads, text, pageIndex)
+								</div>
+								<div class="description">Triggered when the selected text has changed</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:toolModeUpdated">toolModeUpdated</a></b>(evt, toolModeClass)
+								</div>
+								<div class="description">Triggered when the tool mode has changed</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/CoreControls.DocumentViewer.html#event:zoomUpdated">zoomUpdated</a></b>(evt, zoom)
+								</div>
+								<div class="description">Triggered when the zoom level has been updated</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>CoreControls.DocumentViewer</b>()
+				</div>
+				
+				<div class="description">
+					Creates a new empty DocumentViewer.
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="defaults"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{object}</span>
+					<b>defaults</b>
+					
+					</div>
+					<div class="description">
+						Default values for document viewer. Set FitMode, DisplayMode or Zoom.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="clearSelection"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>clearSelection</b>()
+					
+					</div>
+					<div class="description">
+						Clears any selected text on the all pages.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="closeDocument"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>closeDocument</b>()
+					
+					</div>
+					<div class="description">
+						Reinitializes data and clears the viewer area content.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="displayBookmark"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayBookmark</b>(bookmark)
+					
+					</div>
+					<div class="description">
+						If the boomark is an internal link then it scrolls the viewer so that the position of the bookmark is in the upper-left corner of the viewer.If it's an external URL then it opens the URL.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Bookmark}</span> <b>bookmark</b>
+									
+								</dt>
+								<dd>A bookmark that specifies the location to go to. Returned by <a href="../symbols/CoreControls.Document.html#getBookmarks">CoreControls.Document#getBookmarks</a>.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="displayFirstPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayFirstPage</b>()
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the upper-left corner of the Document's first page is in the upper-left corner of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="displayLastPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayLastPage</b>()
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the upper-left corner of the Document's last page is in the upper-left corner of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="displaySearchResult"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displaySearchResult</b>(result, jump)
+					
+					</div>
+					<div class="description">
+						Scrolls the viewer so that the position of the search result is in the middle of the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>result</b>
+									
+								</dt>
+								<dd>The result of a search, DocumentViewer.SearchResults. Returned by onSearchCallback in <a href="../symbols/CoreControls.DocumentViewer.html#textSearchInit">CoreControls.DocumentViewer#textSearchInit</a>.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>jump</b>
+									
+								</dt>
+								<dd>The callback for navigating to the found result.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="dispose"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>dispose</b>()
+					
+					</div>
+					<div class="description">
+						Disposes the current document's data
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="drawSelection"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>drawSelection</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Draws the text selection for the specified page. Should be called after callingAnnotationManager's drawAnnotations function if the selection should still be shown.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									
+								</dt>
+								<dd>The page number to draw the selection on</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAnnotationManager"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{AnnotationManager}</span>
+					<b>getAnnotationManager</b>()
+					
+					</div>
+					<div class="description">
+						Returns the AnnotationManager used by this DocumentViewer
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{AnnotationManager}</span> an instance of AnnotationManager</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCompleteRotation"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{CoreControls.PageRotation}</span>
+					<b>getCompleteRotation</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Returns the complete rotation of the page including the document's rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally pass the page number to get the specific page's rotation</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{CoreControls.PageRotation}</span> The current complete rotation.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCurrentPage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getCurrentPage</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current page number
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The current 1-indexed page number.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDisplayModeManager"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DisplayModeManager}</span>
+					<b>getDisplayModeManager</b>()
+					
+					</div>
+					<div class="description">
+						Returns the DisplayModeManager used by this DocumentViewer
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{DisplayModeManager}</span> an instance of DisplayModeManager</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDocument"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/CoreControls.Document.html">CoreControls.Document</a>}</span>
+					<b>getDocument</b>()
+					
+					</div>
+					<div class="description">
+						Returns the Document that is currently being displayed by the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{<a href="../symbols/CoreControls.Document.html">CoreControls.Document</a>}</span> returns the current document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFitMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{DocumentViewer.FitMode}</span>
+					<b>getFitMode</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current fit mode.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{DocumentViewer.FitMode}</span> The current fit mode.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMargin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getMargin</b>()
+					
+					</div>
+					<div class="description">
+						Returns a pixel value, representing the left, right, top and bottom margins.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The margin value.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageCount"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPageCount</b>()
+					
+					</div>
+					<div class="description">
+						Returns the number of pages in a document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The number of the pages in the current document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageHeight"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPageHeight</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Get the current height of the specified page, taking into account rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The height of the page</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageRotations"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{object}</span>
+					<b>getPageRotations</b>()
+					
+					</div>
+					<div class="description">
+						Gets the individual page rotations of the document. Only returns pages that have been rotated individually.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{object}</span> An object with keys that are page indexes (0-indexed) and values that are rotation values.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageWidth"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPageWidth</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Get the current width of the specified page, taking into account rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The width of the page</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageZoom"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getPageZoom</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Get the zoom value for a particular page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRightToLeftPages"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getRightToLeftPages</b>()
+					
+					</div>
+					<div class="description">
+						Returns the page rendering order.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> The current page rendering order.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRotation"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{CoreControls.PageRotation}</span>
+					<b>getRotation</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Returns the current viewing rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">PageRotation.e_0 = 0 (0 degress) <br/>PageRotation.e_90 = 1 (90 degress) <br/>PageRotation.e_180 = 2 (180 degress) <br/>PageRotation.e_270 = 3 (270 degress) <br/></pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally pass the page number to get the specific page's rotation</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{CoreControls.PageRotation}</span> The current viewing rotation.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSelectedText"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getSelectedText</b>()
+					
+					</div>
+					<div class="description">
+						Returns the text selected by text selection tool or search.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> Selected text.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getToolMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{window.Tools}</span>
+					<b>getToolMode</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current tool.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{window.Tools}</span> The current tool.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getZoom"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getZoom</b>()
+					
+					</div>
+					<div class="description">
+						Returns the current zoom level
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> The current zoom level.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="loadAsync"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>loadAsync</b>(partRetriever, options)
+					
+					</div>
+					<div class="description">
+						Initialize the viewer and load a .xod document into the viewer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{HttpPartRetriever|LocalPartRetriever|StreamingPartRetriever}</span> <b>partRetriever</b>
+									
+								</dt>
+								<dd>An instance of PartRetriever.</dd>
+							
+								<dt>
+									<b>options</b>
+									
+								</dt>
+								<dd>an object that can contain the following optional parameters</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>options.docId</b>
+									<i>Optional</i>
+								</dt>
+								<dd>An optional unique identifier for the document, used for offline mode</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>options.onError</b>
+									<i>Optional</i>
+								</dt>
+								<dd>A callback of the form function(err) which will be called when a loading error occurs.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{promise}</span> <b>options.workerTransportPromise</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Required for PDF viewing. A promise that will be resolved when a worker transport has been initialized. This can be created by calling CoreControls.initializeWorkerTransport</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>options.getPassword</b>
+									<i>Optional</i>
+								</dt>
+								<dd>An method of the form function(callback) where callback is of the form function(password). getPassword will be called when a password is required to load a PDF document and should call the callback with the retrieved password.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>options.extension</b>
+									<i>Optional</i>
+								</dt>
+								<dd>An field used to specify the type of file being read. This is only relevant for PDF viewing and at the moment only works for certain image formats and .pdf</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="recalculateLayout"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>recalculateLayout</b>(pagesToRecalculate)
+					
+					</div>
+					<div class="description">
+						Request a recalculation of page layout and rerender all pages. For use when modifying the underlying Document without using the provided page modification functions (cropPages, rotatePages...)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pagesToRecalculate</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeContent"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeContent</b>(removeData, rotationChanged)
+					
+					</div>
+					<div class="description">
+						Removes all the page content from the DOM.  Also clear the cache if the zoom or rotation has changed.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{bool}</span> <b>removeData</b>
+									
+								</dt>
+								<dd>Whether or not to remove all event handlers and data on the elements</dd>
+							
+								<dt>
+									<b>rotationChanged</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="returnCanvas"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>returnCanvas</b>(pageIndex, canvas)
+					
+					</div>
+					<div class="description">
+						Returns the canvas so that it can be reused.  Should be called when the canvas is no longer used by the viewer.Only valid in viewport canvas mode.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index of the canvas</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>canvas</b>
+									
+								</dt>
+								<dd>The canvas element to return</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rotateClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotateClockwise</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Rotates all pages in the currently displayed document clockwise by 90 degrees.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally pass the page number to rotate only a specific page</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="rotateCounterClockwise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotateCounterClockwise</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Rotates all pages in the currently displayed document counter-clockwise by 90 degrees.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally pass the page number to rotate only a specific page</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="scrollViewUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>scrollViewUpdated</b>()
+					
+					</div>
+					<div class="description">
+						This function must be called after modifying the ScrollView (#DocumentViewer) element's dimensions or properties.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="select"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>select</b>(pt1, pt2)
+					
+					</div>
+					<div class="description">
+						Selects the text content of the document given two page coordinates.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>pt1</b>
+									
+								</dt>
+								<dd>Starting page coordinate. Requires properties x, y and pageIndex.</dd>
+							
+								<dt>
+									<b>pt2</b>
+									
+								</dt>
+								<dd>Ending page coordinate. Requires properties x, y and pageIndex.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setCurrentPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setCurrentPage</b>(pageNumber)
+					
+					</div>
+					<div class="description">
+						Sets the current page. Updates the current page and jumps to it.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageNumber</b>
+									
+								</dt>
+								<dd>The page number to jump to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFitMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFitMode</b>(fitMode)
+					
+					</div>
+					<div class="description">
+						Sets how the document will scale to fit the size of the scrollviewer's viewport.  Also re-renders content to the appropriate zoom level.  Only renders if a document has been loaded.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{DocumentViewer.FitMode}</span> <b>fitMode</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setInternalAnnotationsTransform"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setInternalAnnotationsTransform</b>(handler(annotationData,callback))
+					
+					</div>
+					<div class="description">
+						Allows you to transform (or replace) the internal annotations of the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>handler(annotationData,callback)</b>
+									
+								</dt>
+								<dd>A handler function that takes annotation data and a callback
+         that is called when the transformed data is ready</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMargin"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMargin</b>(margin)
+					
+					</div>
+					<div class="description">
+						Set the pixel value to use for the left, right, top and bottom margins.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>margin</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOptions"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOptions</b>(options)
+					
+					</div>
+					<div class="description">
+						Sets specific DocumentViewer options.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>options</b>
+									
+								</dt>
+								<dd>An options object, currently valid options are enableAnnotations and annotMode</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPageRotations"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPageRotations</b>(rotations)
+					
+					</div>
+					<div class="description">
+						Sets the individual page rotations of multiple pages at once. Pages that aren't specified willuse the default document rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>rotations</b>
+									
+								</dt>
+								<dd>An object with keys that are page indexes (0-indexed) and values that are rotation values.Rotations should be specified as {CoreControls.PageRotation}s</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPagesPerCanvas"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPagesPerCanvas</b>(numPages, isCover)
+					
+					</div>
+					<div class="description">
+						Sets the number of pages that will be visible on each canvas.Only valid in viewport canvas mode.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>numPages</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<b>isCover</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPageZoom"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPageZoom</b>(pageIndex, zoom)
+					
+					</div>
+					<div class="description">
+						Sets the zoom for a particular page. Should be followed by a call to updateView to actually render the page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The page index.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>Zoom value for page.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setRightToLeftPages"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setRightToLeftPages</b>(rightToLeftPages)
+					
+					</div>
+					<div class="description">
+						Sets the page rendering order.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>rightToLeftPages</b>
+									
+								</dt>
+								<dd>Whether the new page rendering order should be right to left or not.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setRotation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setRotation</b>(pageRotation, pageNumber)
+					
+					</div>
+					<div class="description">
+						Sets the current viewing rotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{CoreControls.PageRotation}</span> <b>pageRotation</b>
+									
+								</dt>
+								<dd>desired viewing rotation.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally pass the page number to set the specific page's rotation</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextHighlightColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextHighlightColor</b>(color)
+					
+					</div>
+					<div class="description">
+						Sets the color to use when highlighting text from text selection or searching.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>color</b>
+									
+								</dt>
+								<dd>The color to set.  eg 'rgba(0, 0, 200, 0.3)'</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setToolMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setToolMode</b>(tool)
+					
+					</div>
+					<div class="description">
+						Sets the tool mode. Also removes selection caused by text selection or search.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{<a href="../symbols/Tools.Tool.html">Tools.Tool</a>}</span> <b>tool</b>
+									
+								</dt>
+								<dd>An instance of the toolmode</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="stopPageRender"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>stopPageRender</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Stops the rendering of the specified page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The index of the page who's rendering should be stopped.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="textSearchInit"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>textSearchInit</b>(pattern, mode, fullSearch, onSearchCallback(result))
+					
+					</div>
+					<div class="description">
+						Searches for a particular text string on the currently displayed Document, starting on the current page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>The text to search for.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{DocumentViewer.SearchMode}</span> <b>mode</b>
+									
+								</dt>
+								<dd>The options for search, controlling options such as case sensitivity and search direction.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>fullSearch</b>
+									
+								</dt>
+								<dd>If true, a search of the entire document will be performed. Otherwise, a single search will be perfomed.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{function}</span> <b>onSearchCallback(result)</b>
+									
+								</dt>
+								<dd>The callback function to call when the search completes. The search may complete when the search term is found, when the entire document has been searched, and, depending on the search options, at the end of every page. Parameter result: DocumentViewer.SearchResults.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="updateLinks"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>updateLinks</b>(pageIndex)
+					
+					</div>
+					<div class="description">
+						Updates old xod (version <= 1.2) link annotations in the annotation manager
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The zero-indexed page number to update</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="updateView"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>updateView</b>(visiblePages, currentPageIndex)
+					
+					</div>
+					<div class="description">
+						Removes previously drawn pages that are no longer visible anddraws pages that are visible and have not been drawn.If visiblePages are provided then those pages are rendered otherwise visiblePages are calculateddepending on where the DIV elements for the pages are located.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Object}</span> <b>visiblePages</b>
+									
+								</dt>
+								<dd>An array of integers representing the pages to render.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>currentPageIndex</b>
+									
+								</dt>
+								<dd>The index of the page that is currently visible in the viewer.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="updateVisiblePages"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>updateVisiblePages</b>(visiblePages)
+					
+					</div>
+					<div class="description">
+						Notifies the document viewer that the visible pages have changedbut does not draw any pages.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>visiblePages</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="zoomTo"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>zoomTo</b>(zoom, x, y)
+					
+					</div>
+					<div class="description">
+						Adjusts the viewer's zoom factor, and positions the point (x,y) at the upper left corner of the viewer.  Only renders if a document has been loaded.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>Zoom value.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>x</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Horizontal position to scroll to.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>y</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Vertical position to scroll to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="zoomToMouse"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>zoomToMouse</b>(zoom, offsetX, offsetY)
+					
+					</div>
+					<div class="description">
+						Adjusts the viewer's zoom factor and positions the point on the document under the mouse at the same positionafter zooming in.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>Zoom value</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>offsetX</b>
+									
+								</dt>
+								<dd>The x offset from the mouse position to the viewer's position (e.g. taking into account toolbars)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>offsetY</b>
+									
+								</dt>
+								<dd>The y offset from the mouse position to the viewer's position (e.g. taking into side panels)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+				<div class="sectionTitle">
+					Event Detail
+				</div>
+				
+					<a name="event:beforeDocumentLoaded"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>beforeDocumentLoaded</b>(evt)
+					
+					</div>
+					<div class="description">
+						Triggered just before the document has been loaded into the viewer
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:changePage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>changePage</b>(evt, pageNum)
+					
+					</div>
+					<div class="description">
+						Triggered when the page should be changed.Only fired when using a non-scrollable custom display mode.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageNum</b>
+									
+								</dt>
+								<dd>The 1-indexed page number</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:dblClick"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>dblClick</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the dblClick event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:displayModeUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayModeUpdated</b>(evt)
+					
+					</div>
+					<div class="description">
+						Triggered when the display mode is updated
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:displayPageLocation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>displayPageLocation</b>(evt, pageNum, verticalOffset, horizontalOffset)
+					
+					</div>
+					<div class="description">
+						Triggered when a page location should be displayed
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageNum</b>
+									
+								</dt>
+								<dd>The 1-indexed page number</dd>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>verticalOffset</b>
+									
+								</dt>
+								<dd>The offset from the top of the page</dd>
+							
+								<dt>
+									<span class="light fixedFont">{float}</span> <b>horizontalOffset</b>
+									
+								</dt>
+								<dd>The offset from the left of the page</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:documentLoaded"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>documentLoaded</b>(evt)
+					
+					</div>
+					<div class="description">
+						Triggered when the document has been loaded
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:fitModeUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>fitModeUpdated</b>(evt, fitMode)
+					
+					</div>
+					<div class="description">
+						Triggered when the fit mode has changed
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>fitMode</b>
+									
+								</dt>
+								<dd>The fit mode that has been changed to e.g. docViewer.FitMode.FitWidth</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:keyDown"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>keyDown</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the keyDown event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:keyUp"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>keyUp</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the keyUp event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:layoutChanged"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>layoutChanged</b>(evt, changes)
+					
+					</div>
+					<div class="description">
+						Triggered when the layout has changed because pages have permanently been added, removed, moved or changed in some other way.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>changes</b>
+									
+								</dt>
+								<dd>An object with keys added, removed, moved and contentChanged, indicating which pages have changed</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:linkReady"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>linkReady</b>(evt, linkElement, link)
+					
+					</div>
+					<div class="description">
+						Triggered when a link is created on the page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>linkElement</b>
+									
+								</dt>
+								<dd>The HTML span element that represents the link</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>link</b>
+									
+								</dt>
+								<dd>Link object that contains more information about the link</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseEnter"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseEnter</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseEnter event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseLeave"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseLeave</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseLeave event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseLeftDown"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseLeftDown</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseLeftButtonDown event in the DocumentViewer's viewing areaAttach like docViewer.on('mouseLeftDown', callback)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseLeftUp"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseLeftUp</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseLeftButtonUp event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseMove"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseMove</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseMove event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseRightDown"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseRightDown</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseRightButtonDown event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:mouseRightUp"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>mouseRightUp</b>(evt, nativeEvt)
+					
+					</div>
+					<div class="description">
+						Triggered for the mouseRightButtonUp event in the DocumentViewer's viewing area
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>nativeEvt</b>
+									
+								</dt>
+								<dd>Event object of the native JavaScript event</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:pageComplete"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pageComplete</b>(evt, pageIndex, canvas)
+					
+					</div>
+					<div class="description">
+						Triggered when a page has been completely rendered.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The 0-indexed page index</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>canvas</b>
+									<i>Optional</i>
+								</dt>
+								<dd>The canvas for the page</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:pageNumberUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pageNumberUpdated</b>(evt, pageNumber)
+					
+					</div>
+					<div class="description">
+						Triggered when the page number is updated
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageNumber</b>
+									
+								</dt>
+								<dd>The new page number (1-indexed)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:rotationUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>rotationUpdated</b>(evt, rotation, pageNumber)
+					
+					</div>
+					<div class="description">
+						Triggered when the page rotation has changed
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{CoreControls.PageRotation}</span> <b>rotation</b>
+									
+								</dt>
+								<dd>The new viewing rotation.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pageNumber</b>
+									<i>Optional</i>
+								</dt>
+								<dd>Optionally the specific page number that had its rotation changed</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:textSelected"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>textSelected</b>(evt, quads, text, pageIndex)
+					
+					</div>
+					<div class="description">
+						Triggered when the selected text has changed
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{array}</span> <b>quads</b>
+									
+								</dt>
+								<dd>An array of bounding box quads of the selected text</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>text</b>
+									
+								</dt>
+								<dd>The selected text</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>pageIndex</b>
+									
+								</dt>
+								<dd>The zero-indexed page number that the text was selected on</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:toolModeUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>toolModeUpdated</b>(evt, toolModeClass)
+					
+					</div>
+					<div class="description">
+						Triggered when the tool mode has changed
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>toolModeClass</b>
+									
+								</dt>
+								<dd>The tool mode class that has been changed to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="event:zoomUpdated"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>zoomUpdated</b>(evt, zoom)
+					
+					</div>
+					<div class="description">
+						Triggered when the zoom level has been updated
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{object}</span> <b>evt</b>
+									
+								</dt>
+								<dd>jQuery's event object</dd>
+							
+								<dt>
+									<span class="light fixedFont">{int}</span> <b>zoom</b>
+									
+								</dt>
+								<dd>The new zoom level of the viewer</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:30 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

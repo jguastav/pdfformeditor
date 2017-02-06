@@ -1,0 +1,59 @@
+<style>
+.s24 {
+ width: 36px;
+ height: 36px;
+ color: #f00; }
+      #pdfViewer {
+         height: 960px;
+     }
+    .pdf-img-button:hover {
+      opacity: 0.4;
+      filter: alpha(opacity=40); /* msie */
+      cursor: pointer;
+    }
+.image-upload > input
+    {
+        display: none;
+    }
+</style>
+
+
+
+
+<div ng-controller="pdfFormLibModule.PdfToolbarController">
+  <div id="main-pdf-content" class="row">
+      <div class="col-md-12">
+          <button id="clear-pdf-button" ng-click="clearPdfDocument()" type="submit" class="btn btn-primary width-120">Clear</button>
+          <div class="pull-right">
+            <div>
+              <img id="pdfSignButton" class="pdf-img-button" src="assets/img/menu-icons/contract-icon-0 _36dp.png" ng-click="signPdfDocument()" />
+              <img id="pdfDownloadButton" class="pdf-img-button" src="assets/img/menu-icons/ic_cloud_download_black_36dp_1x.png" ng-click="downloadPdfDocument()" />
+
+<!--   onclick='document.getElementById("pdfViewer").children[0].contentWindow.runSampleFunction()' " -->
+              <span class="image-upload">
+                  <label for="pdf-upload-button">
+                      <img class="pdf-img-button" src="assets/img/menu-icons/ic_cloud_upload_black_36dp_1x.png" ng-click="uploadPdfDocument()" />
+                        </label>
+
+                          <input id="pdf-upload-button" type="file" onchange='angular.element(this).scope().openPdfDocument(this)'/>
+              </span>
+
+
+              <img id="pdfPrintButton" class="pdf-img-button" src="assets/img/menu-icons/ic_print_black_36dp_1x.png" ng-click="printPdfDocument()" />
+              <button id="save-pdf-button" type="submit" class="btn btn-primary width-120" ng-click="savePdfForm()">Save</button>
+              <img id="pdfCloseButton" class="pdf-img-button" src="assets/img/menu-icons/ic_close_red_36dp_1x.png" ng-click="closePdfDocument()" />
+            </div>
+          </div>
+      </div>
+      <div class="col-md-12" style="overflow-y: scroll;height:450px" >
+        <div id="pdfViewer"></div>
+      </div>
+  </div>
+</div>
+<!--<script src="WebViewer/lib/html5/ControlUtils.js"></script>-->
+<!-- WebViewer Production -->
+
+<script src="WebViewer/lib/WebViewer.js" type="text/javascript-lazy"></script>
+<script src="WebViewer/lib/html5/CoreControls.js" type="text/javascript-lazy"></script>
+
+<script src="js/pdftron.config.js" type="text/javascript-lazy"></script>

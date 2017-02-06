@@ -1,0 +1,2025 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.ColorSpace</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.ColorSpace
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.ColorSpace
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.ColorSpace.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.ColorSpace.html#constructor">PDFNet.ColorSpace</a></b>(id)
+							</div>
+							<div class="description">This abstract class is used to serve as a color space tag to identify the specific color space of a Color object.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.ColorSpace.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#assign">assign</a></b>(right)
+								</div>
+								<div class="description">Copy Constructor</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#convert2CMYK">convert2CMYK</a></b>(in_color)
+								</div>
+								<div class="description">A convenience function used to convert color points from the current color space to DeviceCMYK color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#convert2Gray">convert2Gray</a></b>(in_color)
+								</div>
+								<div class="description">A convenience function used to convert color points from the current color space to DeviceGray color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#convert2RGB">convert2RGB</a></b>(in_color)
+								</div>
+								<div class="description">A convenience function used to convert color points from the current color space to DeviceRGB color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.create">create</a></b>(color_space)
+								</div>
+								<div class="description">Create a ColorSpace from the given SDF/Cos object listed under ColorSpaces entry in page Resource dictionary.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createDeviceCMYK">createDeviceCMYK</a></b>()
+								</div>
+								<div class="description">Create a new DeviceCMYK ColorSpace object</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createDeviceGray">createDeviceGray</a></b>()
+								</div>
+								<div class="description">Create a new DeviceGray ColorSpace object</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createDeviceRGB">createDeviceRGB</a></b>()
+								</div>
+								<div class="description">Create a new DeviceRGB ColorSpace object</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createICCFromBuffer">createICCFromBuffer</a></b>(doc, buf)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createICCFromFilter">createICCFromFilter</a></b>(doc, filter)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.createPattern">createPattern</a></b>()
+								</div>
+								<div class="description">Create a new Pattern ColorSpace object</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#destroy">destroy</a></b>()
+								</div>
+								<div class="description">Frees the native memory of the object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getAlternateColorSpace">getAlternateColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getBaseColor">getBaseColor</a></b>(color_idx)
+								</div>
+								<div class="description">Get the base color given a component value (index) in Indexed color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getBaseColorSpace">getBaseColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getComponentNum">getComponentNum</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.getComponentNumFromObj">getComponentNumFromObj</a></b>(cs_type, cs_obj)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getHighVal">getHighVal</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getLookupTable">getLookupTable</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getSDFObj">getSDFObj</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getTintFunction">getTintFunction</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#getType">getType</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.ColorSpace.<b><a href="../symbols/PDFNet.ColorSpace.html#.getTypeFromObj">getTypeFromObj</a></b>(cs_obj)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#initColor">initColor</a></b>()
+								</div>
+								<div class="description">Set color to the initial value used for this color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#initComponentRanges">initComponentRanges</a></b>(num_comps)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#isAll">isAll</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.ColorSpace.html#isNone">isNone</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.ColorSpace</b>(id)
+				</div>
+				
+				<div class="description">
+					This abstract class is used to serve as a color space tag to identify the specific color space of a Color object. It contains methods that transform colors in a specific color space to/from several color space such as DeviceRGB and DeviceCMYK. For purposes of the methods in this class, colors are represented as arrays of color components represented as doubles in a normalized range defined by each ColorSpace. For many ColorSpaces (e.g. DeviceRGB), this range is 0.0 to 1.0. However, some ColorSpaces have components whose values have a different range. Methods are provided to inquire per component minimum and maximum normalized values.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="assign"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>assign</b>(right)
+					
+					</div>
+					<div class="description">
+						Copy Constructor
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>right</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="convert2CMYK"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>convert2CMYK</b>(in_color)
+					
+					</div>
+					<div class="description">
+						A convenience function used to convert color points from the current color space to DeviceCMYK color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>in_color</b>
+									
+								</dt>
+								<dd>input color point in the current color space</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="convert2Gray"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>convert2Gray</b>(in_color)
+					
+					</div>
+					<div class="description">
+						A convenience function used to convert color points from the current color space to DeviceGray color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>in_color</b>
+									
+								</dt>
+								<dd>input color point in the current color space</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="convert2RGB"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>convert2RGB</b>(in_color)
+					
+					</div>
+					<div class="description">
+						A convenience function used to convert color points from the current color space to DeviceRGB color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>in_color</b>
+									
+								</dt>
+								<dd>input color point in the current color space</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".create"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>create</b>(color_space)
+					
+					</div>
+					<div class="description">
+						Create a ColorSpace from the given SDF/Cos object listed under ColorSpaces entry in page Resource dictionary. If color_space dictionary is null, a non valid ColorSpace object is created.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>color_space</b>
+									
+								</dt>
+								<dd>The Cos/SDF object to initialze the ColorSpace object with.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createDeviceCMYK"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createDeviceCMYK</b>()
+					
+					</div>
+					<div class="description">
+						Create a new DeviceCMYK ColorSpace object
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createDeviceGray"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createDeviceGray</b>()
+					
+					</div>
+					<div class="description">
+						Create a new DeviceGray ColorSpace object
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createDeviceRGB"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createDeviceRGB</b>()
+					
+					</div>
+					<div class="description">
+						Create a new DeviceRGB ColorSpace object
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createICCFromBuffer"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createICCFromBuffer</b>(doc, buf)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createICCFromFilter"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createICCFromFilter</b>(doc, filter)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>filter</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createPattern"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{ColorSpace}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>createPattern</b>()
+					
+					</div>
+					<div class="description">
+						Create a new Pattern ColorSpace object
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to an object of type: "ColorSpace" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="destroy"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>destroy</b>()
+					
+					</div>
+					<div class="description">
+						Frees the native memory of the object.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAlternateColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getAlternateColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to the alternate color space if it is available or NULL otherwise.Color spaces that include alternate color space are e_separation, e_device_n, and e_icc.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBaseColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>getBaseColor</b>(color_idx)
+					
+					</div>
+					<div class="description">
+						Get the base color given a component value (index) in Indexed color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>color_idx</b>
+									
+								</dt>
+								<dd>color value represented in the index color space</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBaseColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getBaseColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to the base color space if this is an e_indexed or e_pattern with associated base color space; NULL otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getComponentNum"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getComponentNum</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of colorants (tint components) used to represent color point in this color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".getComponentNumFromObj"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{number}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>getComponentNumFromObj</b>(cs_type, cs_obj)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number [Y]}</span> <b>cs_type</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>cs_obj</b>
+									
+								</dt>
+								<dd>Cos/SDF color space object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of components (tint components) used to represent colorpoint for this color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHighVal"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getHighVal</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the highest index for the color lookup table for Indexed color space. Since the color table is indexed from zero to highval, the actual number of entries ishighval + 1. For color spaces other than indexed the method returns 0.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLookupTable"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getLookupTable</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the color lookup table for Indexed color space. for color spaces other than indexed the method returns NULL.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSDFObj"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getSDFObj</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the underlying SDF/Cos object</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTintFunction"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Function}</span>
+					<b>getTintFunction</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Function}</span> A promise that resolves to the function that transforms tint values into color component values in the alternate color space.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getType"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getType</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.ColorSpace.Type = {	e_device_gray : 0	e_device_rgb : 1	e_device_cmyk : 2	e_cal_gray : 3	e_cal_rgb : 4	e_lab : 5	e_icc : 6	e_indexed : 7	e_pattern : 8	e_separation : 9	e_device_n : 10	e_null : 11}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the type of this color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".getTypeFromObj"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{number}</span>
+					<span class="light">PDFNet.ColorSpace.</span><b>getTypeFromObj</b>(cs_obj)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.ColorSpace.Type = {	e_device_gray : 0	e_device_rgb : 1	e_device_cmyk : 2	e_cal_gray : 3	e_cal_rgb : 4	e_lab : 5	e_icc : 6	e_indexed : 7	e_pattern : 8	e_separation : 9	e_device_n : 10	e_null : 11}</pre></pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>cs_obj</b>
+									
+								</dt>
+								<dd>Cos/SDF color space object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the Type of a given SDF/Cos color space, or e_null for if SDF object is not a valid color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>initColor</b>()
+					
+					</div>
+					<div class="description">
+						Set color to the initial value used for this color space. The initial value depends on the color space (see 4.5.7 in PDF Ref. Manual).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="initComponentRanges"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>initComponentRanges</b>(num_comps)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>num_comps</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isAll"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isAll</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if Separation color space contains the colorant All.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isNone"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isNone</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if Separation or DeviceN color space contains None colorants.For DeviceN the function returns true only if component colorant names are all None.</dd>
+							
+							</dl>
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:32 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

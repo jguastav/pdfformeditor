@@ -1,0 +1,4397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.GState</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.GState
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.GState
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.GState.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.GState.html#constructor">PDFNet.GState</a></b>(id)
+							</div>
+							<div class="description">GState is a class that keeps track of a number of style attributes used to visually define graphical Elements.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.GState.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#concat">concat</a></b>(a, b, c, d, h, v)
+								</div>
+								<div class="description">Concatenate the given matrix expressed in its values to the transformation matrix of this element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#concatMatrix">concatMatrix</a></b>(mtx)
+								</div>
+								<div class="description">Concatenate the given matrix to the transformation matrix of this element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getAISFlag">getAISFlag</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getAutoStrokeAdjust">getAutoStrokeAdjust</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getBlackGenFunct">getBlackGenFunct</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getBlendMode">getBlendMode</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getCharSpacing">getCharSpacing</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFillColor">getFillColor</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFillColorSpace">getFillColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFillOpacity">getFillOpacity</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFillOverprint">getFillOverprint</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFillPattern">getFillPattern</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFlatness">getFlatness</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFont">getFont</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getFontSize">getFontSize</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getHalftone">getHalftone</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getHorizontalScale">getHorizontalScale</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getLeading">getLeading</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getLineCap">getLineCap</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getLineJoin">getLineJoin</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getLineWidth">getLineWidth</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getMiterLimit">getMiterLimit</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getOverprintMode">getOverprintMode</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getPhase">getPhase</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getRenderingIntent">getRenderingIntent</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.GState.<b><a href="../symbols/PDFNet.GState.html#.getRenderingIntentType">getRenderingIntentType</a></b>(name)
+								</div>
+								<div class="description">A utility function that maps a string representing a rendering intent to RenderingIntent type.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getSmoothnessTolerance">getSmoothnessTolerance</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getSoftMask">getSoftMask</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getSoftMaskTransform">getSoftMaskTransform</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getStrokeColor">getStrokeColor</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getStrokeColorSpace">getStrokeColorSpace</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getStrokeOpacity">getStrokeOpacity</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getStrokeOverprint">getStrokeOverprint</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getStrokePattern">getStrokePattern</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getTextRenderMode">getTextRenderMode</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getTextRise">getTextRise</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getTransferFunct">getTransferFunct</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getTransform">getTransform</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getUCRFunct">getUCRFunct</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#getWordSpacing">getWordSpacing</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#isTextKnockout">isTextKnockout</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setAISFlag">setAISFlag</a></b>(AIS)
+								</div>
+								<div class="description">specifies if the alpha is to be interpreted as a shape or opacity mask.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setAutoStrokeAdjust">setAutoStrokeAdjust</a></b>(SA)
+								</div>
+								<div class="description">Specify whether to apply automatic stroke adjustment.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setBlackGenFunct">setBlackGenFunct</a></b>(BG)
+								</div>
+								<div class="description">Sets black-generation function used during conversion between DeviceRGB and DeviceCMYK.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setBlendMode">setBlendMode</a></b>(BM)
+								</div>
+								<div class="description">Sets the current blend mode to be used in the transparent imaging model.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setCharSpacing">setCharSpacing</a></b>(char_spacing)
+								</div>
+								<div class="description">Sets character spacing.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setDashPattern">setDashPattern</a></b>(buf_dash_array, phase)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillColor">setFillColor</a></b>(pattern, c)
+								</div>
+								<div class="description">Set the fill color to the given uncolored tiling pattern.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillColorSpace">setFillColorSpace</a></b>(cs)
+								</div>
+								<div class="description">Sets the color space used for filling operations</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillColorWithColorPt">setFillColorWithColorPt</a></b>(c)
+								</div>
+								<div class="description">Sets the color value/point used for filling operations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillColorWithPattern">setFillColorWithPattern</a></b>(pattern)
+								</div>
+								<div class="description">Set the fill color to the given tiling pattern.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillOpacity">setFillOpacity</a></b>(ca)
+								</div>
+								<div class="description">Sets the opacity value for painting operations other than stroking.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFillOverprint">setFillOverprint</a></b>(op)
+								</div>
+								<div class="description">specifies if overprint is enabled for fill operations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFlatness">setFlatness</a></b>(flatness)
+								</div>
+								<div class="description">Sets the value of flatness tolerance.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setFont">setFont</a></b>(font, font_sz)
+								</div>
+								<div class="description">Sets the font and font size used to draw text.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setHalftone">setHalftone</a></b>(HT)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setHorizontalScale">setHorizontalScale</a></b>(hscale)
+								</div>
+								<div class="description">Sets horizontal scale.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setLeading">setLeading</a></b>(leading)
+								</div>
+								<div class="description">Sets the leading parameter.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setLineCap">setLineCap</a></b>(cap)
+								</div>
+								<div class="description">Sets LineCap style property.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setLineJoin">setLineJoin</a></b>(join)
+								</div>
+								<div class="description">Sets LineJoin style property.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setLineWidth">setLineWidth</a></b>(width)
+								</div>
+								<div class="description">Sets the thickness of the line used to stroke a path.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setMiterLimit">setMiterLimit</a></b>(miter_limit)
+								</div>
+								<div class="description">Sets miter limit.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setOverprintMode">setOverprintMode</a></b>(OPM)
+								</div>
+								<div class="description">Sets the overprint mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setRenderingIntent">setRenderingIntent</a></b>(intent)
+								</div>
+								<div class="description">Sets the color intent to be used for rendering the Element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setSmoothnessTolerance">setSmoothnessTolerance</a></b>(SM)
+								</div>
+								<div class="description">Sets the smoothness tolerance used to control the quality of smooth shading.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setSoftMask">setSoftMask</a></b>(SM)
+								</div>
+								<div class="description">Sets the soft mask of the extended graphics state.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeColor">setStrokeColor</a></b>(pattern, c)
+								</div>
+								<div class="description">Set the stroke color to the given uncolored tiling pattern.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeColorSpace">setStrokeColorSpace</a></b>(cs)
+								</div>
+								<div class="description">Sets the color space used for stroking operations</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeColorWithColorPt">setStrokeColorWithColorPt</a></b>(c)
+								</div>
+								<div class="description">Sets the color value/point used for stroking operations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeColorWithPattern">setStrokeColorWithPattern</a></b>(pattern)
+								</div>
+								<div class="description">Set the stroke color to the given tiling pattern.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeOpacity">setStrokeOpacity</a></b>(ca)
+								</div>
+								<div class="description">Sets opacity value for stroke painting operations for paths and glyph outlines.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setStrokeOverprint">setStrokeOverprint</a></b>(OP)
+								</div>
+								<div class="description">specifies if overprint is enabled for stroke operations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTextKnockout">setTextKnockout</a></b>(knockout)
+								</div>
+								<div class="description">Mark the object as elementary for purposes of color compositing in the transparent imaging model.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTextRenderMode">setTextRenderMode</a></b>(rmode)
+								</div>
+								<div class="description">Sets text rendering mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTextRise">setTextRise</a></b>(rise)
+								</div>
+								<div class="description">Sets text rise.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTransferFunct">setTransferFunct</a></b>(TR)
+								</div>
+								<div class="description">Sets transfer function used during color conversion process.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTransform">setTransform</a></b>(a, b, c, d, h, v)
+								</div>
+								<div class="description">Set the transformation matrix associated with this element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setTransformMatrix">setTransformMatrix</a></b>(mtx)
+								</div>
+								<div class="description">Set the transformation matrix associated with this element.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setUCRFunct">setUCRFunct</a></b>(UCR)
+								</div>
+								<div class="description">Sets undercolor-removal function used during conversion between DeviceRGB and DeviceCMYK.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.GState.html#setWordSpacing">setWordSpacing</a></b>(word_spacing)
+								</div>
+								<div class="description">Sets word spacing.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.GState</b>(id)
+				</div>
+				
+				<div class="description">
+					GState is a class that keeps track of a number of style attributes used to visually define graphical Elements. Each PDF::Element has an associated GState that can be used to query or set various graphics properties.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="concat"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>concat</b>(a, b, c, d, h, v)
+					
+					</div>
+					<div class="description">
+						Concatenate the given matrix expressed in its values to the transformation matrix of this element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>a</b>
+									
+								</dt>
+								<dd>horizontal 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>b</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>c</b>
+									
+								</dt>
+								<dd>vertical 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>d</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>h</b>
+									
+								</dt>
+								<dd>horizontal translation component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>v</b>
+									
+								</dt>
+								<dd>vertical translation component of the new text matrix.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="concatMatrix"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>concatMatrix</b>(mtx)
+					
+					</div>
+					<div class="description">
+						Concatenate the given matrix to the transformation matrix of this element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{matrix2d}</span> <b>mtx</b>
+									
+								</dt>
+								<dd>Matrix2D object to concatenate the current matrix with.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAISFlag"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getAISFlag</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to the alpha source flag ('alpha is shape'), specifying whether the current soft mask and alpha constant are to be interpreted as shape values (true) or opacity values (false).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAutoStrokeAdjust"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getAutoStrokeAdjust</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a flag specifying whether stroke adjustment is enabled in the graphics state. Corresponds to the /SA key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBlackGenFunct"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getBlackGenFunct</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to currently selected black-generation function (NULL by default) used during conversion between DeviceRGB and DeviceCMYK. Corresponds to the /BG key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBlendMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getBlendMode</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.BlendMode = {	e_bl_compatible : 0	e_bl_normal : 1	e_bl_multiply : 2	e_bl_screen : 3	e_bl_difference : 4	e_bl_darken : 5	e_bl_lighten : 6	e_bl_color_dodge : 7	e_bl_color_burn : 8	e_bl_exclusion : 9	e_bl_hard_light : 10	e_bl_overlay : 11	e_bl_soft_light : 12	e_bl_luminosity : 13	e_bl_hue : 14	e_bl_saturation : 15	e_bl_color : 16}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the current blend mode to be used in the transparent imaging model. Corresponds to the /BM key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getCharSpacing"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getCharSpacing</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected character spacing. The character spacing parameter is a number specified in unscaled text spaceunits. When the glyph for each character in the string is rendered, the character spacing is added to the horizontal or vertical component of the glyph's displacement,depending on the writing mode. See Section 5.2.1 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFillColor"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getFillColor</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a color value/point represented in the current fill color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFillColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getFillColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to color space used for filling</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFillOpacity"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getFillOpacity</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the opacity value for painting operations other than stroking.Returns the value of the /ca key in the ExtGState dictionary. If the value is not found, the default value of 1 is returned.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFillOverprint"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getFillOverprint</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to whether overprint is enabled for fill painting operations.Corresponds to the /op key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFillPattern"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{PatternColor}</span>
+					<b>getFillPattern</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PatternColor}</span> A promise that resolves to the pattern color of currently selected pattern color space used for filling.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFlatness"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getFlatness</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to current value of flatness toleranceFlatness is a number in the range 0 to 100; a value of 0 specifies the output device's default flatness tolerance.The flatness tolerance controls the maximum permitted distance in device pixelsbetween the mathematically correct path and an approximation constructed from straight line segments.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFont"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Font}</span>
+					<b>getFont</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Font}</span> A promise that resolves to currently selected font</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFontSize"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getFontSize</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the font size</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHalftone"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getHalftone</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to currently selected halftone dictionary or stream (NULL by default).Corresponds to the /HT key within the ExtGState's dictionary.Halftoning is a process by which continuous-tone colors are approximated on anoutput device that can achieve only a limited number of discrete colors.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getHorizontalScale"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getHorizontalScale</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected horizontal scaleThe horizontal scaling parameter adjusts the width of glyphs by stretching or compressing them in the horizontal direction. Its value is specified as a percentage of the normal width of the glyphs, with 100 being the normal width. The scaling always applies to the horizontal coordinate in text space, independently of the writing mode. See Section 5.2.3 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLeading"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getLeading</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected leading parameterThe leading parameter is measured in unscaled text space units. It specifiesthe vertical distance between the baselines of adjacent lines of text. See Section 5.2.4 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLineCap"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getLineCap</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.LineCap = {	e_butt_cap : 0	e_round_cap : 1	e_square_cap : 2}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected LineCap styleThe line cap style specifies the shape to be used at the ends of open sub-paths (and dashes, if any) when they are stroked.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLineJoin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getLineJoin</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.LineJoin = {	e_miter_join : 0	e_round_join : 1	e_bevel_join : 2}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected LineJoin styleThe line join style specifies the shape to be used at the corners of paths that are stroked.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getLineWidth"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getLineWidth</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the thickness of the line used to stroke a path.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getMiterLimit"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getMiterLimit</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to current value of miter limit. The miter limit imposes a maximum on the ratio of the miter length to the line width. When the limit is exceeded, the join is converted from a miter to a bevel.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getOverprintMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getOverprintMode</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the overprint mode used by this graphics state.Corresponds to the /OPM key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPhase"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPhase</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the phase of the currently selected dash pattern. dash phase is expressed in user space units.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRenderingIntent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getRenderingIntent</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.RenderingIntent = {	e_absolute_colorimetric : 0	e_relative_colorimetric : 1	e_saturation : 2	e_perceptual : 3}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the color intent to be used for rendering the Element</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".getRenderingIntentType"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{number}</span>
+					<span class="light">PDFNet.GState.</span><b>getRenderingIntentType</b>(name)
+					
+					</div>
+					<div class="description">
+						A utility function that maps a string representing a rendering intent to RenderingIntent type.
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.RenderingIntent = {	e_absolute_colorimetric : 0	e_relative_colorimetric : 1	e_saturation : 2	e_perceptual : 3}</pre></pre>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>name</b>
+									
+								</dt>
+								<dd>string that represents the rendering intent to get.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the color rendering intent type matching the specified string</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSmoothnessTolerance"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getSmoothnessTolerance</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the smoothness tolerance used to control the quality of smooth shading. Corresponds to the /SM key within the ExtGState's dictionary.The allowable error (or tolerance) is expressed as a fraction of the range of the color component, from 0.0 to 1.0.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSoftMask"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getSoftMask</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to associated soft mask. NULL if the soft mask is not selected or SDF dictionary representing the soft mask otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSoftMaskTransform"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{matrix2d}</span>
+					<b>getSoftMaskTransform</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{matrix2d}</span> A promise that resolves to the soft mask transform. This is the transformation matrix at the moment the soft mask is established in the graphics state with the gs operator. This information is only relevant when applying the soft mask that may be specified in the graphics state to the current element.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStrokeColor"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getStrokeColor</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a color value/point represented in the current stroke color space</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStrokeColorSpace"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{ColorSpace}</span>
+					<b>getStrokeColorSpace</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{ColorSpace}</span> A promise that resolves to color space used for stroking</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStrokeOpacity"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getStrokeOpacity</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to opacity value for stroke painting operations for paths and glyph outlines.Returns the value of the /CA key in the ExtGState dictionary. If the value is not found, the default value of 1 is returned.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStrokeOverprint"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getStrokeOverprint</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to whether overprint is enabled for stroke painting operations.Corresponds to the /OP key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStrokePattern"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{PatternColor}</span>
+					<b>getStrokePattern</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PatternColor}</span> A promise that resolves to the SDF pattern object of currently selected PatternColorSpace used for stroking.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextRenderMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getTextRenderMode</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.GState.TextRenderingMode = {	e_fill_text : 0	e_stroke_text : 1	e_fill_stroke_text : 2	e_invisible_text : 3	e_fill_clip_text : 4	e_stroke_clip_text : 5	e_fill_stroke_clip_text : 6	e_clip_text : 7}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to current text rendering mode. The text rendering mode determines whether showing text causes glyph outlines to be stroked, filled, used as a clipping boundary, or some combination of the three.See Section 5.2.5 in PDF Reference Manual for details..</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTextRise"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getTextRise</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to current value of text riseText rise specifies the distance, in unscaled text space units, to move thebaseline up or down from its default location. Positive values of text rise move the baseline up</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTransferFunct"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getTransferFunct</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to currently selected transfer function (NULL by default) used duringcolor conversion process. A transfer function adjusts the values of color components to compensate for nonlinear response in an output device and in the human eye. Corresponds to the /TR key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTransform"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{matrix2d}</span>
+					<b>getTransform</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{matrix2d}</span> A promise that resolves to the transformation matrix for this element.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUCRFunct"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getUCRFunct</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to currently selected undercolor-removal function (NULL by default) used during conversion between DeviceRGB and DeviceCMYK. Corresponds to the /UCR key within the ExtGState's dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getWordSpacing"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getWordSpacing</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to currently selected word spacingWord spacing works the same way as character spacing, but applies only to thespace character (char code 32). See Section 5.2.2 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isTextKnockout"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isTextKnockout</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to a boolean flag that determines the text element is considered elementary objects for purposes of color compositing in the transparent imaging model.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setAISFlag"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setAISFlag</b>(AIS)
+					
+					</div>
+					<div class="description">
+						specifies if the alpha is to be interpreted as a shape or opacity mask.The alpha source flag ('alpha is shape'), specifies whether the current soft mask and alpha constant are to be interpreted as shape values (true) or opacity values (false).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>AIS</b>
+									
+								</dt>
+								<dd>true for interpretation as shape values or false for opacity values</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setAutoStrokeAdjust"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setAutoStrokeAdjust</b>(SA)
+					
+					</div>
+					<div class="description">
+						Specify whether to apply automatic stroke adjustment.Corresponds to the /SA key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>SA</b>
+									
+								</dt>
+								<dd>if true automatic stroke adjustment will be applied.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setBlackGenFunct"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setBlackGenFunct</b>(BG)
+					
+					</div>
+					<div class="description">
+						Sets black-generation function used during conversion between DeviceRGB and DeviceCMYK. Corresponds to the /BG key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>BG</b>
+									
+								</dt>
+								<dd>SDF/Cos black-generation function or name</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setBlendMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setBlendMode</b>(BM)
+					
+					</div>
+					<div class="description">
+						Sets the current blend mode to be used in the transparent imaging model.Corresponds to the /BM key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>BM</b>
+									
+								</dt>
+								<dd>New blending mode type.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setCharSpacing"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setCharSpacing</b>(char_spacing)
+					
+					</div>
+					<div class="description">
+						Sets character spacing.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>char_spacing</b>
+									
+								</dt>
+								<dd>a number specified in unscaled text space units. When the glyph for each character in the string is rendered, the character spacing is added to the horizontal or vertical component of the glyph's displacement,depending on the writing mode. See Section 5.2.1 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setDashPattern"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setDashPattern</b>(buf_dash_array, phase)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf_dash_array</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>phase</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillColor</b>(pattern, c)
+					
+					</div>
+					<div class="description">
+						Set the fill color to the given uncolored tiling pattern.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{PatternColor}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>PatternColor (PatternType = 1 and PaintType = 2) object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>c</b>
+									
+								</dt>
+								<dd>is a color in the pattern's underlying color space.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillColorSpace"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillColorSpace</b>(cs)
+					
+					</div>
+					<div class="description">
+						Sets the color space used for filling operations
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>cs</b>
+									
+								</dt>
+								<dd>ColorSpace object to use for filling operations</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillColorWithColorPt"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillColorWithColorPt</b>(c)
+					
+					</div>
+					<div class="description">
+						Sets the color value/point used for filling operations.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>c</b>
+									
+								</dt>
+								<dd>the color used for filling operationsThe color value must be represented in the currently selected color space usedfor filling.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillColorWithPattern"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillColorWithPattern</b>(pattern)
+					
+					</div>
+					<div class="description">
+						Set the fill color to the given tiling pattern.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{PatternColor}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>New pattern color.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillOpacity"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillOpacity</b>(ca)
+					
+					</div>
+					<div class="description">
+						Sets the opacity value for painting operations other than stroking.Corresponds to the value of the /ca key in the ExtGState dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>ca</b>
+									
+								</dt>
+								<dd>value to set fill opacity to</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFillOverprint"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFillOverprint</b>(op)
+					
+					</div>
+					<div class="description">
+						specifies if overprint is enabled for fill operations. Corresponds to the /op key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>op</b>
+									
+								</dt>
+								<dd>true to enable overprint for fill, false to disable.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFlatness"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFlatness</b>(flatness)
+					
+					</div>
+					<div class="description">
+						Sets the value of flatness tolerance.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flatness</b>
+									
+								</dt>
+								<dd>is a number in the range 0 to 100; a value of 0 specifies the output device's default flatness tolerance.The flatness tolerance controls the maximum permitted distance in device pixelsbetween the mathematically correct path and an approximation constructed from straight line segments.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFont"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFont</b>(font, font_sz)
+					
+					</div>
+					<div class="description">
+						Sets the font and font size used to draw text.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Font}</span> <b>font</b>
+									
+								</dt>
+								<dd>Font to draw the text with</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>font_sz</b>
+									
+								</dt>
+								<dd>size of the font to draw the text with</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setHalftone"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setHalftone</b>(HT)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>HT</b>
+									
+								</dt>
+								<dd>SDF/Cos halftone dictionary, stream, or name</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd>currently selected halftone dictionary or stream (NULL by default).Corresponds to the /HT key within the ExtGState's dictionary.Halftoning is a process by which continuous-tone colors are approximated on anoutput device that can achieve only a limited number of discrete colors.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="setHorizontalScale"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setHorizontalScale</b>(hscale)
+					
+					</div>
+					<div class="description">
+						Sets horizontal scale.The horizontal scaling parameter adjusts the width of glyphs by stretching or compressing them in the horizontal direction. Its value is specified as a percentage of the normal width of the glyphs, with 100 being the normal width. The scaling always applies to the horizontal coordinate in text space, independently of the writing mode. See Section 5.2.3 in PDF Reference Manual for details.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>hscale</b>
+									
+								</dt>
+								<dd>value to set horizontal scale to.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLeading"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLeading</b>(leading)
+					
+					</div>
+					<div class="description">
+						Sets the leading parameter.The leading parameter is measured in unscaled text space units. It specifiesthe vertical distance between the baselines of adjacent lines of text.See Section 5.2.4 in PDF Reference Manual for details.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>leading</b>
+									
+								</dt>
+								<dd>number representing vertical distance between lines of text</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLineCap"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLineCap</b>(cap)
+					
+					</div>
+					<div class="description">
+						Sets LineCap style property.The line cap style specifies the shape to be used at the ends of open subpaths (and dashes, if any) when they are stroked.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>cap</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.GState.LineCap = {	e_butt_cap : 0	e_round_cap : 1	e_square_cap : 2}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLineJoin"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLineJoin</b>(join)
+					
+					</div>
+					<div class="description">
+						Sets LineJoin style property.The line join style specifies the shape to be used at the corners of paths that are stroked.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>join</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.GState.LineJoin = {	e_miter_join : 0	e_round_join : 1	e_bevel_join : 2}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setLineWidth"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setLineWidth</b>(width)
+					
+					</div>
+					<div class="description">
+						Sets the thickness of the line used to stroke a path.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>width</b>
+									
+								</dt>
+								<dd>a non-negative number expressed in user space units.A line width of 0 denotes the thinnest line that can be rendered at device resolution: 1 device pixel wide.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setMiterLimit"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setMiterLimit</b>(miter_limit)
+					
+					</div>
+					<div class="description">
+						Sets miter limit.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>miter_limit</b>
+									
+								</dt>
+								<dd>A number that imposes a maximum on the ratio of the miter length to the line width. When the limit is exceeded, the join is converted from a miter to a bevel.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOverprintMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOverprintMode</b>(OPM)
+					
+					</div>
+					<div class="description">
+						Sets the overprint mode. Corresponds to the /OPM key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>OPM</b>
+									
+								</dt>
+								<dd>overprint mode.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setRenderingIntent"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setRenderingIntent</b>(intent)
+					
+					</div>
+					<div class="description">
+						Sets the color intent to be used for rendering the Element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>intent</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.GState.RenderingIntent = {	e_absolute_colorimetric : 0	e_relative_colorimetric : 1	e_saturation : 2	e_perceptual : 3}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setSmoothnessTolerance"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setSmoothnessTolerance</b>(SM)
+					
+					</div>
+					<div class="description">
+						Sets the smoothness tolerance used to control the quality of smooth shading. Corresponds to the /SM key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>SM</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setSoftMask"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setSoftMask</b>(SM)
+					
+					</div>
+					<div class="description">
+						Sets the soft mask of the extended graphics state. Corresponds to the /SMask key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>SM</b>
+									
+								</dt>
+								<dd>SDF/Cos black-generation function or name</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeColor</b>(pattern, c)
+					
+					</div>
+					<div class="description">
+						Set the stroke color to the given uncolored tiling pattern.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{PatternColor}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>pattern (PatternType = 1 and PaintType = 2) object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>c</b>
+									
+								</dt>
+								<dd>is a color in the pattern's underlying color space.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeColorSpace"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeColorSpace</b>(cs)
+					
+					</div>
+					<div class="description">
+						Sets the color space used for stroking operations
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{ColorSpace}</span> <b>cs</b>
+									
+								</dt>
+								<dd>ColorSpace object to use for stroking operations</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeColorWithColorPt"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeColorWithColorPt</b>(c)
+					
+					</div>
+					<div class="description">
+						Sets the color value/point used for stroking operations.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>c</b>
+									
+								</dt>
+								<dd>is the color used for stroking operations</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeColorWithPattern"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeColorWithPattern</b>(pattern)
+					
+					</div>
+					<div class="description">
+						Set the stroke color to the given tiling pattern.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{PatternColor}</span> <b>pattern</b>
+									
+								</dt>
+								<dd>SDF pattern object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeOpacity"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeOpacity</b>(ca)
+					
+					</div>
+					<div class="description">
+						Sets opacity value for stroke painting operations for paths and glyph outlines.Corresponds to the value of the /CA key in the ExtGState dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>ca</b>
+									
+								</dt>
+								<dd>value to set stroke opacity to</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStrokeOverprint"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStrokeOverprint</b>(OP)
+					
+					</div>
+					<div class="description">
+						specifies if overprint is enabled for stroke operations. Corresponds to the /OP key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>OP</b>
+									
+								</dt>
+								<dd>true to enable overprint for stroke, false to disable.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextKnockout"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextKnockout</b>(knockout)
+					
+					</div>
+					<div class="description">
+						Mark the object as elementary for purposes of color compositing in the transparent imaging model.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>knockout</b>
+									
+								</dt>
+								<dd>Whether an object is elementary or not.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextRenderMode"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextRenderMode</b>(rmode)
+					
+					</div>
+					<div class="description">
+						Sets text rendering mode. The text rendering mode determines whether showing text causes glyph outlines to be stroked, filled, used as a clipping boundary, or some combination of the three.See Section 5.2.5 in PDF Reference Manual for details..
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>rmode</b>
+									
+								</dt>
+								<dd>the mode that text will rendered with.rmode can take the following values:PDFNet.GState.TextRenderingMode = {	e_fill_text : 0,	e_stroke_text : 1,	e_fill_stroke_text : 2,	e_invisible_text : 3,	e_fill_clip_text : 4,	e_stroke_clip_text : 5,	e_fill_stroke_clip_text : 6,	e_clip_text : 7}</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTextRise"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTextRise</b>(rise)
+					
+					</div>
+					<div class="description">
+						Sets text rise.Text rise specifies the distance, in unscaled text space units, to move thebaseline up or down from its default location. Positive values of text rise move the baseline up
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>rise</b>
+									
+								</dt>
+								<dd>distance to move baseline up. Negative values move baseline down.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTransferFunct"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTransferFunct</b>(TR)
+					
+					</div>
+					<div class="description">
+						Sets transfer function used during color conversion process. A transfer function adjusts the values of color components to compensate for nonlinear response in an output device and in the human eye. Corresponds to the /TR key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>TR</b>
+									
+								</dt>
+								<dd>SDF/Cos transfer function, array, or name</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTransform"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTransform</b>(a, b, c, d, h, v)
+					
+					</div>
+					<div class="description">
+						Set the transformation matrix associated with this element.A transformation matrix in PDF is specified by six numbers, usually in the form of an array containing six elements. In its most general form, this array is denoted [a b c d h v]; it can represent any linear transformation from one coordinate system to another. For more information about PDF matrices please refer to section 4.2.2 'Common Transformations' in PDF Reference Manual, and to documentation for pdftron::Common::Matrix2D class.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>a</b>
+									
+								</dt>
+								<dd>horizontal 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>b</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>c</b>
+									
+								</dt>
+								<dd>vertical 'scaling' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>d</b>
+									
+								</dt>
+								<dd>'rotation' component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>h</b>
+									
+								</dt>
+								<dd>horizontal translation component of the new text matrix.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>v</b>
+									
+								</dt>
+								<dd>vertical translation component of the new text matrix.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setTransformMatrix"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setTransformMatrix</b>(mtx)
+					
+					</div>
+					<div class="description">
+						Set the transformation matrix associated with this element.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{matrix2d}</span> <b>mtx</b>
+									
+								</dt>
+								<dd>The new transformation for this text element.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setUCRFunct"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setUCRFunct</b>(UCR)
+					
+					</div>
+					<div class="description">
+						Sets undercolor-removal function used during conversion between DeviceRGB and DeviceCMYK. Corresponds to the /UCR key within the ExtGState's dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>UCR</b>
+									
+								</dt>
+								<dd>SDF/Cos undercolor-removal function or name</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setWordSpacing"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setWordSpacing</b>(word_spacing)
+					
+					</div>
+					<div class="description">
+						Sets word spacing.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>word_spacing</b>
+									
+								</dt>
+								<dd>a number specified in unscaled text space units.Word spacing works the same way as character spacing, but applies only to thespace character (char code 32). See Section 5.2.2 in PDF Reference Manual for details.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:33 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

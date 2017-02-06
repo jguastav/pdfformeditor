@@ -1,0 +1,5122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.PDFDoc</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.PDFDoc
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.PDFDoc
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.PDFDoc.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.PDFDoc.html#constructor">PDFNet.PDFDoc</a></b>(id)
+							</div>
+							<div class="description">PDFDoc is a high-level class describing a single PDF (Portable Document Format) document.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.PDFDoc.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addFileAttachment">addFileAttachment</a></b>(file_key, embedded_file)
+								</div>
+								<div class="description">Associates a file attachment with the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addHighlights">addHighlights</a></b>(hilite)
+								</div>
+								<div class="description">addHighlights is used to highlight text in a document using 'Adobe's Highlight File Format' (Technical Note #5172 ).</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addRootBookmark">addRootBookmark</a></b>(root_bookmark)
+								</div>
+								<div class="description">Adds/links the specified Bookmark to the root level of document's outline tree.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addSignatureHandler">addSignatureHandler</a></b>(signature_handler)
+								</div>
+								<div class="description">Adds a signature handler to the signature manager.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addStdSignatureHandlerFromBuffer">addStdSignatureHandlerFromBuffer</a></b>(pkcs12_buffer, pkcs12_pass)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#addStdSignatureHandlerFromURL">addStdSignatureHandlerFromURL</a></b>(pkcs12_file, pkcs12_pass)
+								</div>
+								<div class="description">Adds a standard (built-in) signature handler to the signature manager.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.PDFDoc.<b><a href="../symbols/PDFNet.PDFDoc.html#.create">create</a></b>()
+								</div>
+								<div class="description">Default constructor.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.PDFDoc.<b><a href="../symbols/PDFNet.PDFDoc.html#.createFromBuffer">createFromBuffer</a></b>(buf)
+								</div>
+								<div class="description">Open a SDF/Cos document from a memory buffer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.PDFDoc.<b><a href="../symbols/PDFNet.PDFDoc.html#.createFromFilter">createFromFilter</a></b>(stream)
+								</div>
+								<div class="description">Open an existing PDF document</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectArray">createIndirectArray</a></b>()
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect array objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectBool">createIndirectBool</a></b>(value)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect boolean objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectDict">createIndirectDict</a></b>()
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect dict objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectName">createIndirectName</a></b>(name)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect name object Unlike direct objects, indirect objects can be referenced by more than one object (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectNull">createIndirectNull</a></b>()
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect null objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectNumber">createIndirectNumber</a></b>(value)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect number objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectStream">createIndirectStream</a></b>(data, data_size, filter_chain)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect stream objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectStreamFromFilter">createIndirectStreamFromFilter</a></b>(data, filter_chain)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect stream objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectString">createIndirectString</a></b>(value, buf_size)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect string objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createIndirectStringFromUString">createIndirectStringFromUString</a></b>(str)
+								</div>
+								<div class="description">This method creates an SDF/Cos indirect string objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#createShallowCopy">createShallowCopy</a></b>()
+								</div>
+								<div class="description">Copy Constructor</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#destroy">destroy</a></b>()
+								</div>
+								<div class="description">Destructor</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fdfExtract">fdfExtract</a></b>(flag)
+								</div>
+								<div class="description">Extract form data and/or annotations to FDF</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fdfExtractAnnots">fdfExtractAnnots</a></b>(annot_buf)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fdfExtractPageSet">fdfExtractPageSet</a></b>(pages_to_extract, flag)
+								</div>
+								<div class="description">Extract form data and/or annotations to FDF</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fdfMerge">fdfMerge</a></b>(fdf_doc)
+								</div>
+								<div class="description">Import form data from FDF file to PDF interactive form.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fieldCreate">fieldCreate</a></b>(field_name, type, field_value, def_field_value)
+								</div>
+								<div class="description">Create a new interactive form Field.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#fieldCreateFromStrings">fieldCreateFromStrings</a></b>(field_name, type, field_value, def_field_value)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#flattenAnnotations">flattenAnnotations</a></b>(forms_only)
+								</div>
+								<div class="description">Flatten all annotations in the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#flattenAnnotationsAdvanced">flattenAnnotationsAdvanced</a></b>(flags)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#generateThumbnails">generateThumbnails</a></b>(size)
+								</div>
+								<div class="description">Generates thumbnail images for all the pages in this PDF document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getAcroForm">getAcroForm</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getDocInfo">getDocInfo</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getField">getField</a></b>(field_name)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getFieldIterator">getFieldIterator</a></b>(field_name)
+								</div>
+								<div class="description">An interactive form (sometimes referred to as an AcroForm) is acollection of fields for gathering information interactively from the user.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getFieldIteratorBegin">getFieldIteratorBegin</a></b>()
+								</div>
+								<div class="description">An interactive form (sometimes referred to as an AcroForm) is acollection of fields for gathering information interactively from the user.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getFirstBookmark">getFirstBookmark</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getOCGConfig">getOCGConfig</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getOCGs">getOCGs</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getOpenAction">getOpenAction</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getPage">getPage</a></b>(page_number)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getPageCount">getPageCount</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getPageIterator">getPageIterator</a></b>(page_number)
+								</div>
+								<div class="description">Use the Next() method on the returned iterator to traverse all pages in the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getPageLabel">getPageLabel</a></b>(page_num)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getPages">getPages</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getRoot">getRoot</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getSDFDoc">getSDFDoc</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getSecurityHandler">getSecurityHandler</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getSignatureHandler">getSignatureHandler</a></b>(signature_handler_id)
+								</div>
+								<div class="description">Gets the associated signature handler instance from the signature manager by looking it up with the handler name.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getStructTree">getStructTree</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getTrailer">getTrailer</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getTriggerAction">getTriggerAction</a></b>(trigger)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#getViewPrefs">getViewPrefs</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#hasOC">hasOC</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#hasSignatures">hasSignatures</a></b>()
+								</div>
+								<div class="description">Indicates whether this documents contains any digital signatures.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#importPages">importPages</a></b>(pages, import_bookmarks)
+								</div>
+								<div class="description">The function imports a list of pages to this document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#initSecurityHandler">initSecurityHandler</a></b>(custom_data)
+								</div>
+								<div class="description">Initializes document's SecurityHandler.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#initStdSecurityHandler">initStdSecurityHandler</a></b>(password, password_sz)
+								</div>
+								<div class="description">Initializes document's SecurityHandler using the supplied password.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#initStdSecurityHandlerBuffer">initStdSecurityHandlerBuffer</a></b>(password_buf)
+								</div>
+								<div class="description">Initializes document's SecurityHandler using the supplied password.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#initStdSecurityHandlerUString">initStdSecurityHandlerUString</a></b>(password)
+								</div>
+								<div class="description">Initializes document's SecurityHandler using the supplied password.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#insertPages">insertPages</a></b>(insert_before_page_number, src_doc, start_page, end_page, flag)
+								</div>
+								<div class="description">Inserts a range of pages from specified PDFDoc</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#insertPageSet">insertPageSet</a></b>(insert_before_page_number, src_doc, source_page_set, flag)
+								</div>
+								<div class="description">Inserts a range of pages from specified PDFDoc using PageSet</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#isEncrypted">isEncrypted</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#isLinearized">isLinearized</a></b>()
+								</div>
+								<div class="description">Call this function to determine whether the document is represented in linearized (fast web view) format.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#isModified">isModified</a></b>()
+								</div>
+								<div class="description">Call this function to determine whether the document has been modified since it was last saved.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#isTagged">isTagged</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#lock">lock</a></b>()
+								</div>
+								<div class="description">Locks the document to prevent competing threads from accessing the document at the same time.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#lockRead">lockRead</a></b>()
+								</div>
+								<div class="description">Locks the document to prevent competing write threads (using Lock()) from accessing the document at the same time.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#movePages">movePages</a></b>(move_before_page_number, src_doc, start_page, end_page, flag)
+								</div>
+								<div class="description">Moves a range of pages from specified PDFDoc.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#movePageSet">movePageSet</a></b>(move_before_page_number, src_doc, source_page_set, flag)
+								</div>
+								<div class="description">Moves a range of pages from specified PDFDoc.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#pageCreate">pageCreate</a></b>(media_box)
+								</div>
+								<div class="description">Create a new, empty page in the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#pageInsert">pageInsert</a></b>(where, page)
+								</div>
+								<div class="description">Insert/Import a single page at a specific location in the page sequence.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#pagePushBack">pagePushBack</a></b>(page)
+								</div>
+								<div class="description">Adds a page to the end of a document's page sequence.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#pagePushFront">pagePushFront</a></b>(page)
+								</div>
+								<div class="description">Adds a page to the beginning of a document's page sequence.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#pageRemove">pageRemove</a></b>(page_itr)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#refreshFieldAppearances">refreshFieldAppearances</a></b>()
+								</div>
+								<div class="description">Regenerates the appearance stream for every widget annotation in the document Call this method if you modified field's value and would like to update field's appearances.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#removePageLabel">removePageLabel</a></b>(page_num)
+								</div>
+								<div class="description">removes the page label that is attached to the specified page, effectively merging the specified range with the previous page label sequence.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#removeSecurity">removeSecurity</a></b>()
+								</div>
+								<div class="description">This function removes document security.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#removeSignatureHandler">removeSignatureHandler</a></b>(signature_handler_id)
+								</div>
+								<div class="description">Removes a signature handler from the signature manager.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#requirePage">requirePage</a></b>(page_number)
+								</div>
+								<div class="description">WebViewer only - Ensures that a particular page of the pdf document is finished loading before reading or writing from it.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#saveMemoryBuffer">saveMemoryBuffer</a></b>(flags)
+								</div>
+								<div class="description">Saves the document to a memory buffer.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#saveStream">saveStream</a></b>(stream, flags, progress, header)
+								</div>
+								<div class="description">Saves the document to a stream.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#setOpenAction">setOpenAction</a></b>(action)
+								</div>
+								<div class="description">Sets the Action that will be triggered when the document is opened.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#setPageLabel">setPageLabel</a></b>(page_num, label)
+								</div>
+								<div class="description">attaches a label to a page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#setSecurityHandler">setSecurityHandler</a></b>(handler)
+								</div>
+								<div class="description">The function sets a new SecurityHandler as the current security handler.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#timedLock">timedLock</a></b>(milliseconds)
+								</div>
+								<div class="description">Try locking the document, waiting no longer than specified number of milliseconds.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#timedLockRead">timedLockRead</a></b>(milliseconds)
+								</div>
+								<div class="description">Tries to obtain a read lock the document for <milliseconds> duration, and returns true if the lock was successfully acquired</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#tryLock">tryLock</a></b>()
+								</div>
+								<div class="description">Try locking the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#tryLockRead">tryLockRead</a></b>()
+								</div>
+								<div class="description">Tries to obtain a read lock the document and returns true if the lock was successfully acquired</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#unlock">unlock</a></b>()
+								</div>
+								<div class="description">Removes the lock from the document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.PDFDoc.html#unlockRead">unlockRead</a></b>()
+								</div>
+								<div class="description">Removes the read lock from the document.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.PDFDoc</b>(id)
+				</div>
+				
+				<div class="description">
+					PDFDoc is a high-level class describing a single PDF (Portable Document Format) document. Most applications using PDFNet will use this class to open existing PDF documents, or to create new PDF documents from scratch.The class offers a number of entry points into the document. For example, - To access pages use pdfdoc.GetPageIterator() or pdfdoc.PageFind(page_num). - To access form fields use pdfdoc.GetFieldIterator() or pdfdoc.FieldFind(name). - To access document's meta-data use pdfdoc.GetDocInfo(). - To access the outline tree use pdfdoc.GetFirstBookmark(). - To access low-level Document Catalog use pdfdoc.GetRoot(). ...The class also offers utility methods to slit and merge PDF pages, to create new pages, to flatten forms, to change security settings, etc.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="addFileAttachment"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addFileAttachment</b>(file_key, embedded_file)
+					
+					</div>
+					<div class="description">
+						Associates a file attachment with the document. The file attachment will be displayed in the user interface of a viewer application (in Acrobat this is File Attachment tab). The function differs from  Annot.CreateFileAttachment() because it associates the attachment with the whole document instead of an annotation on a specific page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>file_key</b>
+									
+								</dt>
+								<dd>A key/name under which the attachment will be stored.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{FileSpec}</span> <b>embedded_file</b>
+									
+								</dt>
+								<dd>Embedded file stream</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addHighlights"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addHighlights</b>(hilite)
+					
+					</div>
+					<div class="description">
+						addHighlights is used to highlight text in a document using 'Adobe's Highlight File Format' (Technical Note #5172 ). The method will parse the character offset dataand modify the current document by adding new highlight annotations.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>hilite</b>
+									
+								</dt>
+								<dd>a string representing the filename for the highlight file or or a data buffer containing XML data.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addRootBookmark"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>addRootBookmark</b>(root_bookmark)
+					
+					</div>
+					<div class="description">
+						Adds/links the specified Bookmark to the root level of document's outline tree.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Bookmark}</span> <b>root_bookmark</b>
+									
+								</dt>
+								<dd>Bookmark to Add/link</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="addSignatureHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>addSignatureHandler</b>(signature_handler)
+					
+					</div>
+					<div class="description">
+						Adds a signature handler to the signature manager.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SignatureHandler}</span> <b>signature_handler</b>
+									
+								</dt>
+								<dd>The signature handler instance to add to the signature manager.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to a unique ID representing the SignatureHandler within the SignatureManager.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addStdSignatureHandlerFromBuffer"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>addStdSignatureHandlerFromBuffer</b>(pkcs12_buffer, pkcs12_pass)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>pkcs12_buffer</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>pkcs12_pass</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> A promise that resolves to an unknown type (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="addStdSignatureHandlerFromURL"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>addStdSignatureHandlerFromURL</b>(pkcs12_file, pkcs12_pass)
+					
+					</div>
+					<div class="description">
+						Adds a standard (built-in) signature handler to the signature manager. This method will use cryptographicalgorithm based on Adobe.PPKLite/adbe.pkcs7.detached filter to sign a PDF.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>pkcs12_file</b>
+									
+								</dt>
+								<dd>The private key certificate store to use.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>pkcs12_pass</b>
+									
+								</dt>
+								<dd>The passphrase for the provided private key.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to a unique ID representing the SignatureHandler within the SignatureManager.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".create"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{PDFDoc}</span>
+					<span class="light">PDFNet.PDFDoc.</span><b>create</b>()
+					
+					</div>
+					<div class="description">
+						Default constructor. Creates an empty new document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDoc}</span> A promise that resolves to an object of type: "PDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromBuffer"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{PDFDoc}</span>
+					<span class="light">PDFNet.PDFDoc.</span><b>createFromBuffer</b>(buf)
+					
+					</div>
+					<div class="description">
+						Open a SDF/Cos document from a memory buffer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>buf</b>
+									
+								</dt>
+								<dd>a memory buffer containing the serialized document</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDoc}</span> A promise that resolves to an object of type: "PDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromFilter"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{PDFDoc}</span>
+					<span class="light">PDFNet.PDFDoc.</span><b>createFromFilter</b>(stream)
+					
+					</div>
+					<div class="description">
+						Open an existing PDF document
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>stream</b>
+									
+								</dt>
+								<dd>input stream containing a serialized document. The input stream may be a random-access file, memory buffer, slow HTTP connection etc.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDoc}</span> A promise that resolves to an object of type: "PDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectArray"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectArray</b>()
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect array objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect array object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectBool"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectBool</b>(value)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect boolean objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>value</b>
+									
+								</dt>
+								<dd>the value with which to create the boolean object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect boolean object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectDict"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectDict</b>()
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect dict objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect dict object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectName"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectName</b>(name)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect name object Unlike direct objects, indirect objects can be referenced by more than one object (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>name</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectNull"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectNull</b>()
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect null objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect null object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectNumber"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectNumber</b>(value)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect number objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>value</b>
+									
+								</dt>
+								<dd>the value with which to create the number object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect number object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStream"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStream</b>(data, data_size, filter_chain)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect stream objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>data</b>
+									
+								</dt>
+								<dd>pointer to string with which to create the stream object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>data_size</b>
+									
+								</dt>
+								<dd>length of string.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>filter_chain</b>
+									
+								</dt>
+								<dd>filter object with which to create the stream object. Defaults to Filters::Filter(0,false)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect stream object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStreamFromFilter"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStreamFromFilter</b>(data, filter_chain)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect stream objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FilterReader}</span> <b>data</b>
+									
+								</dt>
+								<dd>reference to a FilterReader object with which to create the stream object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>filter_chain</b>
+									
+								</dt>
+								<dd>filter object with which to create the stream object. Defaults to Filters::Filter(0,false)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect stream object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectString</b>(value, buf_size)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect string objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>value</b>
+									
+								</dt>
+								<dd>Unsigned char pointer with which to create the string object.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>buf_size</b>
+									
+								</dt>
+								<dd>length of string.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect string object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createIndirectStringFromUString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>createIndirectStringFromUString</b>(str)
+					
+					</div>
+					<div class="description">
+						This method creates an SDF/Cos indirect string objectUnlike direct objects, indirect objects can be referenced by more than oneobject (i.e. indirect objects can be shared).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>str</b>
+									
+								</dt>
+								<dd>reference to string with which to create the string object.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to returns a new indirect string object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="createShallowCopy"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{PDFDoc}</span>
+					<b>createShallowCopy</b>()
+					
+					</div>
+					<div class="description">
+						Copy Constructor
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDoc}</span> A promise that resolves to an object of type: "PDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="destroy"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>destroy</b>()
+					
+					</div>
+					<div class="description">
+						Destructor
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="fdfExtract"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{FDFDoc}</span>
+					<b>fdfExtract</b>(flag)
+					
+					</div>
+					<div class="description">
+						Extract form data and/or annotations to FDF
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies extract options</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{FDFDoc}</span> A promise that resolves to a pointer to the newly created FDF file with an interactive data.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="fdfExtractAnnots"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{FDFDoc}</span>
+					<b>fdfExtractAnnots</b>(annot_buf)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>annot_buf</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{FDFDoc}</span> A promise that resolves to an object of type: "FDFDoc" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="fdfExtractPageSet"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{FDFDoc}</span>
+					<b>fdfExtractPageSet</b>(pages_to_extract, flag)
+					
+					</div>
+					<div class="description">
+						Extract form data and/or annotations to FDF
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{PageSet}</span> <b>pages_to_extract</b>
+									
+								</dt>
+								<dd>The set of pages for which to extract interactive data.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies extract options</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{FDFDoc}</span> A promise that resolves to a pointer to the newly created FDF file with an interactive data.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="fdfMerge"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>fdfMerge</b>(fdf_doc)
+					
+					</div>
+					<div class="description">
+						Import form data from FDF file to PDF interactive form.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{FDFDoc}</span> <b>fdf_doc</b>
+									
+								</dt>
+								<dd>a pointer to the FDF file</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="fieldCreate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{field}</span>
+					<b>fieldCreate</b>(field_name, type, field_value, def_field_value)
+					
+					</div>
+					<div class="description">
+						Create a new interactive form Field.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>field_name</b>
+									
+								</dt>
+								<dd>a string representing the fully qualified name of the field (e.g. "employee.name.first"). field_name must be either a unique name or equal to an existing terminal field name.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>type</b>
+									
+								</dt>
+								<dd>field type (e.g. Field::e_text, Field::e_button, etc.)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj [Y]}</span> <b>field_value</b>
+									
+								</dt>
+								<dd></dd>
+							
+								<dt>
+									<span class="light fixedFont">{Obj [Y]}</span> <b>def_field_value</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{field}</span> A promise that resolves to the new form Field.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="fieldCreateFromStrings"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{field}</span>
+					<b>fieldCreateFromStrings</b>(field_name, type, field_value, def_field_value)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>field_name</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>type</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.Field.Type = {	e_button : 0	e_check : 1	e_radio : 2	e_text : 3	e_choice : 4	e_signature : 5	e_null : 6}</pre></dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>field_value</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>def_field_value</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{field}</span> A promise that resolves to an object of type: "field" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="flattenAnnotations"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>flattenAnnotations</b>(forms_only)
+					
+					</div>
+					<div class="description">
+						Flatten all annotations in the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>forms_only</b>
+									
+								</dt>
+								<dd>if false flatten all annotations, otherwise flattenonly form fields.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="flattenAnnotationsAdvanced"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>flattenAnnotationsAdvanced</b>(flags)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flags</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="generateThumbnails"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>generateThumbnails</b>(size)
+					
+					</div>
+					<div class="description">
+						Generates thumbnail images for all the pages in this PDF document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>size</b>
+									
+								</dt>
+								<dd>The maximum dimension (width or height) that thumbnails will have.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAcroForm"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getAcroForm</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the AcroForm dictionary located in "/Root" or NULL if dictionary is not present.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDocInfo"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{PDFDocInfo}</span>
+					<b>getDocInfo</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDocInfo}</span> A promise that resolves to the class representing document information metadata.(i.e. entries in the document information dictionary).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getField"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{field}</span>
+					<b>getField</b>(field_name)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>field_name</b>
+									
+								</dt>
+								<dd>a string representing the fully qualified name of the field (e.g. "employee.name.first").</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{field}</span> A promise that resolves to a FieldIterator referring to an interactive Fieldor to invalid field if the field name was not found. If a given field name was not found itr.HasNext() will return false. For example:</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFieldIterator"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Iterator}</span>
+					<b>getFieldIterator</b>(field_name)
+					
+					</div>
+					<div class="description">
+						An interactive form (sometimes referred to as an AcroForm) is acollection of fields for gathering information interactively from the user. A PDF document may contain any number of fields appearing on any combination of pages, all of which make up a single, global interactive form spanning the entire document.The following methods are used to access and manipulate Interactive form fields (sometimes referred to as AcroForms).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>field_name</b>
+									
+								</dt>
+								<dd>String representing the name of the field to get.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Iterator}</span> an iterator to the first Field in the document.The list of all Fields present in the document can be traversed as follows:</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFieldIteratorBegin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Iterator}</span>
+					<b>getFieldIteratorBegin</b>()
+					
+					</div>
+					<div class="description">
+						An interactive form (sometimes referred to as an AcroForm) is acollection of fields for gathering information interactively from the user. A PDF document may contain any number of fields appearing on any combination of pages, all of which make up a single, global interactive form spanning the entire document.The following methods are used to access and manipulate Interactive form fields (sometimes referred to as AcroForms).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Iterator}</span> A promise that resolves to an iterator to the first Field in the document.The list of all Fields present in the document can be traversed as follows:</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFirstBookmark"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Bookmark}</span>
+					<b>getFirstBookmark</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Bookmark}</span> A promise that resolves to the first Bookmark from the document's outline tree. If the Bookmark tree is empty the underlying SDF/Cos Object is null and returnedBookmark is not valid (i.e. Bookmark::IsValid() returns false).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getOCGConfig"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{OCGConfig}</span>
+					<b>getOCGConfig</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{OCGConfig}</span> A promise that resolves to the default optional-content configuration for the document from the OCProperties D entry.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getOCGs"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getOCGs</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the Obj array that contains optional-content groups (OCGs) for the document, or NULL if the document does not contain any OCGs. The order of the groups is not guaranteed to be the creation order, and is not the same as the display order.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getOpenAction"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Action}</span>
+					<b>getOpenAction</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Action}</span> A promise that resolves to action that is triggered when the document is opened.The returned action can be either a destination or some other kind of Action (see Section 8.5, 'Actions' in PDF Reference Manual).</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Page}</span>
+					<b>getPage</b>(page_number)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_number</b>
+									
+								</dt>
+								<dd>the page number in document's page sequence. Page numbers in document's page sequence are indexed from 1.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Page}</span> A promise that resolves to a Page corresponding to a given page number, or null (invalid page)if the document does not contain the given page number.For example:</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageCount"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getPageCount</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the number of pages in the document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageIterator"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Iterator}</span>
+					<b>getPageIterator</b>(page_number)
+					
+					</div>
+					<div class="description">
+						Use the Next() method on the returned iterator to traverse all pages in the document. For example:
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_number</b>
+									
+								</dt>
+								<dd>page to set the iterator on. 1 corresponds to the first page.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Iterator}</span> A promise that resolves to an iterator to the first page in the document.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPageLabel"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{pagelabel}</span>
+					<b>getPageLabel</b>(page_num)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_num</b>
+									
+								</dt>
+								<dd>The page number. Because PDFNet indexes pages starting from 1, page_num must be larger than 0.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{pagelabel}</span> A promise that resolves to the PageLabel that is in effect for the given page. If there is no label object in effect, this method returns aninvalid page label object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPages"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getPages</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to A dictionary representing the root of the low level page-tree</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRoot"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getRoot</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to A dictionary representing the Cos root of the document (/Root entry within the trailer dictionary)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSDFDoc"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{SDFDoc}</span>
+					<b>getSDFDoc</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{SDFDoc}</span> A promise that resolves to document's SDF/Cos document</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{SecurityHandler}</span>
+					<b>getSecurityHandler</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{SecurityHandler}</span> A promise that resolves to currently selected SecurityHandler.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSignatureHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{SignatureHandler}</span>
+					<b>getSignatureHandler</b>(signature_handler_id)
+					
+					</div>
+					<div class="description">
+						Gets the associated signature handler instance from the signature manager by looking it up with the handler name.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>signature_handler_id</b>
+									
+								</dt>
+								<dd>The unique id of the signature handler to get.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{SignatureHandler}</span> A promise that resolves to the signature handler instance if found, otherwise NULL.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStructTree"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{STree}</span>
+					<b>getStructTree</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{STree}</span> A promise that resolves to the document's logical structure tree root.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTrailer"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getTrailer</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to A dictionary representing the Cos root of the document (document's trailer)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTriggerAction"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getTriggerAction</b>(trigger)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>trigger</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.PDFDoc.EventType = {	e_action_trigger_doc_will_close : 17	e_action_trigger_doc_will_save : 18	e_action_trigger_doc_did_save : 19	e_action_trigger_doc_will_print : 20	e_action_trigger_doc_did_print : 21}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getViewPrefs"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{PDFDocViewPrefs}</span>
+					<b>getViewPrefs</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{PDFDocViewPrefs}</span> A promise that resolves to viewer preferences for this document.PDFDocViewPrefs is a high-level utility class that can be used to control the way the document is to be presented on the screen or in print.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="hasOC"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>hasOC</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the optional content (OC) feature is associated with the document. The document is considered to have optional content if there is an OCProperties dictionary in the document's catalog, and that dictionary has one or more entries in the OCGs array.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="hasSignatures"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>hasSignatures</b>()
+					
+					</div>
+					<div class="description">
+						Indicates whether this documents contains any digital signatures.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if a digital signature is found in this PDFDoc.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="importPages"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Page}</span>
+					<b>importPages</b>(pages, import_bookmarks)
+					
+					</div>
+					<div class="description">
+						The function imports a list of pages to this document. Although a list of pages can be imported using repeated calls to PageInsert(), PageImport will not import duplicate copies of resources that are shared across pages (such as fonts, images, colorspaces etc). Therefore this method is recommended when a page import list consists of several pages that share the same resources.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array [Y]}</span> <b>pages</b>
+									
+								</dt>
+								<dd>A list of pages to import. All pages should belong to the same source document.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>import_bookmarks</b>
+									
+								</dt>
+								<dd>An optional flag specifying whether any bookmark items pointing to pages in the import list should be merged with the target (i.e. this) document.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Page}</span> A promise that resolves to a list of imported pages. Note that imported pages are not placed in the document page sequence. This can be done using methods such as PageInsert(), PagePushBack(), etc.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initSecurityHandler</b>(custom_data)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler. This version of InitSecurityHandler() works with Standard and Custom PDF security and can be used in situations where the password is obtained dynamically via user feedback. See EncTest sample for example code.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized it can be later obtainedusing GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<b>custom_data</b>
+									
+								</dt>
+								<dd></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> true if the SecurityHandler was successfully initialized (this may include authentication data collection, verification etc.), false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initStdSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initStdSecurityHandler</b>(password, password_sz)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler using the supplied password. This version of InitSecurityHandler() assumes that document uses Standard security and that a password is specified directly.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized, it can be later obtained using GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>password</b>
+									
+								</dt>
+								<dd>Specifies the password used to open the document without any user feedback. If you would like to dynamically obtain the password, you need to derive a custom class from StdSecurityHandler() and use InitSecurityHandler() without any parameters. See EncTest sample for example code.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>password_sz</b>
+									
+								</dt>
+								<dd>An optional parameter used to specify the size of the password buffer, in bytes. If the 'password_sz' is 0, or if the parameter is not specified, the function assumes that the string is null terminated.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the given password successfully unlocked the document,false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initStdSecurityHandlerBuffer"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>initStdSecurityHandlerBuffer</b>(password_buf)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler using the supplied password. This version of InitSecurityHandler() assumes that document uses Standard security and that a password is specified directly.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized, it can be later obtained using GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Array}</span> <b>password_buf</b>
+									
+								</dt>
+								<dd>Specifies the password used to open the document withoutany user feedback. If you would like to dynamically obtain the password,you need to derive a custom class from StdSecurityHandler() and useInitSecurityHandler() without any parameters. See EncTest samplefor example code.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> true if the given password successfully unlocked the document,false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="initStdSecurityHandlerUString"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>initStdSecurityHandlerUString</b>(password)
+					
+					</div>
+					<div class="description">
+						Initializes document's SecurityHandler using the supplied password. This version of InitSecurityHandler() assumes that document uses Standard security and that a password is specified directly.This function should be called immediately after an encrypted document is opened. The function does not have any side effects on documents that are not encrypted.If the security handler was successfully initialized, it can be later obtained using GetSecurityHandler() method.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>password</b>
+									
+								</dt>
+								<dd>Specifies the password used to open the document withoutany user feedback. If you would like to dynamically obtain the password,you need to derive a custom class from StdSecurityHandler() and useInitSecurityHandler() without any parameters. See EncTest samplefor example code.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the given password successfully unlocked the document,false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="insertPages"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>insertPages</b>(insert_before_page_number, src_doc, start_page, end_page, flag)
+					
+					</div>
+					<div class="description">
+						Inserts a range of pages from specified PDFDoc
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>insert_before_page_number</b>
+									
+								</dt>
+								<dd>the destination of the insertion. If less than or equal to 1, the pages are added to the beginning of the document. If larger than the number of pages in the destination document, the pages are appended to the document.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PDFDoc}</span> <b>src_doc</b>
+									
+								</dt>
+								<dd>source PDFDoc to insert from</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>start_page</b>
+									
+								</dt>
+								<dd>start of the page number to insert</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>end_page</b>
+									
+								</dt>
+								<dd>end of the page number to insert</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies insert options</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="insertPageSet"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>insertPageSet</b>(insert_before_page_number, src_doc, source_page_set, flag)
+					
+					</div>
+					<div class="description">
+						Inserts a range of pages from specified PDFDoc using PageSet
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>insert_before_page_number</b>
+									
+								</dt>
+								<dd>the destination of the insertion. If less than or equal to 1, the pages are added to the beginning of the document. If larger than the number of pages in the destination document, the pages are appended to the document.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PDFDoc}</span> <b>src_doc</b>
+									
+								</dt>
+								<dd>source PDFDoc to insert from</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PageSet}</span> <b>source_page_set</b>
+									
+								</dt>
+								<dd>a collection of the page number to insert</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies insert options</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="isEncrypted"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isEncrypted</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is/was originally encrypted false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isLinearized"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isLinearized</b>()
+					
+					</div>
+					<div class="description">
+						Call this function to determine whether the document is represented in linearized (fast web view) format.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if document is stored in fast web view format, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isModified"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isModified</b>()
+					
+					</div>
+					<div class="description">
+						Call this function to determine whether the document has been modified since it was last saved.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if document was modified, false otherwise</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isTagged"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isTagged</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if this document is marked as Tagged PDF, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="lock"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>lock</b>()
+					
+					</div>
+					<div class="description">
+						Locks the document to prevent competing threads from accessing the document at the same time. Threads attempting to access the document will wait in suspended state until the thread that owns the lock calls doc.Unlock().
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="lockRead"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>lockRead</b>()
+					
+					</div>
+					<div class="description">
+						Locks the document to prevent competing write threads (using Lock()) from accessing the document at the same time. Other reader threads however, will be allowed to access the document.Threads attempting to obtain write access to the document will wait in suspended state until the thread that owns the lock calls doc.UnlockRead().Note: To avoid deadlocks obtaining a write lock while holdinga read lock is not permitted and will throw an exception. If this situation is encounteredplease either unlock the read lock before the write lock is obtainedor acquire a write lock (rather than read lock) in the first place.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="movePages"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>movePages</b>(move_before_page_number, src_doc, start_page, end_page, flag)
+					
+					</div>
+					<div class="description">
+						Moves a range of pages from specified PDFDoc. Pages are deleted from source document after move.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>move_before_page_number</b>
+									
+								</dt>
+								<dd>the destination of the move. If less than or equal to 1, the pages are moved to the beginning of the document. If larger than the number of pages in the destination document, the pages are moved to the end of the document.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PDFDoc}</span> <b>src_doc</b>
+									
+								</dt>
+								<dd>source PDFDoc to move from</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>start_page</b>
+									
+								</dt>
+								<dd>start of the page number to move</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>end_page</b>
+									
+								</dt>
+								<dd>end of the page number to move</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies insert options	 * @note MovePages function does not save src_doc. It merely delete pages in memeory. For permanent changes,PDFDoc::Save should be used to save src_doc after function exists.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="movePageSet"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>movePageSet</b>(move_before_page_number, src_doc, source_page_set, flag)
+					
+					</div>
+					<div class="description">
+						Moves a range of pages from specified PDFDoc. Pages are deleted from source document after move.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>move_before_page_number</b>
+									
+								</dt>
+								<dd>the destination of the move. If less than or equal to 1, the pages are moved to the beginning of the document. If larger than the number of pages in the destination document, the pages are moved to the end of the document.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PDFDoc}</span> <b>src_doc</b>
+									
+								</dt>
+								<dd>source PDFDoc to move from</dd>
+							
+								<dt>
+									<span class="light fixedFont">{PageSet}</span> <b>source_page_set</b>
+									
+								</dt>
+								<dd>a collection of the page number to move</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>specifies insert options	 * @note MovePages function does not save src_doc. It merely delete pages in memeory. For permanent changes,PDFDoc::Save should be used to save src_doc after function exists.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pageCreate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Page}</span>
+					<b>pageCreate</b>(media_box)
+					
+					</div>
+					<div class="description">
+						Create a new, empty page in the document. You can use PageWriter to fill the page with new content. Finally the page should be inserted at specific place within document page sequence using PageInsert/PagePushFront/PagePushBackmethods.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{rect}</span> <b>media_box</b>
+									
+								</dt>
+								<dd>A rectangle, expressed in default user space units, defining the boundaries of the physical medium on which the page is intended to be displayed or printed. A user space units is 1/72 of an inch. If media_box is not specified the default dimensions of the page are 8.5 x 11 inches (or 8.5*72, 11*72 units). <p>The following is a listing of some standard U.S. page sizes:</p> <ul>   <li>Letter    = Rect(0, 0, 612, 792)   <li>Legal	    = Rect(0, 0, 612, 1008)   <li>Ledger	= Rect(0, 0, 1224, 792)   <li>Tabloid   = Rect(0, 0, 792, 1224)   <li>Executive	= Rect(0, 0, 522, 756)</ul><p>The following is a listing of ISO standard page sizes:</p> <ul>   <li> 4A0 = Rect(0, 0, 4768, 6741)    <li> 2A0 = Rect(0, 0, 3370, 4768)     <li> A0 =  Rect(0, 0, 2384, 3370)   <li> A1 =  Rect(0, 0, 1684, 2384)   <li> A2 =  Rect(0, 0, 1191, 1684)   <li> A3 =  Rect(0, 0, 842,  1191)   <li> A4 =  Rect(0, 0, 595,  842)   <li> A5 =  Rect(0, 0, 420,  595)   <li> A6 =  Rect(0, 0, 298,  420)   <li> A7 =  Rect(0, 0, 210,  298)   <li> A8 =  Rect(0, 0, 147,  210)   <li> A9 =  Rect(0, 0, 105,  147)   <li> A10 = Rect(0, 0, 74,   105)   <li> B0 =  Rect(0, 0, 2835, 4008)   <li> B1 =  Rect(0, 0, 2004, 2835)   <li> B2 =  Rect(0, 0, 1417, 2004)   <li> B3 =  Rect(0, 0, 1001, 1417)   <LI> B4 =  Rect(0, 0, 709,  1001)   <LI> B5 =  Rect(0, 0, 499,  709)   <LI> B6 =  Rect(0, 0, 354,  499)   <LI> B7 =  Rect(0, 0, 249,  354)   <LI> B8 =  Rect(0, 0, 176,  249)   <LI> B9 =  Rect(0, 0, 125,  176)   <li> B10 = Rect(0, 0, 88,   125)   <li> C0 =  Rect(0, 0, 2599, 3677)   <li> C1 =  Rect(0, 0, 1837, 2599)   <li> C2 =  Rect(0, 0, 1298, 1837)   <li> C3 =  Rect(0, 0, 918,  1298)   <li> C4 =  Rect(0, 0, 649,  918)   <li> C5 =  Rect(0, 0, 459,  649)   <li> C6 =  Rect(0, 0, 323,  459)   <li> C7 =  Rect(0, 0, 230,  323)   <li> C8 =  Rect(0, 0, 162,  230)   <li> C9 =  Rect(0, 0, 113,  162)   <li>C10 =  Rect(0, 0, 79,   113)</ul></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Page}</span> A promise that resolves to a new, empty page.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="pageInsert"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pageInsert</b>(where, page)
+					
+					</div>
+					<div class="description">
+						Insert/Import a single page at a specific location in the page sequence.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Iterator}</span> <b>where</b>
+									
+								</dt>
+								<dd>The location in the page sequence indicating where to insert the page. The page is inserted before the specified location.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{Page}</span> <b>page</b>
+									
+								</dt>
+								<dd>A page to insert.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pagePushBack"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pagePushBack</b>(page)
+					
+					</div>
+					<div class="description">
+						Adds a page to the end of a document's page sequence.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Page}</span> <b>page</b>
+									
+								</dt>
+								<dd>a page to append to the document</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pagePushFront"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pagePushFront</b>(page)
+					
+					</div>
+					<div class="description">
+						Adds a page to the beginning of a document's page sequence.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Page}</span> <b>page</b>
+									
+								</dt>
+								<dd>a page to prepend to the documentInvalidates all PageIterators pointing to the document.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pageRemove"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>pageRemove</b>(page_itr)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Iterator}</span> <b>page_itr</b>
+									
+								</dt>
+								<dd>the PageIterator to the page that should be removedA PageIterator for the given page can be obtained using PDFDoc::Find(page_num) or using direct iteration through document's page sequence.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="refreshFieldAppearances"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>refreshFieldAppearances</b>()
+					
+					</div>
+					<div class="description">
+						Regenerates the appearance stream for every widget annotation in the document Call this method if you modified field's value and would like to update field's appearances.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removePageLabel"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removePageLabel</b>(page_num)
+					
+					</div>
+					<div class="description">
+						removes the page label that is attached to the specified page, effectively merging the specified range with the previous page label sequence.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_num</b>
+									
+								</dt>
+								<dd>The page from which the page label is removed.Because PDFNet indexes pages starting from 1, page_num must be larger than 0.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeSecurity"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeSecurity</b>()
+					
+					</div>
+					<div class="description">
+						This function removes document security.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeSignatureHandler"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeSignatureHandler</b>(signature_handler_id)
+					
+					</div>
+					<div class="description">
+						Removes a signature handler from the signature manager.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>signature_handler_id</b>
+									
+								</dt>
+								<dd>The unique id of the signature handler to remove.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="requirePage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>requirePage</b>(page_number)
+					
+					</div>
+					<div class="description">
+						WebViewer only - Ensures that a particular page of the pdf document is finished loading before reading or writing from it. Recommended to be called before runGeneratorWithCleanup/WithoutCleanup is called. If the page(s) to be edited cannot be known until during the execution of the PDFNetJS script, all operations will need to be unlockedwith PDFNet.finishOperation() and [PDFDoc].unlock() before [PDFDoc].requirePage() can be called, and relocked again with PDFNet.beginOperation() and [PDFDoc].lock()
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_number</b>
+									
+								</dt>
+								<dd>- The page to ensure completion of.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="saveMemoryBuffer"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>saveMemoryBuffer</b>(flags)
+					
+					</div>
+					<div class="description">
+						Saves the document to a memory buffer.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flags</b>
+									
+								</dt>
+								<dd>A bit field composed of an OR of SDFDoc::SaveOptions values. Note that this method ignores e_incremental flag.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="saveStream"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>saveStream</b>(stream, flags, progress, header)
+					
+					</div>
+					<div class="description">
+						Saves the document to a stream.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Filter}</span> <b>stream</b>
+									
+								</dt>
+								<dd>The output stream where to write data.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flags</b>
+									
+								</dt>
+								<dd>A bit field composed of an OR of the SDFDoc::SaveOptions values.</dd>
+							
+								<dt>
+									<b>progress</b>
+									
+								</dt>
+								<dd>A pointer to the progress interface. NULL if progress tracking is not required.</dd>
+							
+								<dt>
+									<b>header</b>
+									
+								</dt>
+								<dd>File header. A new file header is set only during full save. See also GetHeader()</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOpenAction"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOpenAction</b>(action)
+					
+					</div>
+					<div class="description">
+						Sets the Action that will be triggered when the document is opened.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Action}</span> <b>action</b>
+									
+								</dt>
+								<dd>A new Action that will be triggered when the document is opened.An example of such action is a GoTo Action that takes the user to a given location in the document.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPageLabel"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPageLabel</b>(page_num, label)
+					
+					</div>
+					<div class="description">
+						attaches a label to a page. This establishes the numbering scheme for that page and all following it, until another page label is encountered. This label allows PDF producers to define a page numbering system other than the default.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>page_num</b>
+									
+								</dt>
+								<dd>The number of the page to label. If page_num is less than 1 or greater than the number of pages in the document, the method does nothing.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{pagelabel}</span> <b>label</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setSecurityHandler"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setSecurityHandler</b>(handler)
+					
+					</div>
+					<div class="description">
+						The function sets a new SecurityHandler as the current security handler.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SecurityHandler}</span> <b>handler</b>
+									
+								</dt>
+								<dd>new SecurityHandler</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="timedLock"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>timedLock</b>(milliseconds)
+					
+					</div>
+					<div class="description">
+						Try locking the document, waiting no longer than specified number of milliseconds.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>milliseconds</b>
+									
+								</dt>
+								<dd>max number of milliseconds to wait for the document to lock</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="timedLockRead"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>timedLockRead</b>(milliseconds)
+					
+					</div>
+					<div class="description">
+						Tries to obtain a read lock the document for <milliseconds> duration, and returns true if the lock was successfully acquired
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>milliseconds</b>
+									
+								</dt>
+								<dd>duration to obtain a read lock for.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="tryLock"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>tryLock</b>()
+					
+					</div>
+					<div class="description">
+						Try locking the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="tryLockRead"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>tryLockRead</b>()
+					
+					</div>
+					<div class="description">
+						Tries to obtain a read lock the document and returns true if the lock was successfully acquired
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> true if the document is locked for multi-threaded access, false otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="unlock"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unlock</b>()
+					
+					</div>
+					<div class="description">
+						Removes the lock from the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="unlockRead"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>unlockRead</b>()
+					
+					</div>
+					<div class="description">
+						Removes the read lock from the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:35 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

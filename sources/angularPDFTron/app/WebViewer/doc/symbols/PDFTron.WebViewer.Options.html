@@ -1,0 +1,1652 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron PDFNet WebViewer Reference - PDFTron.WebViewer.Options</title>
+                <link rel="stylesheet" href="../../assets/treeview/jquery.treeview.css" />
+                <script src="../../assets/jquery-1.8.3.min.js" type="text/javascript"></script>
+                <script src="../../html5/assets/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../assets/treeview/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({persist: "location"});	
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewerJS API Reference v2.2.1</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/PDFTron.html">PDFTron</a></i><ul>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.html">.WebViewer</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.FitMode.html">.WebViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.LayoutMode.html">.WebViewer.LayoutMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.Options.html">.WebViewer.Options</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.ToolMode.html">.WebViewer.ToolMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.User.html">.WebViewer.User</a></li>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFTron.WebViewer.Options
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				Options for WebViewer on creation. Used when constructing a new <a href="../symbols/PDFTron.WebViewer.html">PDFTron.WebViewer</a> instance.
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;WebViewerJS\lib\WebViewer.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFTron.WebViewer.Options.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#constructor">PDFTron.WebViewer.Options</a></b>()
+							</div>
+							<div class="description"></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class PDFTron.WebViewer.Options.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#annotationAdmin">annotationAdmin</a></b>
+								</div>
+								<div class="description">a boolean indicating this user has permission to modify all annotations, even if the annotationUser and author does not match.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#annotationUser">annotationUser</a></b>
+								</div>
+								<div class="description">a user identifier for annotations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#autoCreate">autoCreate</a></b>
+								</div>
+								<div class="description">a boolean to control creating the viewer in the constructor.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#azureWorkaround">azureWorkaround</a></b>
+								</div>
+								<div class="description">whether or not to workaround the issue of Azure not accepting range requests of a certain type.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#backgroundColor">backgroundColor</a></b>
+								</div>
+								<div class="description">a string to set the background color of the inner page to (desktop only)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#cloudApiId">cloudApiId</a></b>
+								</div>
+								<div class="description">the share ID or session ID created from <a href="http://www.pdftron.com/pws/cloud" target="_blank">PWS Cloud</a>.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#config">config</a></b>
+								</div>
+								<div class="description">a URL path to a JavaScript configuration file that holds UI customizations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#custom">custom</a></b>
+								</div>
+								<div class="description">a string of custom data that can be retrieved by the ReaderControl</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#documentId">documentId</a></b>
+								</div>
+								<div class="description">an identifier for the document to be used with annotations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#documentType">documentType</a></b>
+								</div>
+								<div class="description">the type of document the viewer will be used with.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#enableAnnotations">enableAnnotations</a></b>
+								</div>
+								<div class="description">a boolean to enable annotations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#enableOfflineMode">enableOfflineMode</a></b>
+								</div>
+								<div class="description">a boolean to enable offline mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#enableReadOnlyMode">enableReadOnlyMode</a></b>
+								</div>
+								<div class="description">a boolean to enable annotations read-only mode.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#encryption">encryption</a></b>
+								</div>
+								<div class="description">an object containing encryption properties (XOD only)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#errorPage">errorPage</a></b>
+								</div>
+								<div class="description">a path to an HTML page to display errors.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#externalPath">externalPath</a></b>
+								</div>
+								<div class="description">the path to a xod document folder generated using the external parts option</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#hideAnnotationPanel">hideAnnotationPanel</a></b>
+								</div>
+								<div class="description">whether to hide the annotation panel or not.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#html5MobileOptions">html5MobileOptions</a></b>
+								</div>
+								<div class="description">a PDFTron.WebViewer.Options object that overrides the existing options when the Mobile viewer is loaded.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#html5MobilePath">html5MobilePath</a></b>
+								</div>
+								<div class="description">an alternative path to the Mobile WebViewer, relative to the "path" option.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#html5Options">html5Options</a></b>
+								</div>
+								<div class="description">a PDFTron.WebViewer.Options object that overrides the existing options when the viewer is loaded.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#html5Path">html5Path</a></b>
+								</div>
+								<div class="description">an alternative path to the WebViewer, relative to the "path" option.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#initialDoc">initialDoc</a></b>
+								</div>
+								<div class="description">the URL path to a xod document to load on startup</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#l">l</a></b>
+								</div>
+								<div class="description">the license key for viewing PDF files (PDF only)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#mobileRedirect">mobileRedirect</a></b>
+								</div>
+								<div class="description">a boolean indicating whether the mobile viewer should redirect to a new window or not (mobile only, default true)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#path">path</a></b>
+								</div>
+								<div class="description">an alternative path to the WebViewer root folder.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#pdfBackend">pdfBackend</a></b>
+								</div>
+								<div class="description">a string to control PDF engine ["auto", "ems", "pnacl"](PDF only, default "auto" chooses the best option availible)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#pdfnet">pdfnet</a></b>
+								</div>
+								<div class="description">a boolean to enable the use of PDFNet.js library functions (PDF only, default false)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#preloadPDFWorker">preloadPDFWorker</a></b>
+								</div>
+								<div class="description">a boolean to enable the preloading of the PDF worker files (PDF only, default true)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#serverUrl">serverUrl</a></b>
+								</div>
+								<div class="description">a URL to the server-side script that handles annotations.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#showLocalFilePicker">showLocalFilePicker</a></b>
+								</div>
+								<div class="description">a boolean to show/hide the local file picker (PDF only, default false)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#showPageHistoryButtons">showPageHistoryButtons</a></b>
+								</div>
+								<div class="description">a boolean to show/hide the page history buttons (default true)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#showToolbarControl">showToolbarControl</a></b>
+								</div>
+								<div class="description">a boolean to show/hide the default toolbar control.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#startOffline">startOffline</a></b>
+								</div>
+								<div class="description">whether to start loading the document in offline mode or not.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#streaming">streaming</a></b>
+								</div>
+								<div class="description">a boolean indicating whether to use http or streaming PartRetriever, it is recommended to keep streaming false for better performance.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#type">type</a></b>
+								</div>
+								<div class="description">the type of WebViewer to load.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#useDownloader">useDownloader</a></b>
+								</div>
+								<div class="description">enable or disable using Downloader on urls (PDF only, default true)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#workerTransportPromise">workerTransportPromise</a></b>
+								</div>
+								<div class="description">a promise that will resolve to a PDF worker, used if you already create a worker on the outer page and want to share it with the viewer (PDF only)</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.Options.html#xdomainProxyUrl">xdomainProxyUrl</a></b>
+								</div>
+								<div class="description">a URL to the proxy HTML file on the remote server when using the xdomain CORS workaround.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFTron.WebViewer.Options</b>()
+				</div>
+				
+				<div class="description">
+					
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name="annotationAdmin"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>annotationAdmin</b>
+					
+					</div>
+					<div class="description">
+						a boolean indicating this user has permission to modify all annotations, even if the annotationUser and author does not match.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="annotationUser"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>annotationUser</b>
+					
+					</div>
+					<div class="description">
+						a user identifier for annotations. All annotations created will have this as the author. It is used for permission checking: user only permitted to modify annotations where annotationUser and author matches.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="autoCreate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>autoCreate</b>
+					
+					</div>
+					<div class="description">
+						a boolean to control creating the viewer in the constructor. When set to false, invoke the create() method explicity. (default true)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								true
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="azureWorkaround"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>azureWorkaround</b>
+					
+					</div>
+					<div class="description">
+						whether or not to workaround the issue of Azure not accepting range requests of a certain type. Enabling the workaround will add an extra HTTP request of overhead but will still allow documents to be loaded from other locations.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="backgroundColor"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>backgroundColor</b>
+					
+					</div>
+					<div class="description">
+						a string to set the background color of the inner page to (desktop only)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="cloudApiId"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>cloudApiId</b>
+					
+					</div>
+					<div class="description">
+						the share ID or session ID created from <a href="http://www.pdftron.com/pws/cloud" target="_blank">PWS Cloud</a>. Note: the browser must have CORS support. (optional, ignored when initialDoc is also set)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="config"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>config</b>
+					
+					</div>
+					<div class="description">
+						a URL path to a JavaScript configuration file that holds UI customizations.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="custom"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>custom</b>
+					
+					</div>
+					<div class="description">
+						a string of custom data that can be retrieved by the ReaderControl
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="documentId"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>documentId</b>
+					
+					</div>
+					<div class="description">
+						an identifier for the document to be used with annotations. (required for full annotation support)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="documentType"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>documentType</b>
+					
+					</div>
+					<div class="description">
+						the type of document the viewer will be used with. Valid values are "xod" and "pdf". (default "xod")
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="enableAnnotations"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>enableAnnotations</b>
+					
+					</div>
+					<div class="description">
+						a boolean to enable annotations.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								false
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="enableOfflineMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>enableOfflineMode</b>
+					
+					</div>
+					<div class="description">
+						a boolean to enable offline mode.(default false)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="enableReadOnlyMode"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>enableReadOnlyMode</b>
+					
+					</div>
+					<div class="description">
+						a boolean to enable annotations read-only mode.(default false)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="encryption"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{object}</span>
+					<b>encryption</b>
+					
+					</div>
+					<div class="description">
+						an object containing encryption properties (XOD only)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="errorPage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>errorPage</b>
+					
+					</div>
+					<div class="description">
+						a path to an HTML page to display errors.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="externalPath"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>externalPath</b>
+					
+					</div>
+					<div class="description">
+						the path to a xod document folder generated using the external parts option
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="hideAnnotationPanel"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>hideAnnotationPanel</b>
+					
+					</div>
+					<div class="description">
+						whether to hide the annotation panel or not.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								false
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="html5MobileOptions"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/PDFTron.WebViewer.Options.html">PDFTron.WebViewer.Options</a>}</span>
+					<b>html5MobileOptions</b>
+					
+					</div>
+					<div class="description">
+						a PDFTron.WebViewer.Options object that overrides the existing options when the Mobile viewer is loaded.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="html5MobilePath"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>html5MobilePath</b>
+					
+					</div>
+					<div class="description">
+						an alternative path to the Mobile WebViewer, relative to the "path" option.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								"html5/MobileReaderControl.html"
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="html5Options"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{<a href="../symbols/PDFTron.WebViewer.Options.html">PDFTron.WebViewer.Options</a>}</span>
+					<b>html5Options</b>
+					
+					</div>
+					<div class="description">
+						a PDFTron.WebViewer.Options object that overrides the existing options when the viewer is loaded.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="html5Path"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>html5Path</b>
+					
+					</div>
+					<div class="description">
+						an alternative path to the WebViewer, relative to the "path" option.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								"html5/ReaderControl.html"
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="initialDoc"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>initialDoc</b>
+					
+					</div>
+					<div class="description">
+						the URL path to a xod document to load on startup
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="l"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>l</b>
+					
+					</div>
+					<div class="description">
+						the license key for viewing PDF files (PDF only)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="mobileRedirect"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>mobileRedirect</b>
+					
+					</div>
+					<div class="description">
+						a boolean indicating whether the mobile viewer should redirect to a new window or not (mobile only, default true)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								true
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="path"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>path</b>
+					
+					</div>
+					<div class="description">
+						an alternative path to the WebViewer root folder.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="pdfBackend"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>pdfBackend</b>
+					
+					</div>
+					<div class="description">
+						a string to control PDF engine ["auto", "ems", "pnacl"](PDF only, default "auto" chooses the best option availible)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								"auto"
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="pdfnet"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>pdfnet</b>
+					
+					</div>
+					<div class="description">
+						a boolean to enable the use of PDFNet.js library functions (PDF only, default false)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="preloadPDFWorker"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>preloadPDFWorker</b>
+					
+					</div>
+					<div class="description">
+						a boolean to enable the preloading of the PDF worker files (PDF only, default true)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="serverUrl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>serverUrl</b>
+					
+					</div>
+					<div class="description">
+						a URL to the server-side script that handles annotations. (required for full annotation support)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="showLocalFilePicker"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>showLocalFilePicker</b>
+					
+					</div>
+					<div class="description">
+						a boolean to show/hide the local file picker (PDF only, default false)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="showPageHistoryButtons"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>showPageHistoryButtons</b>
+					
+					</div>
+					<div class="description">
+						a boolean to show/hide the page history buttons (default true)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="showToolbarControl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>showToolbarControl</b>
+					
+					</div>
+					<div class="description">
+						a boolean to show/hide the default toolbar control.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="startOffline"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>startOffline</b>
+					
+					</div>
+					<div class="description">
+						whether to start loading the document in offline mode or not.(default false)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="streaming"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>streaming</b>
+					
+					</div>
+					<div class="description">
+						a boolean indicating whether to use http or streaming PartRetriever, it is recommended to keep streaming false for better performance.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								false
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="type"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>type</b>
+					
+					</div>
+					<div class="description">
+						the type of WebViewer to load. Values must be comma-separated in order of preferred WebViewer. (Possibe values: html5, html5Mobile)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Default Value:</dt>
+							<dd>
+								"html5,html5Mobile"
+							</dd>
+							</dl>
+						
+
+					<hr />
+				
+					<a name="useDownloader"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>useDownloader</b>
+					
+					</div>
+					<div class="description">
+						enable or disable using Downloader on urls (PDF only, default true)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="workerTransportPromise"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>workerTransportPromise</b>
+					
+					</div>
+					<div class="description">
+						a promise that will resolve to a PDF worker, used if you already create a worker on the outer page and want to share it with the viewer (PDF only)
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="xdomainProxyUrl"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>xdomainProxyUrl</b>
+					
+					</div>
+					<div class="description">
+						a URL to the proxy HTML file on the remote server when using the xdomain CORS workaround. Can also be an object to specify multiple URLs.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:54:01 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

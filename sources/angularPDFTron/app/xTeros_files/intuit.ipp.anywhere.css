@@ -1,0 +1,475 @@
+.intuitPlatformConnectButton, .intuitPlatformReconnectButton, #intuitPlatformAppMenu .intuitPlatformReconnectButton {
+	outline: none;
+	text-decoration: none;
+	border: none;
+	background: url(connect_to_quickbooks.png) no-repeat 0 0;
+	width: 107px;
+	height: 38px;
+	display: inline-block;
+	text-indent: -9000px;
+	text-transform: capitalize;
+}
+
+.intuitPlatformReconnectButton, #intuitPlatformAppMenu .intuitPlatformReconnectButton {
+	background: url(reconnect_to_quickbooks.png) no-repeat 0 0;
+}
+
+.intuitPlatformConnectButton:hover, .intuitPlatformReconnectButton:hover, #intuitPlatformAppMenu .intuitPlatformReconnectButton:hover {
+	background-position: 0 -39px;
+}
+
+#intuitPlatformAppMenu {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	z-index: 10000;
+}
+
+#intuitPlatformAppMenu * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-align: left;
+	text-decoration: none;
+	font-family: Arial, sans-serif !important;
+}
+
+a#intuitPlatformAppMenuLogo {
+	display: inline-block;
+	text-decoration: none;
+	width: 102px;
+	height: 28px;
+	background: url(intuitACNav.png) no-repeat 0 -40px;
+}
+
+a#intuitPlatformAppMenuLogo:hover {
+	background-position: 0 -85px;
+}
+
+#intuitPlatformAppMenuDot {
+	position: absolute;
+	right: -1px;
+	width: 32px;
+	height: 25px;
+	background: url(intuitACMenu.png) -380px 0 no-repeat;
+	display: none;
+}
+
+a#intuitPlatformAppMenuLogo.opened #intuitPlatformAppMenuDot {
+	display: block;
+}
+
+#intuitPlatformAppMenuDropdown {
+	position: absolute;
+	top: 25px;
+	right: -4px;
+	width: 207px;
+	padding: 0 0 45px 0;
+	background: url(intuitACMenu.png) -415px 100% no-repeat;
+	font: normal 12px/1.2em Arial, sans-serif;
+	color: #333;
+	z-index: 10000;
+}
+
+#intuitPlatformAppMenuDropdownTop {
+	height: 9px;
+	background: url(intuitACMenu.png) -208px -24px no-repeat
+}
+
+#intuitPlatformFindMoreIppApps {
+	font-weight: bold;
+	padding-bottom: 15px;
+	display:inline-block;
+}
+
+
+#intuitPlatformAppMenuDropdownInner {
+	background: url(intuitACMenu.png) -1px -7px repeat-y;
+	padding: 0 11px;
+	word-wrap: break-word;
+	min-height: 1px;
+}
+
+#intuitPlatformAppMenuDropdownInner span.intuitPlatformAppMenuDropdownHeader {
+	margin: 0 4px 0px 4px;
+	display: block;
+	padding: 2px 0 5px 0;
+}
+
+#intuitPlatformAppMenuDropdownInner ul {
+	list-style: none;
+	list-style-type: none;
+	padding: 0;
+	margin: 0px;
+}
+
+#intuitPlatformAppMenuDropdownInner ul:last-child {
+	border: none;
+}
+
+#intuitPlatformAppMenuDropdownInner ul li {
+	padding: 5px 4px;
+	margin: 0;
+}
+
+#intuitPlatformAppMenuDropdownInner ul li span {
+	padding: 0px;
+	margin: 0;
+}
+
+#intuitPlatformAppMenuDropdownInner span {
+	font-weight: bold;
+	padding: 5px 0;
+	margin: 0;
+}
+
+#intuitPlatformAppMenuDropdownInner div.intuitPlatformAppMenuDropdownSeparator {
+	background: url(intuitACMenu.png) no-repeat -633px 0px transparent;
+	height: 10px;
+}
+
+#intuitPlatformAppMenuDropdownInner a {
+	text-decoration: none;
+	color: #505050;
+}
+
+#intuitPlatformAppMenuDropdownInner a:hover {
+	text-decoration: underline;
+}
+
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li {
+	padding: 4px;
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li span {
+	padding: 4px 0 6px 0;
+	margin: 0 0 0 0;
+	background-repeat: no-repeat;
+	display: inline-block;
+	background: url(ippACMenuApp.png) 0 0 no-repeat;
+	width: 155px;
+}
+
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li span a {
+	background-repeat: no-repeat;
+	display: inline-block;
+	background-size: contain;
+	background-size: 16px 16px;
+}
+
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li.intuitPlatformAppMenuListSelected {
+	background: url(intuitACMenu.png) repeat-y -840px -1px transparent;
+}
+
+#intuitPlatformAppMenuDropdownInner a.intuitPlatformAppMenuDropdownAppLink {
+	max-width: 130px;
+	padding-left: 25px;
+	margin-left: 5px;
+}
+
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li span a.intuitPlatformAppMenuDropdownNewWindow {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	background: blue;
+	width: 13px;
+	height: 11px;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	display: none;
+	background: url(intuitACNav.png) 1px -285px no-repeat;
+}
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li:hover a.intuitPlatformAppMenuDropdownNewWindow {
+	display: inline-block;
+}
+#intuitPlatformAppMenuDropdownInner ul.intuitPlatformAppMenuDropdownAppsList li:hover a.intuitPlatformAppMenuDropdownNewWindow:hover {
+	background-position:1px -301px;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection .intuitPlatformSyncStatusGreen,
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection .intuitPlatformSyncStatusYellow,
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection .intuitPlatformSyncStatusRed {
+	padding-left: 20px;
+	min-height: 16px;
+	display: inline-block;
+	background: url(intuitACNav.png) 0 -319px no-repeat;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection .intuitPlatformSyncStatusYellow {
+	background: url(intuitACNav.png) 0 -340px no-repeat;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection .intuitPlatformSyncStatusRed {
+	background: url(intuitACNav.png) 0 -362px no-repeat;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection #intuitPlatformSyncStatus .intuitPlatformSyncStatusDropdownArrow {
+	background: url(intuitACNav.png) -109px -21px no-repeat;
+	width: 16px;
+	display: inline-block;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformSyncSection #intuitPlatformSyncStatusMenu {
+	padding-left: 20px;
+	display: none;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll {
+	clear: both;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollViewport {
+	height: 100px;
+	position: relative;
+	overflow: hidden;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollOverview {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollThumb .intuitPlatformAppMenuDropdownAppsListScrollEnd,
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollThumb {
+	background: #ccc;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollbar {
+	position: relative; float: right; width: 6px;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollTrack {
+	background: #eee; height: 100%; width: 6px; position: relative;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollThumb {
+	height: 20px; width: 6px; cursor: pointer; overflow: hidden; position: absolute; top: 0;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollThumb .intuitPlatformAppMenuDropdownAppsListScrollEnd {
+	overflow: hidden; height: 5px; width: 6px;
+}
+
+#intuitPlatformAppMenuDropdownInner #intuitPlatformAppMenuDropdownAppsListScroll .intuitPlatformAppMenuDropdownAppsListScrollDisable {
+	display: none;
+}
+
+/* LOGIN BUTTONS */
+.intuitPlatformLoginButtonVertical, .intuitPlatformLoginButtonHorizontal, .intuitPlatformLoginButtonLogo {
+	outline: none;
+	text-decoration: none;
+	border: none;
+	display: inline-block;
+	text-indent: -9000px;
+	text-transform: capitalize;
+}
+.intuitPlatformLoginButtonVertical { background: url(button_signinwithintuit_2line_small.png) no-repeat 0 0; width: 77px; height: 44px; }
+.intuitPlatformLoginButtonHorizontal { background: url(button_signinwithintuit_horiz_small.png) no-repeat 0 0; width: 117px; height: 25px; }
+.intuitPlatformLoginButtonLogo { background: url(button_signinwithintuit_logo_small.png) no-repeat 0 0; width: 74px; height: 34px; }
+
+/* POPUP */
+#intuitPlatformPopupWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 11101;
+	outline: none;
+	display: none;
+	margin: 20px;
+}
+#intuitPlatformPopup {	
+	background: white;
+	box-shadow: 0 0 30px #333;
+	border-radius: 7px 7px 5px 5px;
+}
+#intuitPlatformPopupOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 11100;
+	display: none;
+	background-color: #777;
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+#intuitPlatformPopupContent {
+	width: 703px;
+}
+
+#intuitPlatformPopupHeader {
+	background: #206DD0 url(intuit_logo.png) 20px 10px no-repeat;
+	padding-left: 83px;
+	height: 36px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+#intuitPlatformPopupInnerContent {
+	margin: 0 20px;
+}
+
+/* GENERIC BUTTONS */
+.intuitPlatformLargeButton, .intuitPlatformLargeButton .intuitPlatformLargeButtonWrapper {
+	background: url(buttons_large.png) no-repeat;
+	display: -moz-inline-box; /* for FF2 */
+	display: inline-block;
+}
+
+.intuitPlatformLargeButton .intuitPlatformLargeButtonWrapper button {
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: "Trebuchet MS"  !important;
+	padding: 2px 4px 7px 12px;
+	height: 40px;
+	font-size: 16px;
+	color: #fff;
+	margin: 0;
+}
+
+.intuitPlatformLargeButton { background-position: 100% -44px; }
+.intuitPlatformLargeButton .intuitPlatformLargeButtonWrapper { background-position: 0 -1px; margin: 0 8px 0 0; }
+
+.intuitPlatformLargeButton:hover { background-position: 100% -130px; }
+.intuitPlatformLargeButton:hover .intuitPlatformLargeButtonWrapper { background-position: 0 -87px; }
+
+.intuitPlatformLargeButton.intuitPlatformButtonOrange { background-position: 100% -218px; }
+.intuitPlatformLargeButton.intuitPlatformButtonOrange .intuitPlatformLargeButtonWrapper { background-position: 0 -175px; }
+.intuitPlatformLargeButton.intuitPlatformButtonOrange .intuitPlatformLargeButtonWrapper button { color: #4f4f4f; }
+.intuitPlatformLargeButton.intuitPlatformButtonOrange:hover { background-position: 100% -305px; }
+.intuitPlatformLargeButton.intuitPlatformButtonOrange:hover .intuitPlatformLargeButtonWrapper { background-position: 0 -262px; }
+
+#intuitPlatformPopupContent ul.intuitPlatformCheckmarkList { list-style-type: none; margin-left: 10px; margin-bottom: 10px; }
+#intuitPlatformPopupContent ul.intuitPlatformCheckmarkList li {
+	background: url(wp_assets.png) no-repeat 0 -938px transparent;
+    padding-left: 18px;
+    height: 18px;
+	margin: 0 0 6px 0 ;
+}
+
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphic {
+	width: 350px;
+	background: #E2E2E2 url(../Static/images/double_arrow.png) no-repeat center 39px;
+	margin: 0 auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphicQBIcon {
+	display: inline-block;
+	padding-top: 60px;
+	background: url(../Static/images/quickBooks_online.png) no-repeat center 0;
+	width: 120px;
+	margin: 20px 70px 20px 20px;
+	vertical-align: top;
+	text-align: center;
+}
+
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphicAppIcon {
+	margin: 20px 0 20px 0;
+	display: inline-block;
+	width: 120px;
+	background: transparent;
+	vertical-align: top;
+	text-align: center;
+}
+
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphicAppIcon img{
+	padding: 7px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 5px #888;
+	display: block;
+	margin: 0 auto;
+}
+
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphicQBIcon span,
+#intuitPlatformPopupContent #intuitPlatformSyncingGraphicAppIcon span {
+	display: inline-block;
+	margin-top: 3px;
+}
+
+
+#intuitPlatformCallout * {
+		text-align: center;
+}
+
+#intuitPlatformCallout {
+    position: absolute;
+    background-color: #FFFFCC;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+		border:1px solid #BEBE00;
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding-box;
+		background-clip: padding-box;
+		-moz-box-shadow:0px 2px 4px #888;  /* Firefox */
+		-webkit-box-shadow: 0px 2px 4px #333; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+		box-shadow: 3px 2px 6px #333; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+		-webkit-transform: rotate(-7.5deg); 
+		-moz-transform: rotate(-7.5deg); 
+		-ms-transform: rotate(-7.5deg);  
+		-o-transform: rotate(-7.5deg);  
+		transform: rotate(-7.5deg);
+		zoom: 1;
+		z-index: 99999;
+		width:220px;
+		right:20px;
+		padding:20px;
+		top:60px;
+		font-size: 14px;
+		line-height: 18px;
+		text-align: center;
+		font-family: Comic Sans MS;
+		color: #505050;
+}
+
+
+#intuitPlatformCallout .intuitPlatformCalloutPointer {
+	background: url(intuitACNav.png) repeat scroll 0 -388px transparent;
+		width: 37px;
+		height: 53px;
+		margin-top: -35px;
+		display: block;
+		position: absolute;
+		right:50px;
+		top: 0%;
+}
+
+#intuitPlatformCallout .close {
+	height:13px;
+	width:13px;
+	position:absolute;
+	right: 5px;
+	top:5px;
+	cursor: pointer;
+}
+
+#intuitPlatformCallout .intuit-bigText {
+	color: #505050;
+	font-size:18px;
+	height: auto;
+	line-height: 20px;
+	margin-bottom:5px;
+	font-weight: normal;
+	margin-top: 0;
+	padding:0;
+}

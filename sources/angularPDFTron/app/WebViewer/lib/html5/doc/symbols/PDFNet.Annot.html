@@ -1,0 +1,2915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron WebViewer HTML5 API Reference - PDFNet.Annot</title>
+                <link rel="stylesheet" href="../../external/jquery.treeview.css" />
+                <script src="../../external/jquery-1.7.2.min.js" type="text/javascript"></script>
+                <script src="../../external/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../external/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({ persist: "cookie", cookieId: "webviewer-html5-ref"});		
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewer HTML5 API Reference v2.2.1.49105</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/Actions.html">Actions</a></i><ul>
+	
+	<li><a href="../symbols/Actions.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/Actions.Dispatcher.html">.Dispatcher</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.html">.GoTo</a></li>
+	
+	<li><a href="../symbols/Actions.GoTo.Dest.html">.GoTo.Dest</a></li>
+	
+	<li><a href="../symbols/Actions.Hide.html">.Hide</a></li>
+	
+	<li><a href="../symbols/Actions.JavaScript.html">.JavaScript</a></li>
+	
+	<li><a href="../symbols/Actions.Named.html">.Named</a></li>
+	
+	<li><a href="../symbols/Actions.ResetForm.html">.ResetForm</a></li>
+	
+	<li><a href="../symbols/Actions.SubmitForm.html">.SubmitForm</a></li>
+	
+	<li><a href="../symbols/Actions.URI.html">.URI</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Annotations.html">Annotations</a></i><ul>
+	
+	<li><a href="../symbols/Annotations.Annotation.html">.Annotation</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxControlHandle.html">.BoxControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.BoxSelectionModel.html">.BoxSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.ButtonWidgetAnnotation.html">.ButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CalloutControlHandle.html">.CalloutControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.CaretAnnotation.html">.CaretAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.CheckButtonWidgetAnnotation.html">.CheckButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.ChoiceWidgetAnnotation.html">.ChoiceWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Color.html">.Color</a></li>
+	
+	<li><a href="../symbols/Annotations.ControlHandle.html">.ControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.EllipseAnnotation.html">.EllipseAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.html">.Forms</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.Field.html">.Forms.Field</a></li>
+	
+	<li><a href="../symbols/Annotations.Forms.FieldManager.html">.Forms.FieldManager</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeHandAnnotation.html">.FreeHandAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextAnnotation.html">.FreeTextAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.FreeTextSelectionModel.html">.FreeTextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.HTMLAnnotation.html">.HTMLAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.IPathAnnotation.html">.IPathAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineAnnotation.html">.LineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.LineControlHandle.html">.LineControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.LineSelectionModel.html">.LineSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Link.html">.Link</a></li>
+	
+	<li><a href="../symbols/Annotations.ListWidgetAnnotation.html">.ListWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.MarkupAnnotation.html">.MarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PathControlHandle.html">.PathControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PathSelectionModel.html">.PathSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonAnnotation.html">.PolygonAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonControlHandle.html">.PolygonControlHandle</a></li>
+	
+	<li><a href="../symbols/Annotations.PolygonSelectionModel.html">.PolygonSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.PolylineAnnotation.html">.PolylineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.PopupAnnotation.html">.PopupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.RadioButtonWidgetAnnotation.html">.RadioButtonWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/Annotations.RectangleAnnotation.html">.RectangleAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionAlgorithm.html">.SelectionAlgorithm</a></li>
+	
+	<li><a href="../symbols/Annotations.SelectionModel.html">.SelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.SignatureWidgetAnnotation.html">.SignatureWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StampAnnotation.html">.StampAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.StickyAnnotation.html">.StickyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextHighlightAnnotation.html">.TextHighlightAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextMarkupAnnotation.html">.TextMarkupAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSelectionModel.html">.TextSelectionModel</a></li>
+	
+	<li><a href="../symbols/Annotations.TextSquigglyAnnotation.html">.TextSquigglyAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextStrikeoutAnnotation.html">.TextStrikeoutAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextUnderlineAnnotation.html">.TextUnderlineAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.TextWidgetAnnotation.html">.TextWidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetAnnotation.html">.WidgetAnnotation</a></li>
+	
+	<li><a href="../symbols/Annotations.WidgetFlags.html">.WidgetFlags</a></li>
+	
+	</ul></li><li><a href="../symbols/BaseReaderControl.html">BaseReaderControl</a></li>
+	
+	<li><i><a href="../symbols/CoreControls.html">CoreControls</a></i><ul>
+	
+	<li><a href="../symbols/CoreControls.AnnotationManager.html">.AnnotationManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayMode.html">.DisplayMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModeManager.html">.DisplayModeManager</a></li>
+	
+	<li><a href="../symbols/CoreControls.DisplayModes.html">.DisplayModes</a></li>
+	
+	<li><a href="../symbols/CoreControls.Document.html">.Document</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.html">.DocumentViewer</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.FitMode.html">.DocumentViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchMode.html">.DocumentViewer.SearchMode</a></li>
+	
+	<li><a href="../symbols/CoreControls.DocumentViewer.SearchResults.html">.DocumentViewer.SearchResults</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PartRetrievers.html">PartRetrievers</a></i><ul>
+	
+	<li><a href="../symbols/PartRetrievers.AndroidContentPartRetriever.html">.AndroidContentPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.AzurePartRetriever.html">.AzurePartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.ExternalPdfPartRetriever.html">.ExternalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.HttpPartRetriever.html">.HttpPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.IOSPartRetriever.html">.IOSPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPartRetriever.html">.LocalPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.LocalPdfPartRetriever.html">.LocalPdfPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.StreamingPartRetriever.html">.StreamingPartRetriever</a></li>
+	
+	<li><a href="../symbols/PartRetrievers.WinRTPartRetriever.html">.WinRTPartRetriever</a></li>
+	
+	</ul></li><li><i><a href="../symbols/PDFNet.html">PDFNet</a></i><ul>
+	
+	<li><a href="../symbols/PDFNet.Action.html">.Action</a></li>
+	
+	<li><a href="../symbols/PDFNet.ActionParameter.html">.ActionParameter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Annot.html">.Annot</a></li>
+	
+	<li><a href="../symbols/PDFNet.AnnotBorderStyle.html">.AnnotBorderStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.AttrObj.html">.AttrObj</a></li>
+	
+	<li><a href="../symbols/PDFNet.Bookmark.html">.Bookmark</a></li>
+	
+	<li><a href="../symbols/PDFNet.CaretAnnot.html">.CaretAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ChunkRenderer.html">.ChunkRenderer</a></li>
+	
+	<li><a href="../symbols/PDFNet.CircleAnnot.html">.CircleAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ClassMap.html">.ClassMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorPt.html">.ColorPt</a></li>
+	
+	<li><a href="../symbols/PDFNet.ColorSpace.html">.ColorSpace</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentItem.html">.ContentItem</a></li>
+	
+	<li><a href="../symbols/PDFNet.ContentReplacer.html">.ContentReplacer</a></li>
+	
+	<li><a href="../symbols/PDFNet.ConversionMonitor.html">.ConversionMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.Convert.html">.Convert</a></li>
+	
+	<li><a href="../symbols/PDFNet.Date.html">.Date</a></li>
+	
+	<li><a href="../symbols/PDFNet.Destination.html">.Destination</a></li>
+	
+	<li><a href="../symbols/PDFNet.DictIterator.html">.DictIterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.DocumentConversion.html">.DocumentConversion</a></li>
+	
+	<li><a href="../symbols/PDFNet.Element.html">.Element</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementBuilder.html">.ElementBuilder</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementReader.html">.ElementReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.ElementWriter.html">.ElementWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFDoc.html">.FDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.FDFField.html">.FDFField</a></li>
+	
+	<li><a href="../symbols/PDFNet.Field.html">.Field</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileAttachmentAnnot.html">.FileAttachmentAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.FileSpec.html">.FileSpec</a></li>
+	
+	<li><a href="../symbols/PDFNet.Filter.html">.Filter</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterReader.html">.FilterReader</a></li>
+	
+	<li><a href="../symbols/PDFNet.FilterWriter.html">.FilterWriter</a></li>
+	
+	<li><a href="../symbols/PDFNet.Flattener.html">.Flattener</a></li>
+	
+	<li><a href="../symbols/PDFNet.Font.html">.Font</a></li>
+	
+	<li><a href="../symbols/PDFNet.FreeTextAnnot.html">.FreeTextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Function.html">.Function</a></li>
+	
+	<li><a href="../symbols/PDFNet.GState.html">.GState</a></li>
+	
+	<li><a href="../symbols/PDFNet.HighlightAnnot.html">.HighlightAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Highlights.html">.Highlights</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF.html">.HTML2PDF</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_Proxy.html">.HTML2PDF_Proxy</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_TOCSettings.html">.HTML2PDF_TOCSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.HTML2PDF_WebPageSettings.html">.HTML2PDF_WebPageSettings</a></li>
+	
+	<li><a href="../symbols/PDFNet.Image.html">.Image</a></li>
+	
+	<li><a href="../symbols/PDFNet.InkAnnot.html">.InkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Iterator.html">.Iterator</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeActionResult.html">.KeyStrokeActionResult</a></li>
+	
+	<li><a href="../symbols/PDFNet.KeyStrokeEventData.html">.KeyStrokeEventData</a></li>
+	
+	<li><a href="../symbols/PDFNet.LineAnnot.html">.LineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.LinkAnnot.html">.LinkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.MarkupAnnot.html">.MarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Matrix2D.html">.Matrix2D</a></li>
+	
+	<li><a href="../symbols/PDFNet.MovieAnnot.html">.MovieAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.NameTree.html">.NameTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.NumberTree.html">.NumberTree</a></li>
+	
+	<li><a href="../symbols/PDFNet.Obj.html">.Obj</a></li>
+	
+	<li><a href="../symbols/PDFNet.ObjSet.html">.ObjSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCG.html">.OCG</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGConfig.html">.OCGConfig</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCGContext.html">.OCGContext</a></li>
+	
+	<li><a href="../symbols/PDFNet.OCMD.html">.OCMD</a></li>
+	
+	<li><a href="../symbols/PDFNet.Optimizer.html">.Optimizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.Page.html">.Page</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageLabel.html">.PageLabel</a></li>
+	
+	<li><a href="../symbols/PDFNet.PageSet.html">.PageSet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PatternColor.html">.PatternColor</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFACompliance.html">.PDFACompliance</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDC.html">.PDFDC</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDCEX.html">.PDFDCEX</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDoc.html">.PDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocInfo.html">.PDFDocInfo</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDocViewPrefs.html">.PDFDocViewPrefs</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFDraw.html">.PDFDraw</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFNet.html">.PDFNet</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFRasterizer.html">.PDFRasterizer</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFView.html">.PDFView</a></li>
+	
+	<li><a href="../symbols/PDFNet.PDFViewCtrl.html">.PDFViewCtrl</a></li>
+	
+	<li><a href="../symbols/PDFNet.Point.html">.Point</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolygonAnnot.html">.PolygonAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PolyLineAnnot.html">.PolyLineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.PopupAnnot.html">.PopupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ProgressMonitor.html">.ProgressMonitor</a></li>
+	
+	<li><a href="../symbols/PDFNet.QuadPoint.html">.QuadPoint</a></li>
+	
+	<li><a href="../symbols/PDFNet.Rect.html">.Rect</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redaction.html">.Redaction</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAnnot.html">.RedactionAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.RedactionAppearance.html">.RedactionAppearance</a></li>
+	
+	<li><a href="../symbols/PDFNet.Redactor.html">.Redactor</a></li>
+	
+	<li><a href="../symbols/PDFNet.RoleMap.html">.RoleMap</a></li>
+	
+	<li><a href="../symbols/PDFNet.RubberStampAnnot.html">.RubberStampAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ScreenAnnot.html">.ScreenAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SDFDoc.html">.SDFDoc</a></li>
+	
+	<li><a href="../symbols/PDFNet.SecurityHandler.html">.SecurityHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SElement.html">.SElement</a></li>
+	
+	<li><a href="../symbols/PDFNet.Shading.html">.Shading</a></li>
+	
+	<li><a href="../symbols/PDFNet.SignatureHandler.html">.SignatureHandler</a></li>
+	
+	<li><a href="../symbols/PDFNet.SoundAnnot.html">.SoundAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquareAnnot.html">.SquareAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.SquigglyAnnot.html">.SquigglyAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.Stamper.html">.Stamper</a></li>
+	
+	<li><a href="../symbols/PDFNet.STree.html">.STree</a></li>
+	
+	<li><a href="../symbols/PDFNet.StrikeOutAnnot.html">.StrikeOutAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextAnnot.html">.TextAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractor.html">.TextExtractor</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorLine.html">.TextExtractorLine</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorStyle.html">.TextExtractorStyle</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextExtractorWord.html">.TextExtractorWord</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextMarkupAnnot.html">.TextMarkupAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.TextSearch.html">.TextSearch</a></li>
+	
+	<li><a href="../symbols/PDFNet.UnderlineAnnot.html">.UnderlineAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.ViewChangeCollection.html">.ViewChangeCollection</a></li>
+	
+	<li><a href="../symbols/PDFNet.WatermarkAnnot.html">.WatermarkAnnot</a></li>
+	
+	<li><a href="../symbols/PDFNet.WidgetAnnot.html">.WidgetAnnot</a></li>
+	
+	</ul></li><li><a href="../symbols/ReaderControl.html">ReaderControl</a></li>
+	
+	<li><i><a href="../symbols/ReaderControl.config.html">ReaderControl.config</a></i><ul>
+	
+	<li><a href="../symbols/ReaderControl.config.ui.html">.ui</a></li>
+	
+	</ul></li><li><i><a href="../symbols/Tools.html">Tools</a></i><ul>
+	
+	<li><a href="../symbols/Tools.AnnotationEditTool.html">.AnnotationEditTool</a></li>
+	
+	<li><a href="../symbols/Tools.AnnotationSelectTool.html">.AnnotationSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.ArrowCreateTool.html">.ArrowCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.CalloutCreateTool.html">.CalloutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.EllipseCreateTool.html">.EllipseCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeHandCreateTool.html">.FreeHandCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.FreeTextCreateTool.html">.FreeTextCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.GenericAnnotationCreateTool.html">.GenericAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.LineCreateTool.html">.LineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PageCoordinate.html">.PageCoordinate</a></li>
+	
+	<li><a href="../symbols/Tools.PanTool.html">.PanTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCloudCreateTool.html">.PolygonCloudCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolygonCreateTool.html">.PolygonCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.PolylineCreateTool.html">.PolylineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.RectangleCreateTool.html">.RectangleCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.SignatureCreateTool.html">.SignatureCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.StickyCreateTool.html">.StickyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextAnnotationCreateTool.html">.TextAnnotationCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextHighlightCreateTool.html">.TextHighlightCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSelectTool.html">.TextSelectTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextSquigglyCreateTool.html">.TextSquigglyCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextStrikeoutCreateTool.html">.TextStrikeoutCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextTool.html">.TextTool</a></li>
+	
+	<li><a href="../symbols/Tools.TextUnderlineCreateTool.html">.TextUnderlineCreateTool</a></li>
+	
+	<li><a href="../symbols/Tools.Tool.html">.Tool</a></li>
+	
+	</ul></li><li><i><a href="../symbols/WebViewerInterface.html">WebViewerInterface</a></i><ul>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Class PDFNet.Annot
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				PDFNet.Annot
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;..\example\pdf\PDFNet.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFNet.Annot.">
+				<caption>Class Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFNet.Annot.html#constructor">PDFNet.Annot</a></b>(id)
+							</div>
+							<div class="description">Annot is a base class for different types of annotations.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the methods documented in the class PDFNet.Annot.">
+					<caption>Method Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Method Attributes</th>
+							<th scope="col">Method Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#compare">compare</a></b>(d)
+								</div>
+								<div class="description">Compares two annotations for equality.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#copy">copy</a></b>()
+								</div>
+								<div class="description">Assignment operator</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Annot.<b><a href="../symbols/PDFNet.Annot.html#.create">create</a></b>(doc, type, pos)
+								</div>
+								<div class="description">Creates a new annotation of a given type, in the specified document.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Annot.<b><a href="../symbols/PDFNet.Annot.html#.createFromObj">createFromObj</a></b>(d)
+								</div>
+								<div class="description">Create an annotation and initialize it using given Cos/SDF object.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#flatten">flatten</a></b>(page)
+								</div>
+								<div class="description">Flatten/Merge the existing annotation appearances with the page content anddelete this annotation from a given page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getActiveAppearanceState">getActiveAppearanceState</a></b>()
+								</div>
+								<div class="description">Gets the annotation's active appearance state.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getAppearance">getAppearance</a></b>(annot_state, app_state)
+								</div>
+								<div class="description">Gets the annotation's appearance for the given combination of annotation and appearance states.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getBorderStyle">getBorderStyle</a></b>()
+								</div>
+								<div class="description">Gets the border style for the annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Annot.<b><a href="../symbols/PDFNet.Annot.html#.getBorderStyleStyle">getBorderStyleStyle</a></b>(bs)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getColor">getColor</a></b>()
+								</div>
+								<div class="description">Gets an annotation's color without any specified color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getColorAsCMYK">getColorAsCMYK</a></b>()
+								</div>
+								<div class="description">Returns the annotation's color in CMYK color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getColorAsGray">getColorAsGray</a></b>()
+								</div>
+								<div class="description">Returns the annotation's color in Gray color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getColorAsRGB">getColorAsRGB</a></b>()
+								</div>
+								<div class="description">Gets an annotation's color in RGB color space.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getColorCompNum">getColorCompNum</a></b>()
+								</div>
+								<div class="description">Returns the color space the annotation's color is represented in.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getContents">getContents</a></b>()
+								</div>
+								<div class="description">Extract the content of this annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getDate">getDate</a></b>()
+								</div>
+								<div class="description">Gets an annotation's last modified date.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getFlag">getFlag</a></b>(flag)
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getOptionalContent">getOptionalContent</a></b>()
+								</div>
+								<div class="description">Returns optional content associated with this annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getPage">getPage</a></b>()
+								</div>
+								<div class="description">Gets the page the annotation is associated with.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getRect">getRect</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getRotation">getRotation</a></b>()
+								</div>
+								<div class="description">Returns the rotation value of the annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getSDFObj">getSDFObj</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getStructParent">getStructParent</a></b>()
+								</div>
+								<div class="description">Returns the struct parent of an annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getTriggerAction">getTriggerAction</a></b>(trigger)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getType">getType</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getUniqueID">getUniqueID</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#getVisibleContentBox">getVisibleContentBox</a></b>()
+								</div>
+								<div class="description">It is possible during viewing that GetRect does not return the most accurate bounding boxof what is actually rendered.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#isMarkup">isMarkup</a></b>()
+								</div>
+								<div class="description">Return true if this annotation is classified as a markup annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#isValid">isValid</a></b>()
+								</div>
+								<div class="description"></div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#refreshAppearance">refreshAppearance</a></b>()
+								</div>
+								<div class="description">Regenerates the appearance stream for the annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#removeAppearance">removeAppearance</a></b>(annot_state, app_state)
+								</div>
+								<div class="description">Removes the annotation's appearance for the given combination of annotationand appearance states.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#resize">resize</a></b>(newrect)
+								</div>
+								<div class="description">Scales the geometry of the annotation so that its appearance would now fit a newrectangle on the page, in user units.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setActiveAppearanceState">setActiveAppearanceState</a></b>(astate)
+								</div>
+								<div class="description">Sets the annotation's active appearance state.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setAppearance">setAppearance</a></b>(app_stream, annot_state, app_state)
+								</div>
+								<div class="description">Sets the annotation's appearance for the given combination of annotation and appearance states.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setBorderStyle">setBorderStyle</a></b>(bs, oldStyleOnly)
+								</div>
+								<div class="description">Sets the border style for the annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">PDFNet.Annot.<b><a href="../symbols/PDFNet.Annot.html#.setBorderStyleStyle">setBorderStyleStyle</a></b>(bs, bst)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setColor">setColor</a></b>(col, numcomp)
+								</div>
+								<div class="description">Sets an annotation's color.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setColorDefault">setColorDefault</a></b>(col)
+								</div>
+								<div class="description">[Documentation Not Yet Added]</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setContents">setContents</a></b>(contents)
+								</div>
+								<div class="description">Sets the content of this annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setDate">setDate</a></b>(date)
+								</div>
+								<div class="description">Sets an annotation's last modified date.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setFlag">setFlag</a></b>(flag, value)
+								</div>
+								<div class="description">sets the value of given Flag.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setOptionalContent">setOptionalContent</a></b>(content)
+								</div>
+								<div class="description">Associates optional content with this annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setPage">setPage</a></b>(Page)
+								</div>
+								<div class="description">sets the reference to a page the annotation is associated with.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setRect">setRect</a></b>(pos)
+								</div>
+								<div class="description">Sets the size and location of an annotation on its page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setRotation">setRotation</a></b>(angle)
+								</div>
+								<div class="description">Sets the rotation value of the annotation.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont"><b><a href="../symbols/PDFNet.Annot.html#setStructParent">setStructParent</a></b>(parkeyval)
+								</div>
+								<div class="description">sets the struct parent of an annotation.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Class Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFNet.Annot</b>(id)
+				</div>
+				
+				<div class="description">
+					Annot is a base class for different types of annotations. For annotation specific properties, please refer to derived classes. An annotation is an interactive object placed on a page, such as a text note, a link, or an embedded file. PDF includes a wide variety of standard annotation types. An annotation associates an object such as a widget, note, or movie with a locationon a page of a PDF document, or provides a means of interacting with the uservia the mouse and keyboard. For more details on PDF annotations please refer to section 12.5 in the PDF Reference Manual and the documentation in derived classes.
+					
+				</div>
+				
+				
+				
+				
+					
+						<dl class="detailList">
+						<dt class="heading">Parameters:</dt>
+						
+							<dt>
+								 <b>id</b>
+								
+							</dt>
+								<dd></dd>
+						
+						</dl>
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+
+<!-- ============================== method details ========================= -->		
+			
+				<div class="sectionTitle">
+					Method Detail
+				</div>
+				
+					<a name="compare"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{[ERROR]}</span>
+					<b>compare</b>(d)
+					
+					</div>
+					<div class="description">
+						Compares two annotations for equality. The comparison will return trueonly if both annotations share the same underlying SDF/Cos object.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Annot}</span> <b>d</b>
+									
+								</dt>
+								<dd>Annotation to compare to</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> A promise that resolves to an unknown type (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="copy"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Annot}</span>
+					<b>copy</b>()
+					
+					</div>
+					<div class="description">
+						Assignment operator
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Annot}</span> A promise that resolves to an object of type: "Annot" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".create"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Annot}</span>
+					<span class="light">PDFNet.Annot.</span><b>create</b>(doc, type, pos)
+					
+					</div>
+					<div class="description">
+						Creates a new annotation of a given type, in the specified document.The newly created annotation does not contain any properties specific to a given annotation type, which means an invalid annotation object could be created.It is therefore recommended to always create an annotation using type specific methods,such as Annots::Line::Create() or Annots::FileAttachment::Create().Users should only call Annot::Create() to create annotations of non-standard typesthat are not recognized by PDFTron software (by using Annot::e_Unknown as a type).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{SDFDoc}</span> <b>doc</b>
+									
+								</dt>
+								<dd>A document to which the annotation is added.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>type</b>
+									
+								</dt>
+								<dd>Subtype of annotation to create.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{rect}</span> <b>pos</b>
+									
+								</dt>
+								<dd>A rectangle specifying the annotation's bounds, specified in user space coordinates.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Annot}</span> A promise that resolves to a newly created blank annotation for the given annotation type.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".createFromObj"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{Annot}</span>
+					<span class="light">PDFNet.Annot.</span><b>createFromObj</b>(d)
+					
+					</div>
+					<div class="description">
+						Create an annotation and initialize it using given Cos/SDF object.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>d</b>
+									
+								</dt>
+								<dd>The Cos/SDF object to initialze the annotation with.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Annot}</span> A promise that resolves to an object of type: "Annot" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="flatten"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>flatten</b>(page)
+					
+					</div>
+					<div class="description">
+						Flatten/Merge the existing annotation appearances with the page content anddelete this annotation from a given page.Annotation 'flattening' refers to the operation that changes active annotations(such as markup, widgets, 3D models, etc.) into a static area that is part of the PDF document, just like the other text and images in the document.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Page}</span> <b>page</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="getActiveAppearanceState"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getActiveAppearanceState</b>()
+					
+					</div>
+					<div class="description">
+						Gets the annotation's active appearance state.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> A promise that resolves to the name of the active state. The annotation's appearance state, which selects the applicable appearance stream from an appearance subdictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getAppearance"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getAppearance</b>(annot_state, app_state)
+					
+					</div>
+					<div class="description">
+						Gets the annotation's appearance for the given combination of annotation and appearance states.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>annot_state</b>
+									
+								</dt>
+								<dd>the annotation's appearance state, which selects the applicableappearance stream from the appearance sub-dictionary. An annotation can define as manyas three separate appearances: The normal, rollover, and down appearance.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>app_state</b>
+									
+								</dt>
+								<dd>is an optional parameter specifying the appearance stateto look for (e.g. "Off", "On", etc). If appearance_state is NULL, the choice between different appearance states is determined by the AS (Appearance State) entry in the annotation dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the appearance stream for this annotation, or NULL if the annotation does not have an appearance for the given combination of annotation and appearance states.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getBorderStyle"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{AnnotBorderStyle}</span>
+					<b>getBorderStyle</b>()
+					
+					</div>
+					<div class="description">
+						Gets the border style for the annotation. Typically used for Link annotations.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{AnnotBorderStyle}</span> A promise that resolves to annotation's border style.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name=".getBorderStyleStyle"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					<span class="light">{[ERROR]}</span>
+					<span class="light">PDFNet.Annot.</span><b>getBorderStyleStyle</b>(bs)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{AnnotBorderStyle}</span> <b>bs</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{[ERROR]}</span> A promise that resolves to an unknown type (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getColor"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getColor</b>()
+					
+					</div>
+					<div class="description">
+						Gets an annotation's color without any specified color space. It is generally recommendedto use getColorAsRGB(), getColorAsCMYK() or getColorAsGray() for more predictable behavior
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a ColorPt object containing an array of numbers in the range 0.0 to 1.0.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getColorAsCMYK"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getColorAsCMYK</b>()
+					
+					</div>
+					<div class="description">
+						Returns the annotation's color in CMYK color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a ColorPt object containing an array of four numbers in the range 0.0 to 1.0, representing a CMYK color used for the following purposes:  The background of the annotation's icon when closed  The title bar of the annotation's pop-up window  The border of a link annotationIf the annotation does not specify an explicit color, a default color is returned. Text annotations return 'default yellow;' all others return black.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getColorAsGray"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getColorAsGray</b>()
+					
+					</div>
+					<div class="description">
+						Returns the annotation's color in Gray color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a ColorPt object containing a number in the range 0.0 to 1.0, representing a Gray Scale color used for the following purposes:The background of the annotation's icon when closedThe title bar of the annotation's pop-up windowThe border of a link annotationIf the annotation does not specify an explicit color, black color is returned.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getColorAsRGB"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{colorpt}</span>
+					<b>getColorAsRGB</b>()
+					
+					</div>
+					<div class="description">
+						Gets an annotation's color in RGB color space.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{colorpt}</span> A promise that resolves to a ColorPt object containing an array of three numbers in the range 0.0 to 1.0, representing an RGB colour used for the following purposes:  The background of the annotation's icon when closed  The title bar of the annotation's pop-up window  The border of a link annotation If the annotation does not specify an explicit color, a default color is returned.  Text annotations return 'default yellow;' all others return black.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getColorCompNum"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getColorCompNum</b>()
+					
+					</div>
+					<div class="description">
+						Returns the color space the annotation's color is represented in.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to an integer that is either 1(for DeviceGray), 3(DeviceRGB), or 4(DeviceCMYK). If the annotation has no color, i.e. is transparent, 0 will be returned.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getContents"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{string}</span>
+					<b>getContents</b>()
+					
+					</div>
+					<div class="description">
+						Extract the content of this annotation. (Optional).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{string}</span> A promise that resolves to  A unicode string object with the text that is associated withthis annotation. This is the text that annotation displays on user interaction, if the annotation type supports it.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getDate"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{date}</span>
+					<b>getDate</b>()
+					
+					</div>
+					<div class="description">
+						Gets an annotation's last modified date.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{date}</span> A promise that resolves to the annotation's last modified time and date. If the annotation has no associateddate structure, the returned date is not valid (date.IsValid() returns false). Correspondsto the "M" entry of the annotation dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getFlag"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>getFlag</b>(flag)
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>The Flag property to query.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to the value of given Flag</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getOptionalContent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getOptionalContent</b>()
+					
+					</div>
+					<div class="description">
+						Returns optional content associated with this annotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to a SDF object corresponding to the group of optional properties.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getPage"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Page}</span>
+					<b>getPage</b>()
+					
+					</div>
+					<div class="description">
+						Gets the page the annotation is associated with.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Page}</span> A promise that resolves to a Page object or null page object if the page reference is not available. The page object returned is an indirect reference to the page object with which this annotation is associated. This entry shall be present in screen annotations associated with rendition actions. Optional. PDF 1.3 PDF 1.4 PDF 1.5 not used in FDF files.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRect"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{rect}</span>
+					<b>getRect</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{rect}</span> A promise that resolves to annotation's bounding rectangle, specified in user space coordinates.The meaning of the rectangle depends on the annotation type. For Link and RubberStamp annotations, the rectangle specifies the area containing the hyperlink area or stamp. For Note annotations, the rectangle is describing the popup window when it's opened. When it's closed, the icon is positioned at lower left corner.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getRotation"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getRotation</b>()
+					
+					</div>
+					<div class="description">
+						Returns the rotation value of the annotation. The Rotation specifies the number of degrees by which theannotation shall be rotated counterclockwise relative to the page.The value shall be a multiple of 90.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to an integer representing the rotation value of the annotation.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getSDFObj"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getSDFObj</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the underlying SDF/Cos object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getStructParent"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getStructParent</b>()
+					
+					</div>
+					<div class="description">
+						Returns the struct parent of an annotation.(Required if the annotation is a structural content item; PDF 1.3)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to an integer which is the integer key of the annotation's entry in the structural parent tree.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getTriggerAction"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getTriggerAction</b>(trigger)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number/enum}</span> <b>trigger</b>
+									
+								</dt>
+								<dd>(generated enum documentation) <pre>PDFNet.Annot.EventType = {	e_action_trigger_activate : 0	e_action_trigger_annot_enter : 1	e_action_trigger_annot_exit : 2	e_action_trigger_annot_down : 3	e_action_trigger_annot_up : 4	e_action_trigger_annot_focus : 5	e_action_trigger_annot_blur : 6	e_action_trigger_annot_page_open : 7	e_action_trigger_annot_page_close : 8	e_action_trigger_annot_page_visible : 9	e_action_trigger_annot_page_invisible : 10}</pre></dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to an object of type: "Obj" (generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getType"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{number}</span>
+					<b>getType</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+					<pre class="code">Return value enum:<pre>PDFNet.Annot.Type = {	e_Text : 0	e_Link : 1	e_FreeText : 2	e_Line : 3	e_Square : 4	e_Circle : 5	e_Polygon : 6	e_Polyline : 7	e_Highlight : 8	e_Underline : 9	e_Squiggly : 10	e_StrikeOut : 11	e_Stamp : 12	e_Caret : 13	e_Ink : 14	e_Popup : 15	e_FileAttachment : 16	e_Sound : 17	e_Movie : 18	e_Widget : 19	e_Screen : 20	e_PrinterMark : 21	e_TrapNet : 22	e_Watermark : 23	e_3D : 24	e_Redact : 25	e_Projection : 26	e_RichMedia : 27	e_Unknown : 28}</pre></pre>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{number}</span> A promise that resolves to the type of this annotation. Corresponds to the "Subtype" entry of annotationdictionary, as per PDF Reference Manual section 12.5.2</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getUniqueID"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{Obj}</span>
+					<b>getUniqueID</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{Obj}</span> A promise that resolves to the unique identifier for this annotation, or NULL if the identifier is not available. The returned value is a String object and is the value of the "NM" field, which was added as an optional attribute in PDF 1.4.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="getVisibleContentBox"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{rect}</span>
+					<b>getVisibleContentBox</b>()
+					
+					</div>
+					<div class="description">
+						It is possible during viewing that GetRect does not return the most accurate bounding boxof what is actually rendered. This method calculates the bounding box, rather than relyingon what is specified in the PDF document. The bounding box is defined as the smallestrectangle that includes all the visible content on the annotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{rect}</span> A promise that resolves to the bounding box for this annotation. The dimensions are specified in user spacecoordinates.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isMarkup"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isMarkup</b>()
+					
+					</div>
+					<div class="description">
+						Return true if this annotation is classified as a markup annotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to boolean value, true if this annotation is classified as a markup annotation.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="isValid"> </a>
+					<div class="fixedFont">
+					
+					<span class="light">{boolean}</span>
+					<b>isValid</b>()
+					
+					</div>
+					<div class="description">
+						
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+							<dl class="detailList">
+							<dt class="heading">Returns:</dt>
+							
+								<dd><span class="light fixedFont">{boolean}</span> A promise that resolves to true if this is a valid (non-null) annotation, false otherwise. If the function returns false the underlying SDF/Cos object is null or is not valid and the annotation object should be treated as a null object.</dd>
+							
+							</dl>
+						
+						
+						
+
+					<hr />
+				
+					<a name="refreshAppearance"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>refreshAppearance</b>()
+					
+					</div>
+					<div class="description">
+						Regenerates the appearance stream for the annotation. 	This method can be used to auto-generate the annotation appearance after creating or modifying the annotation without providing an explicit appearance or setting the "NeedAppearances" flag in the AcroForm dictionary.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="removeAppearance"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>removeAppearance</b>(annot_state, app_state)
+					
+					</div>
+					<div class="description">
+						Removes the annotation's appearance for the given combination of annotationand appearance states.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>annot_state</b>
+									
+								</dt>
+								<dd>the annotation's appearance state, which selects the applicableappearance stream from the appearance sub-dictionary. An annotation can define as manyas three separate appearances: The normal, rollover, and down appearance.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>app_state</b>
+									
+								</dt>
+								<dd>is an optional parameter specifying the appearance state(e.g. "Off", "On", etc) under which the new appearance should be stored. If appearance_state is NULL, the annotation will have only one annotation state.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="resize"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>resize</b>(newrect)
+					
+					</div>
+					<div class="description">
+						Scales the geometry of the annotation so that its appearance would now fit a newrectangle on the page, in user units. Users still have to call RefreshAppearance() laterif they want a corresponding appearance stream to be generated for the new rectangle.The main reason for not combining the two operations together is to be able to resizeannotations that do not have an appearance stream.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{rect}</span> <b>newrect</b>
+									
+								</dt>
+								<dd>A reference to the new rectangle to which this annotation has to be resized.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setActiveAppearanceState"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setActiveAppearanceState</b>(astate)
+					
+					</div>
+					<div class="description">
+						Sets the annotation's active appearance state. (Required if the appearance dictionary AP contains one or more subdictionaries; PDF 1.2)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>astate</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setAppearance"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setAppearance</b>(app_stream, annot_state, app_state)
+					
+					</div>
+					<div class="description">
+						Sets the annotation's appearance for the given combination of annotation and appearance states.(Optional; PDF 1.2)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>app_stream</b>
+									
+								</dt>
+								<dd>a content stream defining the new appearance.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>annot_state</b>
+									
+								</dt>
+								<dd>the annotation's appearance state, which selects the applicableappearance stream from the appearance sub-dictionary. An annotation can define as manyas three separate appearances: The normal, rollover, and down appearance.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>app_state</b>
+									
+								</dt>
+								<dd>is an optional parameter specifying the appearance state(e.g. "Off", "On", etc) under which the new appearance should be stored. If appearance_state is NULL, the annotation will have only one annotation state.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setBorderStyle"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setBorderStyle</b>(bs, oldStyleOnly)
+					
+					</div>
+					<div class="description">
+						Sets the border style for the annotation.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{AnnotBorderStyle}</span> <b>bs</b>
+									
+								</dt>
+								<dd>New border style for this annotation.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>oldStyleOnly</b>
+									
+								</dt>
+								<dd>PDF manual specifies two ways to add border information to an annotation object,either through an array named 'Border' (PDF 1.0), or a dictionary called 'BS' (PDF 1.2) the lattertaking precedence over the former. However, if you want to create a border with rounded corners, you can onlydo that using PDF 1.0 Border specification, in which case if you call SetBorderStyle() set the parameteroldStyleOnly to true. This parameter has a default value of false in the API and does not need to be used otherwise.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".setBorderStyleStyle"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">PDFNet.Annot.</span><b>setBorderStyleStyle</b>(bs, bst)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{AnnotBorderStyle}</span> <b>bs</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>bst</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setColor"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setColor</b>(col, numcomp)
+					
+					</div>
+					<div class="description">
+						Sets an annotation's color.(Optional; PDF 1.1)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>col</b>
+									
+								</dt>
+								<dd>A ColorPt object in RGB or Gray or CMYK color space representing the annotation's color. The ColorPt contains an array of numbers in the range 0.0 to 1.0, representing a color used for the following purposes:   The background of the annotation's icon when closed    The title bar of the annotation's pop-up window    The border of a link annotationThe number of array elements determines the color space in which the color shall be defined:0 No color; transparent1 DeviceGray3 DeviceRGB4 DeviceCMYK</dd>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>numcomp</b>
+									
+								</dt>
+								<dd>The number of color components used to represent the color (i.e. 1, 3, 4).</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setColorDefault"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setColorDefault</b>(col)
+					
+					</div>
+					<div class="description">
+						[Documentation Not Yet Added]
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{colorpt}</span> <b>col</b>
+									
+								</dt>
+								<dd>(generated documentation)</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setContents"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setContents</b>(contents)
+					
+					</div>
+					<div class="description">
+						Sets the content of this annotation. (Optional).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{string}</span> <b>contents</b>
+									
+								</dt>
+								<dd>A reference to unicode string object with the text that will be associated withthis annotation. This is the text that annotation displays on user interaction, if the annotationtype supports it.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setDate"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setDate</b>(date)
+					
+					</div>
+					<div class="description">
+						Sets an annotation's last modified date.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{date}</span> <b>date</b>
+									
+								</dt>
+								<dd>The annotation's last modified time and date. Corresponds to the "M" entry of theannotation dictionary.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setFlag"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setFlag</b>(flag, value)
+					
+					</div>
+					<div class="description">
+						sets the value of given Flag.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>flag</b>
+									
+								</dt>
+								<dd>The Flag property to modify.</dd>
+							
+								<dt>
+									<span class="light fixedFont">{boolean}</span> <b>value</b>
+									
+								</dt>
+								<dd>The new value for the property.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setOptionalContent"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setOptionalContent</b>(content)
+					
+					</div>
+					<div class="description">
+						Associates optional content with this annotation. (Optional, PDF1.5).
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Obj}</span> <b>content</b>
+									
+								</dt>
+								<dd>A pointer to an SDF object corresponding to the optional content,a PDF::OCG::Group or membership dictionary specifying the PDF::OCG::Group properties for the annotation. Before the annotation is drawn, its visibility shall be determined based on this entry as well as the annotation flags specified in the Flag entry . If it is determined to be invisible, the annotation shall be skipped, as if it were not in the document.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setPage"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setPage</b>(Page)
+					
+					</div>
+					<div class="description">
+						sets the reference to a page the annotation is associated with. (Optional PDF 1.3; not used in FDF files)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{Page}</span> <b>Page</b>
+									
+								</dt>
+								<dd>The page object user wants the annotation to be associated with.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setRect"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setRect</b>(pos)
+					
+					</div>
+					<div class="description">
+						Sets the size and location of an annotation on its page.
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{rect}</span> <b>pos</b>
+									
+								</dt>
+								<dd>Annotation's bounding rectangle, specified in user space coordinates.The meaning of the rectangle depends on the annotation type. For Link and RubberStamp annotations, the rectangle specifies the area containing the hyperlink area or stamp. For Note annotations, the rectangle is describing the popup window when it's opened. When it's closed, the icon is positioned at lower left corner.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setRotation"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setRotation</b>(angle)
+					
+					</div>
+					<div class="description">
+						Sets the rotation value of the annotation. The Rotation specifies the number of degrees by which theannotation shall be rotated counterclockwise relative to the page.The value shall be a multiple of 90.(Optional)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>angle</b>
+									
+								</dt>
+								<dd>An integer representing the rotation value of the annotation.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name="setStructParent"> </a>
+					<div class="fixedFont">
+					
+					
+					<b>setStructParent</b>(parkeyval)
+					
+					</div>
+					<div class="description">
+						sets the struct parent of an annotation.(Required if the annotation is a structural content item; PDF 1.3)
+						<!---->
+						
+					</div>
+					
+					
+					
+						
+							<dl class="detailList">
+							<dt class="heading">Parameters:</dt>
+							
+								<dt>
+									<span class="light fixedFont">{number}</span> <b>parkeyval</b>
+									
+								</dt>
+								<dd>An integer which is the integer key of the annotation's entry in the structural parent tree.</dd>
+							
+							</dl>
+						
+						
+						
+						
+						
+						
+						
+
+					
+				
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:56:31 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>

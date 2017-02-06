@@ -1,0 +1,501 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="JsDoc Toolkit" />
+		
+
+                <title>PDFTron PDFNet WebViewer Reference - PDFTron.WebViewer.FitMode</title>
+                <link rel="stylesheet" href="../../assets/treeview/jquery.treeview.css" />
+                <script src="../../assets/jquery-1.8.3.min.js" type="text/javascript"></script>
+                <script src="../../html5/assets/jquery.cookie.js" type="text/javascript"></script>
+                <script src="../../assets/treeview/jquery.treeview.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){		
+				$(".classList").treeview({persist: "location"});	
+			});
+		</script>
+		<style type="text/css">
+			/* default.css */
+body
+{
+	font: 12px "Lucida Grande", Tahoma, Arial, Helvetica, sans-serif;
+	width: 800px;
+}
+
+a:visited {
+    color: #036;
+}
+a:link {
+    color: #07A;
+}
+a:hover{
+    color: #f38805 !important;
+}
+a.selected{
+    font-weight: bold;
+    color: #f38805 !important;
+    background: none !important;
+}
+.header
+{
+	clear: both;
+	background-color: #ccc;
+	padding: 8px;
+}
+
+h1
+{
+	font-size: 150%;
+	font-weight: bold;
+	padding: 0;
+	margin: 1em 0 0 .3em;
+}
+
+hr
+{
+	border: none 0;
+	border-top: 1px solid #7F8FB1;
+	height: 1px;
+}
+
+pre.code
+{
+	display: block;
+	padding: 8px;
+	border: 1px dashed #ccc;
+}
+
+#index
+{
+	margin-top: 24px;
+	float: left;
+	width: 260px;
+	position: absolute;
+	left: 8px;
+	background-color: #F3F3F3;
+/*	padding: 8px;*/
+        padding: 4px 0 0 0px;
+}
+
+#content
+{
+	margin-left: 290px;
+	width: 600px;
+}
+
+.classList
+{
+	list-style-type: none;
+/*	padding: 0;*/
+        padding: 0 8px 0 2px;
+/*	margin: 0 0 0 8px;*/
+	font-family: arial, sans-serif;
+	font-size: 1em;
+	overflow: auto;
+}
+
+.classList li
+{
+/*	padding: 0;
+	margin: 0 0 8px 0;*/
+}
+
+.summaryTable { width: 100%; }
+
+h1.classTitle
+{
+	font-size:170%;
+	line-height:130%;
+}
+
+h2 { font-size: 110%; }
+caption, div.sectionTitle
+{
+/*	background-color: #7F8FB1;*/
+	background-color: #07A;
+	color: #fff;
+	font-size:130%;
+	text-align: left;
+	padding: 2px 6px 2px 6px;
+/*	border: 1px #7F8FB1 solid;*/
+        border: 1px #07A solid;
+}
+
+div.sectionTitle { margin-bottom: 8px; }
+.summaryTable thead { display: none; }
+
+.summaryTable td
+{
+	vertical-align: top;
+	padding: 4px;
+	border-bottom: 1px #7F8FB1 solid;
+	border-right: 1px #7F8FB1 solid;
+}
+
+/*col#summaryAttributes {}*/
+.summaryTable td.attributes
+{
+	border-left: 1px #7F8FB1 solid;
+	width: 140px;
+	text-align: right;
+}
+
+td.attributes, .fixedFont
+{
+	line-height: 15px;
+	color: #002EBE;
+	font-family: "Courier New",Courier,monospace;
+	font-size: 13px;
+}
+
+.summaryTable td.nameDescription
+{
+	text-align: left;
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.summaryTable td.nameDescription, .description
+{
+	line-height: 15px;
+	padding: 4px;
+	padding-left: 4px;
+}
+
+.summaryTable { margin-bottom: 8px; }
+
+ul.inheritsList
+{
+	list-style: square;
+	margin-left: 20px;
+	padding-left: 0;
+}
+
+.detailList {
+	margin-left: 20px; 
+	line-height: 15px;
+}
+.detailList dt { margin-left: 20px; }
+
+.detailList .heading
+{
+	font-weight: bold;
+	padding-bottom: 6px;
+	margin-left: 0;
+}
+
+.light, td.attributes, .light a:link, .light a:visited
+{
+	color: #777;
+	font-style: italic;
+}
+
+.fineprint
+{
+	text-align: right;
+	font-size: 10px;
+}
+
+/** CUSTOM */
+tr.deprecated .fixedFont
+{
+	text-decoration: line-through;
+}
+
+		</style>
+	</head>
+
+	<body>
+<!-- ============================== header ================================= -->	
+		<!-- begin static/header.html -->
+		<div id="header">   
+                    <div><img src="PDFTron.png"></div>
+                    <h2>WebViewerJS API Reference v2.2.1</h2>
+                </div>
+		<!-- end static/header.html -->
+
+<!-- ============================== classes index ============================ -->
+		<div id="index">
+			<!-- begin publish.classesIndex -->
+			<div align="center"><a href="../index.html">Class Index</a></div>
+<hr />
+<h2>Classes</h2>
+<ul class="classList">
+        
+	
+	<li><i><a href="../symbols/_global_.html">_global_</a></i></li>
+	
+	<li><i><a href="../symbols/PDFTron.html">PDFTron</a></i><ul>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.html">.WebViewer</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.FitMode.html">.WebViewer.FitMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.LayoutMode.html">.WebViewer.LayoutMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.Options.html">.WebViewer.Options</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.ToolMode.html">.WebViewer.ToolMode</a></li>
+	
+	<li><a href="../symbols/PDFTron.WebViewer.User.html">.WebViewer.User</a></li>
+	
+        </ul></li>
+</ul>
+<hr />
+			<!-- end publish.classesIndex -->
+		</div>
+		
+		<div id="content">
+<!-- ============================== class title ============================ -->
+			<h1 class="classTitle">
+				
+				Namespace PDFTron.WebViewer.FitMode
+			</h1>
+
+<!-- ============================== class summary ========================== -->			
+			<p class="description">
+				
+				
+			
+				FitModes are specialized modes for specifying the zoom level of the document.
+				
+				<!--
+					<br /><i>Defined in: </i> &lt;WebViewerJS\lib\WebViewer.js&gt;.
+				-->
+			</p>
+
+<!-- ============================== constructor summary ==================== -->			
+			
+			<table class="summaryTable" cellspacing="0" summary="A summary of the constructor documented in the class PDFTron.WebViewer.FitMode.">
+				<caption>Namespace Summary</caption>
+				<thead>
+					<tr>
+						<th scope="col">Constructor Attributes</th>
+						<th scope="col">Constructor Name and Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="attributes">&nbsp;</td>
+						<td class="nameDescription" >
+							<div class="fixedFont">
+								<b><a href="../symbols/PDFTron.WebViewer.FitMode.html#constructor">PDFTron.WebViewer.FitMode</a></b>
+							</div>
+							<div class="description">Contains all posible modes for fitting/zooming pages to the viewer.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+
+<!-- ============================== properties summary ===================== -->
+			
+				
+				
+				<table class="summaryTable" cellspacing="0" summary="A summary of the fields documented in the class PDFTron.WebViewer.FitMode.">
+					<caption>Field Summary</caption>
+					<thead>
+						<tr>
+							<th scope="col">Field Attributes</th>
+							<th scope="col">Field Name and Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								PDFTron.WebViewer.FitMode.<b><a href="../symbols/PDFTron.WebViewer.FitMode.html#.FitHeight">FitHeight</a></b>
+								</div>
+								<div class="description">A fit mode where the zoom level is fixed to the height of the page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								PDFTron.WebViewer.FitMode.<b><a href="../symbols/PDFTron.WebViewer.FitMode.html#.FitPage">FitPage</a></b>
+								</div>
+								<div class="description">A fit mode where the zoom level is fixed to the width or height of the page, whichever is smaller.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								PDFTron.WebViewer.FitMode.<b><a href="../symbols/PDFTron.WebViewer.FitMode.html#.FitWidth">FitWidth</a></b>
+								</div>
+								<div class="description">A fit mode where the zoom level is fixed to the width of the page.</div>
+							</td>
+						</tr>
+					
+						<tr >
+							<td class="attributes">&lt;static&gt; &nbsp;</td>
+							<td class="nameDescription">
+								<div class="fixedFont">
+								PDFTron.WebViewer.FitMode.<b><a href="../symbols/PDFTron.WebViewer.FitMode.html#.Zoom">Zoom</a></b>
+								</div>
+								<div class="description">A fit mode where the zoom level is not fixed.</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+				
+				
+				
+			
+
+<!-- ============================== methods summary ======================== -->
+			
+<!-- ============================== events summary ======================== -->
+			
+
+<!-- ============================== constructor details ==================== -->		
+			
+			<div class="details"><a name="constructor"> </a>
+				<div class="sectionTitle">
+					Namespace Detail
+				</div>
+				
+				<div class="fixedFont">
+						<b>PDFTron.WebViewer.FitMode</b>
+				</div>
+				
+				<div class="description">
+					Contains all posible modes for fitting/zooming pages to the viewer.The behavior may vary depending on the <a href="../symbols/PDFTron.WebViewer.LayoutMode.html">PDFTron.WebViewer.LayoutMode</a>.
+					
+				</div>
+				
+				
+				
+				
+					
+					
+					
+					
+					
+					
+					
+
+			</div>
+			
+
+<!-- ============================== field details ========================== -->		
+			
+				<div class="sectionTitle">
+					Field Detail
+				</div>
+				
+					<a name=".FitHeight"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">PDFTron.WebViewer.FitMode.</span><b>FitHeight</b>
+					
+					</div>
+					<div class="description">
+						A fit mode where the zoom level is fixed to the height of the page.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".FitPage"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">PDFTron.WebViewer.FitMode.</span><b>FitPage</b>
+					
+					</div>
+					<div class="description">
+						A fit mode where the zoom level is fixed to the width or height of the page, whichever is smaller.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".FitWidth"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">PDFTron.WebViewer.FitMode.</span><b>FitWidth</b>
+					
+					</div>
+					<div class="description">
+						A fit mode where the zoom level is fixed to the width of the page.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					<hr />
+				
+					<a name=".Zoom"> </a>
+					<div class="fixedFont">&lt;static&gt; 
+					
+					
+					<span class="light">PDFTron.WebViewer.FitMode.</span><b>Zoom</b>
+					
+					</div>
+					<div class="description">
+						A fit mode where the zoom level is not fixed.
+						<!---->
+						
+					</div>
+					
+					
+
+						
+						
+						
+						
+
+					
+				
+			
+
+<!-- ============================== method details ========================= -->		
+			
+			
+<!-- ============================== event details ========================= -->		
+			
+			
+			<hr />
+		</div>
+
+		
+<!-- ============================== footer ================================= -->
+		<div class="fineprint" style="clear:both">
+			
+			Documentation generated by <a href="http://code.google.com/p/jsdoc-toolkit/" target="_blank">JsDoc Toolkit</a> 2.4.0 on Tue Sep 06 2016 13:54:00 GMT-0700 (PDT)
+		</div>
+	</body>
+</html>
