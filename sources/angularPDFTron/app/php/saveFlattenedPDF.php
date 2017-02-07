@@ -1,4 +1,5 @@
 <?php
+echo (getcwd() . "<br/>\n");
 
 var_dump($_POST);
 $name = $_POST["baseName"];

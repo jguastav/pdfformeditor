@@ -158,5 +158,8 @@ AngularJS v1.5.11
 
 PHP.: public host: 4.4.9 or 5.6.16  (preferred)
          php files are only samples about how to communicate with server side components
+Python 2.7
+		http://www.pdftron.com/downloads/PDFNetWrappers/PDFNetWrappersLinux64.tar.gz
+ubuntu server 16.04
+http server nginx
 
-      

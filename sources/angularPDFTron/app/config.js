@@ -36,8 +36,15 @@
         });
     });
 
-
-
+	clearPdfForm = function() {
+		var annotationManager = readerControl.docViewer.getAnnotationManager();
+		console.log(annotationManager);
+		
+		var annotationList = annotationManager.getAnnotationsList();
+		console.log(annotationList);
+		annotationManager.hideAnnotations(annotationList);
+		
+	}
 
 	var uploadFile = function(file) {
 		var formData = new FormData();
@@ -57,9 +64,21 @@
 	}
 
 
-	
+	/*
+	var importAnnotations = function() {
+        var annotManager = readerControl.docViewer.getAnnotationManager();
 
-
+        $.ajax({
+            url: '../../samples/hide-annotations/annots.xfdf',
+            success: function(data) {
+                annotManager.importAnnotations(data);
+            },
+            dataType: 'xml'
+        });		
+		
+		
+	}
+*/
 
     var runCustomViewerCode = function(doc)
     {
@@ -410,14 +429,12 @@ var simpleFlattenPDFFFileGenerator = function* () {
     });
 	console.log(pdfBlob.size);
 	uploadPDFBlob(pdfBlob);
-	
+    // Refresh the cache with the newly updated document
+    readerControl.docViewer.refreshAll();
+    // Update viewer with new document
+    readerControl.docViewer.updateView();
 
-        // Refresh the cache with the newly updated document
-        readerControl.docViewer.refreshAll();
-        // Update viewer with new document
-        readerControl.docViewer.updateView();
-
-	}
+}
 
 
 	var flattenPDFFileGenerator = function* () {

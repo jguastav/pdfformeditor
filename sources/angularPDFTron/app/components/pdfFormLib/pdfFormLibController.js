@@ -33,8 +33,8 @@ pdfFormLibModule.controller("pdfFormLibModule.PdfToolbarController",["$scope","$
   }
 
   $scope.clearPdfForm = function() {
+	getPDFViewerContext().clearPdfForm();
     // Actions.ResetForm
-    alert("clearPdfForm");
   }
 
   $scope.signPdfDocument = function() {
@@ -91,6 +91,7 @@ pdfFormLibModule.controller("pdfFormLibModule.PdfToolbarController",["$scope","$
 
 
   }
+  
   $scope.downloadPdfDocument = function() {
     alert("by now generating xfdf in console");
     getPDFViewerContext().generateXFDF();

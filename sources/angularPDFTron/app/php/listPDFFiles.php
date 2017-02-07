@@ -4,6 +4,12 @@
 <body>
 <?php
 
+
+echo ("<p>");
+echo ("Current Dir: ".getcwd() . "<br/>\n");
+echo ("</p>");
+
+
 // scan dir for php 4
 function scan_dir2($dir) {
 	//path to directory to scan
@@ -41,6 +47,16 @@ function scan_dir($dir) {
 
 
 // $filesToList = scan_dir("uploaded");
+
+if (!file_exists('uploaded')) {
+    mkdir('uploaded', 0777, true);
+	echo("uploaded directory created\n");
+} else {
+	echo("uploaded file already exists<br/>");
+}
+
+
+
 $filesToList = scan_dir2("uploaded");
 echo("<table>");
 foreach ($filesToList as $thisFile) {

@@ -1,8 +1,10 @@
 <?php 
 
+echo (getcwd() . "<br/>\n");
 
 if (!function_exists('file_put_contents')) {
     function file_put_contents($filename, $data) {
+		echo("old function : ".filename."\n");
         $f = @fopen($filename, 'w');
         if (!$f) {
             return false;
@@ -14,15 +16,17 @@ if (!function_exists('file_put_contents')) {
     }
 }
 
-
-//print_r($_FILES);
+print_r($_FILES);
 $fileName = $_FILES['file']['name'];
 $fileType = $_FILES['file']['type'];
 $fileError = $_FILES['file']['error'];
 $fileSize = $_FILES['file']['size'];
+	echo("before file_get_contents<br/>");
+
 $fileContent = file_get_contents($_FILES['file']['tmp_name']);
 
 if($fileError == UPLOAD_ERR_OK){
+	echo("uploading file no error<br/>");
 	if ($fileSize<5000000) {
 		$file = 'uploaded/lastUploaded.pdf';
 		// Open the file to get existing content
